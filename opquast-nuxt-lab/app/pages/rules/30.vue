@@ -197,50 +197,84 @@ const activeTab = ref('preview')
           <!-- RENDU -->
           <div v-if="activeTab === 'preview'" class="space-y-4">
             <div class="text-sm text-zinc-400">
-              Exemple de rubrique visible dès la page d’accueil
+              Exemple de page de paiement avec option "Continuer en tant
+              qu'invité" (guest checkout) bien visible
             </div>
-
             <div class="rounded-xl border border-zinc-800 bg-zinc-950 p-5">
-              <div class="flex items-center justify-between">
-                <h3 class="text-base font-semibold text-zinc-100">
-                  Quoi de neuf ?
-                </h3>
-                <span class="text-xs text-zinc-500">Actualités du site</span>
-              </div>
+              <div class="flex flex-col gap-5">
+                <div class="text-base font-semibold text-zinc-100">
+                  Finaliser votre commande
+                </div>
 
-              <ul class="mt-4 space-y-3">
-                <li class="flex items-start justify-between gap-4">
-                  <div>
-                    <div class="flex items-center gap-2">
-                      <span class="text-sm font-medium text-zinc-100">
-                        Nouvelle fonctionnalité publiée
-                      </span>
-                      <span
-                        class="text-[11px] uppercase tracking-wide rounded-full border border-zinc-700 bg-zinc-900 px-2 py-0.5 text-zinc-200"
+                <div class="space-y-4">
+                  <p class="text-sm text-zinc-300">
+                    Vous pouvez commander sans créer de compte. Vos informations
+                    ne seront utilisées que pour traiter cette commande.
+                  </p>
+
+                  <!-- Option Guest bien mise en avant -->
+                  <div
+                    class="rounded-lg border border-zinc-700 bg-zinc-900/50 p-4"
+                  >
+                    <div class="flex items-center gap-3">
+                      <input
+                        type="radio"
+                        id="guest"
+                        name="account"
+                        checked
+                        class="w-5 h-5 accent-zinc-400"
+                      />
+                      <label
+                        for="guest"
+                        class="text-sm font-medium text-zinc-100 cursor-pointer"
                       >
-                        Nouveau
-                      </span>
+                        Continuer en tant qu'invité (sans compte)
+                      </label>
                     </div>
-                    <p class="text-sm text-zinc-400">
-                      Mise en ligne d’un nouveau service accessible depuis
-                      l’accueil.
+                    <p class="mt-1 text-xs text-zinc-500 pl-8">
+                      Rapide et sans obligation. Vous pourrez suivre votre
+                      commande via le lien reçu par email.
                     </p>
                   </div>
-                  <span class="text-xs text-zinc-500">05/01/2026</span>
-                </li>
 
-                <li class="flex items-start justify-between gap-4">
-                  <div>
-                    <span class="text-sm font-medium text-zinc-100">
-                      Mise à jour du contenu éditorial
-                    </span>
-                    <p class="text-sm text-zinc-400">
-                      Actualisation des informations principales du site.
+                  <!-- Option compte (secondaire) -->
+                  <div
+                    class="rounded-lg border border-zinc-800 bg-zinc-900/30 p-4"
+                  >
+                    <div class="flex items-center gap-3">
+                      <input
+                        type="radio"
+                        id="account"
+                        name="account"
+                        class="w-5 h-5 accent-zinc-400"
+                      />
+                      <label
+                        for="account"
+                        class="text-sm text-zinc-400 cursor-pointer"
+                      >
+                        Créer un compte (optionnel)
+                      </label>
+                    </div>
+                    <p class="mt-1 text-xs text-zinc-600 pl-8">
+                      Pour des commandes plus rapides à l'avenir et un
+                      historique personnel.
                     </p>
                   </div>
-                  <span class="text-xs text-zinc-500">03/01/2026</span>
-                </li>
-              </ul>
+                </div>
+
+                <div class="flex justify-end gap-3 mt-4">
+                  <button
+                    class="px-6 py-2.5 bg-zinc-700 text-zinc-100 rounded-lg hover:bg-zinc-600 transition"
+                  >
+                    Retour au panier
+                  </button>
+                  <button
+                    class="px-6 py-2.5 bg-blue-600 text-white rounded-lg hover:bg-blue-500 transition"
+                  >
+                    Continuer vers le paiement
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -249,54 +283,60 @@ const activeTab = ref('preview')
             <pre
               class="rounded-xl bg-zinc-950 p-5 overflow-x-auto text-sm text-zinc-100"
             >
-<code>
-&lt;div class=&quot;rounded-xl border border-zinc-800 bg-zinc-950 p-5&quot;&gt;
-  &lt;div class=&quot;flex items-center justify-between&quot;&gt;
-    &lt;h3 class=&quot;text-base font-semibold text-zinc-100&quot;&gt;
-      Quoi de neuf ?
-    &lt;/h3&gt;
-    &lt;span class=&quot;text-xs text-zinc-500&quot;&gt;Actualités du site&lt;/span&gt;
-  &lt;/div&gt;
-
-  &lt;ul class=&quot;mt-4 space-y-3&quot;&gt;
-    &lt;li class=&quot;flex items-start justify-between gap-4&quot;&gt;
-      &lt;div&gt;
-        &lt;div class=&quot;flex items-center gap-2&quot;&gt;
-          &lt;span class=&quot;text-sm font-medium text-zinc-100&quot;&gt;
-            Nouvelle fonctionnalité publiée
-          &lt;/span&gt;
-          &lt;span
-            class=&quot;text-[11px] uppercase tracking-wide rounded-full border border-zinc-700 bg-zinc-900 px-2 py-0.5 text-zinc-200&quot;
-          &gt;
-            Nouveau
-          &lt;/span&gt;
-        &lt;/div&gt;
-        &lt;p class=&quot;text-sm text-zinc-400&quot;&gt;
-          Mise en ligne d’un nouveau service accessible depuis l’accueil.
-        &lt;/p&gt;
-      &lt;/div&gt;
-      &lt;span class=&quot;text-xs text-zinc-500&quot;&gt;05/01/2026&lt;/span&gt;
-    &lt;/li&gt;
-
-    &lt;li class=&quot;flex items-start justify-between gap-4&quot;&gt;
-      &lt;div&gt;
-        &lt;span class=&quot;text-sm font-medium text-zinc-100&quot;&gt;
-          Mise à jour du contenu éditorial
-        &lt;/span&gt;
-        &lt;p class=&quot;text-sm text-zinc-400&quot;&gt;
-          Actualisation des informations principales du site.
-        &lt;/p&gt;
-      &lt;/div&gt;
-      &lt;span class=&quot;text-xs text-zinc-500&quot;&gt;03/01/2026&lt;/span&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/div&gt;
-</code>
-</pre>
-
+          <code>
+          &lt;div class="rounded-xl border border-zinc-800 bg-zinc-950 p-5"&gt;
+            &lt;div class="flex flex-col gap-5"&gt;
+              &lt;div class="text-base font-semibold text-zinc-100"&gt;
+                Finaliser votre commande
+              &lt;/div&gt;
+              
+              &lt;div class="space-y-4"&gt;
+                &lt;p class="text-sm text-zinc-300"&gt;
+                  Vous pouvez commander sans créer de compte. Vos informations ne seront utilisées que pour traiter cette commande.
+                &lt;/p&gt;
+                
+                &lt;!-- Option Guest bien mise en avant --&gt;
+                &lt;div class="rounded-lg border border-zinc-700 bg-zinc-900/50 p-4"&gt;
+                  &lt;div class="flex items-center gap-3"&gt;
+                    &lt;input type="radio" id="guest" name="account" checked class="w-5 h-5 accent-zinc-400" /&gt;
+                    &lt;label for="guest" class="text-sm font-medium text-zinc-100 cursor-pointer"&gt;
+                      Continuer en tant qu'invité (sans compte)
+                    &lt;/label&gt;
+                  &lt;/div&gt;
+                  &lt;p class="mt-1 text-xs text-zinc-500 pl-8"&gt;
+                    Rapide et sans obligation. Vous pourrez suivre votre commande via le lien reçu par email.
+                  &lt;/p&gt;
+                &lt;/div&gt;
+                
+                &lt;!-- Option compte (secondaire) --&gt;
+                &lt;div class="rounded-lg border border-zinc-800 bg-zinc-900/30 p-4"&gt;
+                  &lt;div class="flex items-center gap-3"&gt;
+                    &lt;input type="radio" id="account" name="account" class="w-5 h-5 accent-zinc-400" /&gt;
+                    &lt;label for="account" class="text-sm text-zinc-400 cursor-pointer"&gt;
+                      Créer un compte (optionnel)
+                    &lt;/label&gt;
+                  &lt;/div&gt;
+                  &lt;p class="mt-1 text-xs text-zinc-600 pl-8"&gt;
+                    Pour des commandes plus rapides à l'avenir et un historique personnel.
+                  &lt;/p&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              
+              &lt;div class="flex justify-end gap-3 mt-4"&gt;
+                &lt;button class="px-6 py-2.5 bg-zinc-700 text-zinc-100 rounded-lg hover:bg-zinc-600 transition"&gt;
+                  Retour au panier
+                &lt;/button&gt;
+                &lt;button class="px-6 py-2.5 bg-blue-600 text-white rounded-lg hover:bg-blue-500 transition"&gt;
+                  Continuer vers le paiement
+                &lt;/button&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          </code>
+              </pre>
             <p class="mt-3 text-xs text-zinc-500">
-              Le principe essentiel est la visibilité immédiate des nouveautés,
-              sans navigation complexe ni recherche supplémentaire.
+              Le principe essentiel est de rendre l'option "sans compte" claire,
+              prioritaire et rassurante, pour réduire les abandons de panier.
             </p>
           </div>
         </div>

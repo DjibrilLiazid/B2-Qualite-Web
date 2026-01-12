@@ -197,50 +197,77 @@ const activeTab = ref('preview')
           <!-- RENDU -->
           <div v-if="activeTab === 'preview'" class="space-y-4">
             <div class="text-sm text-zinc-400">
-              Exemple de rubrique visible dès la page d’accueil
+              Exemple de fiche produit ebook / contenu numérique avec modalités
+              de récupération claires avant ajout au panier
             </div>
-
             <div class="rounded-xl border border-zinc-800 bg-zinc-950 p-5">
-              <div class="flex items-center justify-between">
-                <h3 class="text-base font-semibold text-zinc-100">
-                  Quoi de neuf ?
-                </h3>
-                <span class="text-xs text-zinc-500">Actualités du site</span>
+              <div class="flex flex-col gap-5">
+                <div class="text-base font-semibold text-zinc-100">
+                  Ebook : "L'Art de la Qualité Numérique" – Format numérique
+                </div>
+
+                <p class="text-sm text-zinc-300">
+                  Disponible immédiatement après achat – Pas de livraison
+                  physique
+                </p>
+
+                <!-- Modalités détaillées -->
+                <div
+                  class="rounded-lg border border-zinc-700 bg-zinc-900/50 p-4 space-y-3"
+                >
+                  <h5 class="text-sm font-medium text-zinc-100">
+                    Comment récupérer votre ebook ?
+                  </h5>
+
+                  <ul class="text-sm text-zinc-400 space-y-2 list-disc pl-5">
+                    <li>
+                      <strong>Accès immédiat</strong> : dès validation du
+                      paiement
+                    </li>
+                    <li>
+                      <strong>Format</strong> : ePub + PDF (DRM Adobe
+                      compatible)
+                    </li>
+                    <li>
+                      <strong>Canaux d'accès</strong> :
+                      <ul class="list-disc pl-5 mt-1 text-xs text-zinc-500">
+                        <li>
+                          Dans votre compte > "Mes ebooks" (téléchargement
+                          illimité)
+                        </li>
+                        <li>Lien direct envoyé par email (valable 30 jours)</li>
+                        <li>
+                          Via l'application mobile / liseuse compatible (Kobo,
+                          Kindle via conversion, etc.)
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <strong>Durée de disponibilité</strong> : Accès permanent
+                      à vie
+                    </li>
+                    <li>
+                      <strong>Compatibilité</strong> : Tous appareils
+                      (smartphone, tablette, liseuse, ordinateur) – Nécessite
+                      Adobe Digital Editions pour le DRM
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Message anti-déception -->
+                <p class="text-xs text-zinc-500 italic">
+                  Toutes ces informations sont confirmées avant ajout au panier.
+                  Pas de surprise après achat.
+                </p>
+
+                <div class="flex justify-end gap-3 mt-4">
+                  <button
+                    class="px-6 py-2.5 bg-zinc-700 text-zinc-100 rounded-lg hover:bg-zinc-600 transition"
+                  >
+                    Ajouter au panier
+                  </button>
+                </div>
               </div>
-
-              <ul class="mt-4 space-y-3">
-                <li class="flex items-start justify-between gap-4">
-                  <div>
-                    <div class="flex items-center gap-2">
-                      <span class="text-sm font-medium text-zinc-100">
-                        Nouvelle fonctionnalité publiée
-                      </span>
-                      <span
-                        class="text-[11px] uppercase tracking-wide rounded-full border border-zinc-700 bg-zinc-900 px-2 py-0.5 text-zinc-200"
-                      >
-                        Nouveau
-                      </span>
-                    </div>
-                    <p class="text-sm text-zinc-400">
-                      Mise en ligne d’un nouveau service accessible depuis
-                      l’accueil.
-                    </p>
-                  </div>
-                  <span class="text-xs text-zinc-500">05/01/2026</span>
-                </li>
-
-                <li class="flex items-start justify-between gap-4">
-                  <div>
-                    <span class="text-sm font-medium text-zinc-100">
-                      Mise à jour du contenu éditorial
-                    </span>
-                    <p class="text-sm text-zinc-400">
-                      Actualisation des informations principales du site.
-                    </p>
-                  </div>
-                  <span class="text-xs text-zinc-500">03/01/2026</span>
-                </li>
-              </ul>
             </div>
           </div>
 
@@ -249,54 +276,54 @@ const activeTab = ref('preview')
             <pre
               class="rounded-xl bg-zinc-950 p-5 overflow-x-auto text-sm text-zinc-100"
             >
-<code>
-&lt;div class=&quot;rounded-xl border border-zinc-800 bg-zinc-950 p-5&quot;&gt;
-  &lt;div class=&quot;flex items-center justify-between&quot;&gt;
-    &lt;h3 class=&quot;text-base font-semibold text-zinc-100&quot;&gt;
-      Quoi de neuf ?
-    &lt;/h3&gt;
-    &lt;span class=&quot;text-xs text-zinc-500&quot;&gt;Actualités du site&lt;/span&gt;
-  &lt;/div&gt;
-
-  &lt;ul class=&quot;mt-4 space-y-3&quot;&gt;
-    &lt;li class=&quot;flex items-start justify-between gap-4&quot;&gt;
-      &lt;div&gt;
-        &lt;div class=&quot;flex items-center gap-2&quot;&gt;
-          &lt;span class=&quot;text-sm font-medium text-zinc-100&quot;&gt;
-            Nouvelle fonctionnalité publiée
-          &lt;/span&gt;
-          &lt;span
-            class=&quot;text-[11px] uppercase tracking-wide rounded-full border border-zinc-700 bg-zinc-900 px-2 py-0.5 text-zinc-200&quot;
-          &gt;
-            Nouveau
-          &lt;/span&gt;
+        <code>
+        &lt;div class="rounded-xl border border-zinc-800 bg-zinc-950 p-5"&gt;
+          &lt;div class="flex flex-col gap-5"&gt;
+            &lt;div class="text-base font-semibold text-zinc-100"&gt;
+              Ebook : "L'Art de la Qualité Numérique" – Format numérique
+            &lt;/div&gt;
+            
+            &lt;p class="text-sm text-zinc-300"&gt;
+              Disponible immédiatement après achat – Pas de livraison physique
+            &lt;/p&gt;
+            
+            &lt;!-- Modalités détaillées --&gt;
+            &lt;div class="rounded-lg border border-zinc-700 bg-zinc-900/50 p-4 space-y-3"&gt;
+              &lt;h5 class="text-sm font-medium text-zinc-100"&gt;Comment récupérer votre ebook ?&lt;/h5&gt;
+              
+              &lt;ul class="text-sm text-zinc-400 space-y-2 list-disc pl-5"&gt;
+                &lt;li&gt;&lt;strong&gt;Accès immédiat&lt;/strong&gt; : dès validation du paiement&lt;/li&gt;
+                &lt;li&gt;&lt;strong&gt;Format&lt;/strong&gt; : ePub + PDF (DRM Adobe compatible)&lt;/li&gt;
+                &lt;li&gt;&lt;strong&gt;Canaux d'accès&lt;/strong&gt; :
+                  &lt;ul class="list-disc pl-5 mt-1 text-xs text-zinc-500"&gt;
+                    &lt;li&gt;Dans votre compte &gt; "Mes ebooks" (téléchargement illimité)&lt;/li&gt;
+                    &lt;li&gt;Lien direct envoyé par email (valable 30 jours)&lt;/li&gt;
+                    &lt;li&gt;Via l'application mobile / liseuse compatible&lt;/li&gt;
+                  &lt;/ul&gt;
+                &lt;/li&gt;
+                &lt;li&gt;&lt;strong&gt;Durée de disponibilité&lt;/strong&gt; : Accès permanent à vie&lt;/li&gt;
+                &lt;li&gt;&lt;strong&gt;Compatibilité&lt;/strong&gt; : Tous appareils – Nécessite Adobe Digital Editions pour le DRM&lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/div&gt;
+            
+            &lt;p class="text-xs text-zinc-500 italic"&gt;
+              Toutes ces informations sont confirmées avant ajout au panier. Pas de surprise après achat.
+            &lt;/p&gt;
+            
+            &lt;div class="flex justify-end gap-3 mt-4"&gt;
+              &lt;button class="px-6 py-2.5 bg-zinc-700 text-zinc-100 rounded-lg hover:bg-zinc-600 transition"&gt;
+                Ajouter au panier
+              &lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
         &lt;/div&gt;
-        &lt;p class=&quot;text-sm text-zinc-400&quot;&gt;
-          Mise en ligne d’un nouveau service accessible depuis l’accueil.
-        &lt;/p&gt;
-      &lt;/div&gt;
-      &lt;span class=&quot;text-xs text-zinc-500&quot;&gt;05/01/2026&lt;/span&gt;
-    &lt;/li&gt;
-
-    &lt;li class=&quot;flex items-start justify-between gap-4&quot;&gt;
-      &lt;div&gt;
-        &lt;span class=&quot;text-sm font-medium text-zinc-100&quot;&gt;
-          Mise à jour du contenu éditorial
-        &lt;/span&gt;
-        &lt;p class=&quot;text-sm text-zinc-400&quot;&gt;
-          Actualisation des informations principales du site.
-        &lt;/p&gt;
-      &lt;/div&gt;
-      &lt;span class=&quot;text-xs text-zinc-500&quot;&gt;03/01/2026&lt;/span&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/div&gt;
-</code>
-</pre>
-
+        </code>
+            </pre>
             <p class="mt-3 text-xs text-zinc-500">
-              Le principe essentiel est la visibilité immédiate des nouveautés,
-              sans navigation complexe ni recherche supplémentaire.
+              Le principe essentiel est de lister exhaustivement et clairement
+              (format, accès, délai, contraintes) les modalités de récupération
+              dès la fiche produit, pour que l'utilisateur sache exactement
+              comment il obtiendra son bien dématérialisé avant de commander.
             </p>
           </div>
         </div>

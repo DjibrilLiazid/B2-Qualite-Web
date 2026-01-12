@@ -197,50 +197,101 @@ const activeTab = ref('preview')
           <!-- RENDU -->
           <div v-if="activeTab === 'preview'" class="space-y-4">
             <div class="text-sm text-zinc-400">
-              Exemple de rubrique visible dès la page d’accueil
+              Exemple de récapitulatif de commande avec frais de livraison
+              estimés clairs et breakdown visible
             </div>
-
             <div class="rounded-xl border border-zinc-800 bg-zinc-950 p-5">
-              <div class="flex items-center justify-between">
-                <h3 class="text-base font-semibold text-zinc-100">
-                  Quoi de neuf ?
-                </h3>
-                <span class="text-xs text-zinc-500">Actualités du site</span>
-              </div>
+              <div class="flex flex-col gap-6">
+                <div class="text-base font-semibold text-zinc-100">
+                  Récapitulatif de votre commande
+                </div>
 
-              <ul class="mt-4 space-y-3">
-                <li class="flex items-start justify-between gap-4">
-                  <div>
-                    <div class="flex items-center gap-2">
-                      <span class="text-sm font-medium text-zinc-100">
-                        Nouvelle fonctionnalité publiée
-                      </span>
-                      <span
-                        class="text-[11px] uppercase tracking-wide rounded-full border border-zinc-700 bg-zinc-900 px-2 py-0.5 text-zinc-200"
-                      >
-                        Nouveau
-                      </span>
+                <!-- Détail articles -->
+                <div class="space-y-2">
+                  <div class="flex justify-between text-sm text-zinc-300">
+                    <span>Articles (2 produits)</span>
+                    <span>188,90 €</span>
+                  </div>
+                </div>
+
+                <!-- Frais de livraison - options claires -->
+                <div class="space-y-4">
+                  <div
+                    class="rounded-lg border border-zinc-700 bg-zinc-900/50 p-4"
+                  >
+                    <div class="flex items-center justify-between">
+                      <div>
+                        <label class="text-sm font-medium text-zinc-100">
+                          Livraison standard à domicile
+                        </label>
+                        <p class="text-xs text-zinc-400 mt-1">
+                          Délai estimé : 3-5 jours ouvrés
+                        </p>
+                      </div>
+                      <div class="text-right">
+                        <span class="text-sm font-medium text-green-400"
+                          >Gratuit</span
+                        >
+                        <p class="text-xs text-zinc-500 mt-1">
+                          (dès 50 € d'achat)
+                        </p>
+                      </div>
                     </div>
-                    <p class="text-sm text-zinc-400">
-                      Mise en ligne d’un nouveau service accessible depuis
-                      l’accueil.
-                    </p>
                   </div>
-                  <span class="text-xs text-zinc-500">05/01/2026</span>
-                </li>
 
-                <li class="flex items-start justify-between gap-4">
-                  <div>
-                    <span class="text-sm font-medium text-zinc-100">
-                      Mise à jour du contenu éditorial
-                    </span>
-                    <p class="text-sm text-zinc-400">
-                      Actualisation des informations principales du site.
-                    </p>
+                  <div
+                    class="rounded-lg border border-zinc-700 bg-zinc-900/50 p-4"
+                  >
+                    <div class="flex items-center justify-between">
+                      <div>
+                        <label class="text-sm font-medium text-zinc-100">
+                          Livraison express (24h)
+                        </label>
+                        <p class="text-xs text-zinc-400 mt-1">
+                          Pour une réception rapide
+                        </p>
+                      </div>
+                      <div class="text-right">
+                        <span class="text-sm font-medium text-zinc-100"
+                          >9,90 €</span
+                        >
+                      </div>
+                    </div>
                   </div>
-                  <span class="text-xs text-zinc-500">03/01/2026</span>
-                </li>
-              </ul>
+                </div>
+
+                <!-- Total final avec frais visibles -->
+                <div class="border-t border-zinc-800 pt-4">
+                  <div
+                    class="flex justify-between text-base font-semibold text-zinc-100"
+                  >
+                    <span>Total à payer</span>
+                    <span>198,80 €</span>
+                  </div>
+                  <p class="text-xs text-zinc-500 mt-1">
+                    (dont 9,90 € de frais de livraison express)
+                  </p>
+                </div>
+
+                <!-- Message transparence -->
+                <p class="text-xs text-zinc-500 italic mt-2">
+                  Les frais sont calculés en fonction de votre adresse, du poids
+                  et du type de produits. Aucun frais caché après validation.
+                </p>
+
+                <div class="flex justify-end gap-3 mt-6">
+                  <button
+                    class="px-6 py-2.5 bg-zinc-700 text-zinc-100 rounded-lg hover:bg-zinc-600 transition"
+                  >
+                    Modifier l'adresse
+                  </button>
+                  <button
+                    class="px-6 py-2.5 bg-blue-600 text-white rounded-lg hover:bg-blue-500 transition"
+                  >
+                    Valider la commande
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -249,54 +300,75 @@ const activeTab = ref('preview')
             <pre
               class="rounded-xl bg-zinc-950 p-5 overflow-x-auto text-sm text-zinc-100"
             >
-<code>
-&lt;div class=&quot;rounded-xl border border-zinc-800 bg-zinc-950 p-5&quot;&gt;
-  &lt;div class=&quot;flex items-center justify-between&quot;&gt;
-    &lt;h3 class=&quot;text-base font-semibold text-zinc-100&quot;&gt;
-      Quoi de neuf ?
-    &lt;/h3&gt;
-    &lt;span class=&quot;text-xs text-zinc-500&quot;&gt;Actualités du site&lt;/span&gt;
-  &lt;/div&gt;
-
-  &lt;ul class=&quot;mt-4 space-y-3&quot;&gt;
-    &lt;li class=&quot;flex items-start justify-between gap-4&quot;&gt;
-      &lt;div&gt;
-        &lt;div class=&quot;flex items-center gap-2&quot;&gt;
-          &lt;span class=&quot;text-sm font-medium text-zinc-100&quot;&gt;
-            Nouvelle fonctionnalité publiée
-          &lt;/span&gt;
-          &lt;span
-            class=&quot;text-[11px] uppercase tracking-wide rounded-full border border-zinc-700 bg-zinc-900 px-2 py-0.5 text-zinc-200&quot;
-          &gt;
-            Nouveau
-          &lt;/span&gt;
+        <code>
+        &lt;div class="rounded-xl border border-zinc-800 bg-zinc-950 p-5"&gt;
+          &lt;div class="flex flex-col gap-6"&gt;
+            &lt;div class="text-base font-semibold text-zinc-100"&gt;
+              Récapitulatif de votre commande
+            &lt;/div&gt;
+            
+            &lt;div class="space-y-2"&gt;
+              &lt;div class="flex justify-between text-sm text-zinc-300"&gt;
+                &lt;span&gt;Articles (2 produits)&lt;/span&gt;
+                &lt;span&gt;188,90 €&lt;/span&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            
+            &lt;!-- Frais de livraison - options claires --&gt;
+            &lt;div class="space-y-4"&gt;
+              &lt;div class="rounded-lg border border-zinc-700 bg-zinc-900/50 p-4"&gt;
+                &lt;div class="flex items-center justify-between"&gt;
+                  &lt;div&gt;
+                    &lt;label class="text-sm font-medium text-zinc-100"&gt;
+                      Livraison standard à domicile
+                    &lt;/label&gt;
+                    &lt;p class="text-xs text-zinc-400 mt-1"&gt;
+                      Délai estimé : 3-5 jours ouvrés
+                    &lt;/p&gt;
+                  &lt;/div&gt;
+                  &lt;div class="text-right"&gt;
+                    &lt;span class="text-sm font-medium text-green-400"&gt;Gratuit&lt;/span&gt;
+                    &lt;p class="text-xs text-zinc-500 mt-1"&gt;(dès 50 € d'achat)&lt;/p&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              
+              &lt;div class="rounded-lg border border-zinc-700 bg-zinc-900/50 p-4"&gt;
+                &lt;!-- Structure similaire pour express --&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            
+            &lt;div class="border-t border-zinc-800 pt-4"&gt;
+              &lt;div class="flex justify-between text-base font-semibold text-zinc-100"&gt;
+                &lt;span&gt;Total à payer&lt;/span&gt;
+                &lt;span&gt;198,80 €&lt;/span&gt;
+              &lt;/div&gt;
+              &lt;p class="text-xs text-zinc-500 mt-1"&gt;
+                (dont 9,90 € de frais de livraison express)
+              &lt;/p&gt;
+            &lt;/div&gt;
+            
+            &lt;p class="text-xs text-zinc-500 italic mt-2"&gt;
+              Les frais sont calculés en fonction de votre adresse, du poids et du type de produits. Aucun frais caché après validation.
+            &lt;/p&gt;
+            
+            &lt;div class="flex justify-end gap-3 mt-6"&gt;
+              &lt;button class="px-6 py-2.5 bg-zinc-700 text-zinc-100 rounded-lg hover:bg-zinc-600 transition"&gt;
+                Modifier l'adresse
+              &lt;/button&gt;
+              &lt;button class="px-6 py-2.5 bg-blue-600 text-white rounded-lg hover:bg-blue-500 transition"&gt;
+                Valider la commande
+              &lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
         &lt;/div&gt;
-        &lt;p class=&quot;text-sm text-zinc-400&quot;&gt;
-          Mise en ligne d’un nouveau service accessible depuis l’accueil.
-        &lt;/p&gt;
-      &lt;/div&gt;
-      &lt;span class=&quot;text-xs text-zinc-500&quot;&gt;05/01/2026&lt;/span&gt;
-    &lt;/li&gt;
-
-    &lt;li class=&quot;flex items-start justify-between gap-4&quot;&gt;
-      &lt;div&gt;
-        &lt;span class=&quot;text-sm font-medium text-zinc-100&quot;&gt;
-          Mise à jour du contenu éditorial
-        &lt;/span&gt;
-        &lt;p class=&quot;text-sm text-zinc-400&quot;&gt;
-          Actualisation des informations principales du site.
-        &lt;/p&gt;
-      &lt;/div&gt;
-      &lt;span class=&quot;text-xs text-zinc-500&quot;&gt;03/01/2026&lt;/span&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/div&gt;
-</code>
-</pre>
-
+        </code>
+            </pre>
             <p class="mt-3 text-xs text-zinc-500">
-              Le principe essentiel est la visibilité immédiate des nouveautés,
-              sans navigation complexe ni recherche supplémentaire.
+              Le principe essentiel est d'afficher les frais de livraison (ou
+              gratuité) de manière transparente et visible pour chaque option,
+              avec le total final mis à jour, bien avant la validation
+              définitive → zéro surprise sur le coût.
             </p>
           </div>
         </div>

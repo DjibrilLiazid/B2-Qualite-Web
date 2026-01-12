@@ -197,50 +197,100 @@ const activeTab = ref('preview')
           <!-- RENDU -->
           <div v-if="activeTab === 'preview'" class="space-y-4">
             <div class="text-sm text-zinc-400">
-              Exemple de rubrique visible dès la page d’accueil
+              Exemple de panier e-commerce avec lien direct vers la fiche
+              produit pour chaque article
             </div>
-
             <div class="rounded-xl border border-zinc-800 bg-zinc-950 p-5">
-              <div class="flex items-center justify-between">
-                <h3 class="text-base font-semibold text-zinc-100">
-                  Quoi de neuf ?
-                </h3>
-                <span class="text-xs text-zinc-500">Actualités du site</span>
-              </div>
+              <div class="flex flex-col gap-6">
+                <div class="text-base font-semibold text-zinc-100">
+                  Votre panier (3 articles)
+                </div>
 
-              <ul class="mt-4 space-y-3">
-                <li class="flex items-start justify-between gap-4">
-                  <div>
-                    <div class="flex items-center gap-2">
-                      <span class="text-sm font-medium text-zinc-100">
-                        Nouvelle fonctionnalité publiée
-                      </span>
-                      <span
-                        class="text-[11px] uppercase tracking-wide rounded-full border border-zinc-700 bg-zinc-900 px-2 py-0.5 text-zinc-200"
+                <!-- Article 1 -->
+                <div class="flex gap-4 items-start">
+                  <div
+                    class="w-20 h-20 bg-zinc-800 rounded-lg flex-shrink-0"
+                  ></div>
+                  <div class="flex-1 space-y-1">
+                    <div class="flex items-start justify-between">
+                      <div>
+                        <h4 class="text-sm font-medium text-zinc-100">
+                          Écouteurs sans fil Noise-Cancelling
+                        </h4>
+                        <p class="text-xs text-zinc-500">
+                          Noir mat • Réf. : WH-1000XM5
+                        </p>
+                      </div>
+                      <span class="text-sm font-medium text-zinc-100"
+                        >149,00 €</span
                       >
-                        Nouveau
-                      </span>
                     </div>
-                    <p class="text-sm text-zinc-400">
-                      Mise en ligne d’un nouveau service accessible depuis
-                      l’accueil.
-                    </p>
-                  </div>
-                  <span class="text-xs text-zinc-500">05/01/2026</span>
-                </li>
 
-                <li class="flex items-start justify-between gap-4">
-                  <div>
-                    <span class="text-sm font-medium text-zinc-100">
-                      Mise à jour du contenu éditorial
-                    </span>
-                    <p class="text-sm text-zinc-400">
-                      Actualisation des informations principales du site.
-                    </p>
+                    <!-- Lien direct vers la fiche -->
+                    <a
+                      href="#"
+                      class="text-xs text-blue-400 hover:text-blue-300 underline"
+                    >
+                      Voir les détails du produit (description complète, photos,
+                      avis…)
+                    </a>
+
+                    <div
+                      class="flex items-center gap-4 mt-2 text-xs text-zinc-400"
+                    >
+                      <span>Quantité : 1</span>
+                      <span class="text-green-400">En stock</span>
+                    </div>
                   </div>
-                  <span class="text-xs text-zinc-500">03/01/2026</span>
-                </li>
-              </ul>
+                </div>
+
+                <!-- Article 2 (similaire pour montrer la répétition) -->
+                <div
+                  class="flex gap-4 items-start border-t border-zinc-800 pt-4"
+                >
+                  <div
+                    class="w-20 h-20 bg-zinc-800 rounded-lg flex-shrink-0"
+                  ></div>
+                  <div class="flex-1 space-y-1">
+                    <div class="flex items-start justify-between">
+                      <div>
+                        <h4 class="text-sm font-medium text-zinc-100">
+                          Chargeur rapide 65W GaN
+                        </h4>
+                        <p class="text-xs text-zinc-500">
+                          Blanc • Réf. : PD-65W
+                        </p>
+                      </div>
+                      <span class="text-sm font-medium text-zinc-100"
+                        >39,90 €</span
+                      >
+                    </div>
+
+                    <a
+                      href="#"
+                      class="text-xs text-blue-400 hover:text-blue-300 underline"
+                    >
+                      Voir les détails du produit (spécifications techniques,
+                      compatibilité…)
+                    </a>
+
+                    <div
+                      class="flex items-center gap-4 mt-2 text-xs text-zinc-400"
+                    >
+                      <span>Quantité : 2</span>
+                      <span class="text-green-400">En stock</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mt-4 text-right">
+                  <button
+                    class="px-6 py-2.5 bg-blue-600 text-white rounded-lg hover:bg-blue-500 transition"
+                  >
+                    Valider la commande
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -249,54 +299,56 @@ const activeTab = ref('preview')
             <pre
               class="rounded-xl bg-zinc-950 p-5 overflow-x-auto text-sm text-zinc-100"
             >
-<code>
-&lt;div class=&quot;rounded-xl border border-zinc-800 bg-zinc-950 p-5&quot;&gt;
-  &lt;div class=&quot;flex items-center justify-between&quot;&gt;
-    &lt;h3 class=&quot;text-base font-semibold text-zinc-100&quot;&gt;
-      Quoi de neuf ?
-    &lt;/h3&gt;
-    &lt;span class=&quot;text-xs text-zinc-500&quot;&gt;Actualités du site&lt;/span&gt;
-  &lt;/div&gt;
-
-  &lt;ul class=&quot;mt-4 space-y-3&quot;&gt;
-    &lt;li class=&quot;flex items-start justify-between gap-4&quot;&gt;
-      &lt;div&gt;
-        &lt;div class=&quot;flex items-center gap-2&quot;&gt;
-          &lt;span class=&quot;text-sm font-medium text-zinc-100&quot;&gt;
-            Nouvelle fonctionnalité publiée
-          &lt;/span&gt;
-          &lt;span
-            class=&quot;text-[11px] uppercase tracking-wide rounded-full border border-zinc-700 bg-zinc-900 px-2 py-0.5 text-zinc-200&quot;
-          &gt;
-            Nouveau
-          &lt;/span&gt;
+        <code>
+        &lt;div class="rounded-xl border border-zinc-800 bg-zinc-950 p-5"&gt;
+          &lt;div class="flex flex-col gap-6"&gt;
+            &lt;div class="text-base font-semibold text-zinc-100"&gt;
+              Votre panier (3 articles)
+            &lt;/div&gt;
+            
+            &lt;!-- Article 1 --&gt;
+            &lt;div class="flex gap-4 items-start"&gt;
+              &lt;div class="w-20 h-20 bg-zinc-800 rounded-lg flex-shrink-0"&gt;&lt;/div&gt;
+              &lt;div class="flex-1 space-y-1"&gt;
+                &lt;div class="flex items-start justify-between"&gt;
+                  &lt;div&gt;
+                    &lt;h4 class="text-sm font-medium text-zinc-100"&gt;
+                      Écouteurs sans fil Noise-Cancelling
+                    &lt;/h4&gt;
+                    &lt;p class="text-xs text-zinc-500"&gt;Noir mat • Réf. : WH-1000XM5&lt;/p&gt;
+                  &lt;/div&gt;
+                  &lt;span class="text-sm font-medium text-zinc-100"&gt;149,00 €&lt;/span&gt;
+                &lt;/div&gt;
+                
+                &lt;a href="#" class="text-xs text-blue-400 hover:text-blue-300 underline"&gt;
+                  Voir les détails du produit (description complète, photos, avis…)
+                &lt;/a&gt;
+                
+                &lt;div class="flex items-center gap-4 mt-2 text-xs text-zinc-400"&gt;
+                  &lt;span&gt;Quantité : 1&lt;/span&gt;
+                  &lt;span class="text-green-400"&gt;En stock&lt;/span&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            
+            &lt;!-- Article 2 (exemple répété) --&gt;
+            &lt;div class="flex gap-4 items-start border-t border-zinc-800 pt-4"&gt;
+              &lt;!-- Même structure que ci-dessus --&gt;
+            &lt;/div&gt;
+            
+            &lt;div class="mt-4 text-right"&gt;
+              &lt;button class="px-6 py-2.5 bg-blue-600 text-white rounded-lg hover:bg-blue-500 transition"&gt;
+                Valider la commande
+              &lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
         &lt;/div&gt;
-        &lt;p class=&quot;text-sm text-zinc-400&quot;&gt;
-          Mise en ligne d’un nouveau service accessible depuis l’accueil.
-        &lt;/p&gt;
-      &lt;/div&gt;
-      &lt;span class=&quot;text-xs text-zinc-500&quot;&gt;05/01/2026&lt;/span&gt;
-    &lt;/li&gt;
-
-    &lt;li class=&quot;flex items-start justify-between gap-4&quot;&gt;
-      &lt;div&gt;
-        &lt;span class=&quot;text-sm font-medium text-zinc-100&quot;&gt;
-          Mise à jour du contenu éditorial
-        &lt;/span&gt;
-        &lt;p class=&quot;text-sm text-zinc-400&quot;&gt;
-          Actualisation des informations principales du site.
-        &lt;/p&gt;
-      &lt;/div&gt;
-      &lt;span class=&quot;text-xs text-zinc-500&quot;&gt;03/01/2026&lt;/span&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/div&gt;
-</code>
-</pre>
-
+        </code>
+            </pre>
             <p class="mt-3 text-xs text-zinc-500">
-              Le principe essentiel est la visibilité immédiate des nouveautés,
-              sans navigation complexe ni recherche supplémentaire.
+              Le principe essentiel est de proposer un lien clair et direct vers
+              la fiche produit depuis chaque ligne du panier, pour permettre une
+              vérification rapide sans quitter la page.
             </p>
           </div>
         </div>

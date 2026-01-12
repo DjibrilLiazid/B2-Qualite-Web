@@ -197,50 +197,105 @@ const activeTab = ref('preview')
           <!-- RENDU -->
           <div v-if="activeTab === 'preview'" class="space-y-4">
             <div class="text-sm text-zinc-400">
-              Exemple de rubrique visible dès la page d’accueil
+              Exemple de récapitulatif de commande avec statut de disponibilité
+              clair pour chaque produit
             </div>
-
             <div class="rounded-xl border border-zinc-800 bg-zinc-950 p-5">
-              <div class="flex items-center justify-between">
-                <h3 class="text-base font-semibold text-zinc-100">
-                  Quoi de neuf ?
-                </h3>
-                <span class="text-xs text-zinc-500">Actualités du site</span>
-              </div>
+              <div class="flex flex-col gap-6">
+                <div class="text-base font-semibold text-zinc-100">
+                  Récapitulatif de votre commande
+                </div>
 
-              <ul class="mt-4 space-y-3">
-                <li class="flex items-start justify-between gap-4">
-                  <div>
-                    <div class="flex items-center gap-2">
-                      <span class="text-sm font-medium text-zinc-100">
-                        Nouvelle fonctionnalité publiée
-                      </span>
-                      <span
-                        class="text-[11px] uppercase tracking-wide rounded-full border border-zinc-700 bg-zinc-900 px-2 py-0.5 text-zinc-200"
+                <!-- Article 1 : En stock -->
+                <div class="flex gap-4 items-start">
+                  <div
+                    class="w-20 h-20 bg-zinc-800 rounded-lg flex-shrink-0"
+                  ></div>
+                  <div class="flex-1 space-y-1">
+                    <div class="flex items-start justify-between">
+                      <div>
+                        <h4 class="text-sm font-medium text-zinc-100">
+                          Écouteurs sans fil Noise-Cancelling
+                        </h4>
+                        <p class="text-xs text-zinc-500">
+                          Noir mat • Réf. : WH-1000XM5
+                        </p>
+                      </div>
+                      <span class="text-sm font-medium text-zinc-100"
+                        >149,00 €</span
                       >
-                        Nouveau
+                    </div>
+
+                    <div class="flex items-center gap-2 mt-1">
+                      <span
+                        class="text-xs px-2 py-0.5 rounded-full bg-green-900/50 text-green-400 border border-green-800"
+                      >
+                        En stock – Livraison dès demain
                       </span>
                     </div>
-                    <p class="text-sm text-zinc-400">
-                      Mise en ligne d’un nouveau service accessible depuis
-                      l’accueil.
-                    </p>
-                  </div>
-                  <span class="text-xs text-zinc-500">05/01/2026</span>
-                </li>
 
-                <li class="flex items-start justify-between gap-4">
-                  <div>
-                    <span class="text-sm font-medium text-zinc-100">
-                      Mise à jour du contenu éditorial
-                    </span>
-                    <p class="text-sm text-zinc-400">
-                      Actualisation des informations principales du site.
+                    <p class="text-xs text-zinc-500 mt-1">
+                      Disponible immédiatement (5 pièces restantes)
                     </p>
                   </div>
-                  <span class="text-xs text-zinc-500">03/01/2026</span>
-                </li>
-              </ul>
+                </div>
+
+                <!-- Article 2 : Rupture / Délai -->
+                <div
+                  class="flex gap-4 items-start border-t border-zinc-800 pt-4"
+                >
+                  <div
+                    class="w-20 h-20 bg-zinc-800 rounded-lg flex-shrink-0"
+                  ></div>
+                  <div class="flex-1 space-y-1">
+                    <div class="flex items-start justify-between">
+                      <div>
+                        <h4 class="text-sm font-medium text-zinc-100">
+                          Coque smartphone renforcée
+                        </h4>
+                        <p class="text-xs text-zinc-500">
+                          Pour iPhone 15 • Réf. : CASE-RUGGED
+                        </p>
+                      </div>
+                      <span class="text-sm font-medium text-zinc-100"
+                        >24,90 €</span
+                      >
+                    </div>
+
+                    <div class="flex items-center gap-2 mt-1">
+                      <span
+                        class="text-xs px-2 py-0.5 rounded-full bg-amber-900/50 text-amber-400 border border-amber-800"
+                      >
+                        Stock limité – 1 pièce restante
+                      </span>
+                    </div>
+
+                    <p class="text-xs text-amber-400 mt-1">
+                      Attention : si épuisé avant validation, commande possible
+                      sous 7 jours
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Message global transparence -->
+                <p class="text-xs text-zinc-500 italic mt-2">
+                  Tous les statuts sont vérifiés en temps réel. Vous serez
+                  averti avant paiement si un article devient indisponible.
+                </p>
+
+                <div class="flex justify-end gap-3 mt-6">
+                  <button
+                    class="px-6 py-2.5 bg-zinc-700 text-zinc-100 rounded-lg hover:bg-zinc-600 transition"
+                  >
+                    Modifier le panier
+                  </button>
+                  <button
+                    class="px-6 py-2.5 bg-blue-600 text-white rounded-lg hover:bg-blue-500 transition"
+                  >
+                    Valider la commande
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -249,54 +304,65 @@ const activeTab = ref('preview')
             <pre
               class="rounded-xl bg-zinc-950 p-5 overflow-x-auto text-sm text-zinc-100"
             >
-<code>
-&lt;div class=&quot;rounded-xl border border-zinc-800 bg-zinc-950 p-5&quot;&gt;
-  &lt;div class=&quot;flex items-center justify-between&quot;&gt;
-    &lt;h3 class=&quot;text-base font-semibold text-zinc-100&quot;&gt;
-      Quoi de neuf ?
-    &lt;/h3&gt;
-    &lt;span class=&quot;text-xs text-zinc-500&quot;&gt;Actualités du site&lt;/span&gt;
-  &lt;/div&gt;
-
-  &lt;ul class=&quot;mt-4 space-y-3&quot;&gt;
-    &lt;li class=&quot;flex items-start justify-between gap-4&quot;&gt;
-      &lt;div&gt;
-        &lt;div class=&quot;flex items-center gap-2&quot;&gt;
-          &lt;span class=&quot;text-sm font-medium text-zinc-100&quot;&gt;
-            Nouvelle fonctionnalité publiée
-          &lt;/span&gt;
-          &lt;span
-            class=&quot;text-[11px] uppercase tracking-wide rounded-full border border-zinc-700 bg-zinc-900 px-2 py-0.5 text-zinc-200&quot;
-          &gt;
-            Nouveau
-          &lt;/span&gt;
+        <code>
+        &lt;div class="rounded-xl border border-zinc-800 bg-zinc-950 p-5"&gt;
+          &lt;div class="flex flex-col gap-6"&gt;
+            &lt;div class="text-base font-semibold text-zinc-100"&gt;
+              Récapitulatif de votre commande
+            &lt;/div&gt;
+            
+            &lt;!-- Article 1 : En stock --&gt;
+            &lt;div class="flex gap-4 items-start"&gt;
+              &lt;div class="w-20 h-20 bg-zinc-800 rounded-lg flex-shrink-0"&gt;&lt;/div&gt;
+              &lt;div class="flex-1 space-y-1"&gt;
+                &lt;div class="flex items-start justify-between"&gt;
+                  &lt;div&gt;
+                    &lt;h4 class="text-sm font-medium text-zinc-100"&gt;
+                      Écouteurs sans fil Noise-Cancelling
+                    &lt;/h4&gt;
+                    &lt;p class="text-xs text-zinc-500"&gt;Noir mat • Réf. : WH-1000XM5&lt;/p&gt;
+                  &lt;/div&gt;
+                  &lt;span class="text-sm font-medium text-zinc-100"&gt;149,00 €&lt;/span&gt;
+                &lt;/div&gt;
+                
+                &lt;div class="flex items-center gap-2 mt-1"&gt;
+                  &lt;span class="text-xs px-2 py-0.5 rounded-full bg-green-900/50 text-green-400 border border-green-800"&gt;
+                    En stock – Livraison dès demain
+                  &lt;/span&gt;
+                &lt;/div&gt;
+                
+                &lt;p class="text-xs text-zinc-500 mt-1"&gt;
+                  Disponible immédiatement (5 pièces restantes)
+                &lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            
+            &lt;!-- Article 2 : Rupture / Délai --&gt;
+            &lt;div class="flex gap-4 items-start border-t border-zinc-800 pt-4"&gt;
+              &lt;!-- Structure similaire avec badge ambre et message d'alerte --&gt;
+            &lt;/div&gt;
+            
+            &lt;p class="text-xs text-zinc-500 italic mt-2"&gt;
+              Tous les statuts sont vérifiés en temps réel. Vous serez averti avant paiement si un article devient indisponible.
+            &lt;/p&gt;
+            
+            &lt;div class="flex justify-end gap-3 mt-6"&gt;
+              &lt;button class="px-6 py-2.5 bg-zinc-700 text-zinc-100 rounded-lg hover:bg-zinc-600 transition"&gt;
+                Modifier le panier
+              &lt;/button&gt;
+              &lt;button class="px-6 py-2.5 bg-blue-600 text-white rounded-lg hover:bg-blue-500 transition"&gt;
+                Valider la commande
+              &lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
         &lt;/div&gt;
-        &lt;p class=&quot;text-sm text-zinc-400&quot;&gt;
-          Mise en ligne d’un nouveau service accessible depuis l’accueil.
-        &lt;/p&gt;
-      &lt;/div&gt;
-      &lt;span class=&quot;text-xs text-zinc-500&quot;&gt;05/01/2026&lt;/span&gt;
-    &lt;/li&gt;
-
-    &lt;li class=&quot;flex items-start justify-between gap-4&quot;&gt;
-      &lt;div&gt;
-        &lt;span class=&quot;text-sm font-medium text-zinc-100&quot;&gt;
-          Mise à jour du contenu éditorial
-        &lt;/span&gt;
-        &lt;p class=&quot;text-sm text-zinc-400&quot;&gt;
-          Actualisation des informations principales du site.
-        &lt;/p&gt;
-      &lt;/div&gt;
-      &lt;span class=&quot;text-xs text-zinc-500&quot;&gt;03/01/2026&lt;/span&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/div&gt;
-</code>
-</pre>
-
+        </code>
+            </pre>
             <p class="mt-3 text-xs text-zinc-500">
-              Le principe essentiel est la visibilité immédiate des nouveautés,
-              sans navigation complexe ni recherche supplémentaire.
+              Le principe essentiel est d'afficher clairement le statut de stock
+              (en stock / limité / délai) pour chaque produit sur le
+              récapitulatif final, afin d'anticiper tout problème avant
+              paiement.
             </p>
           </div>
         </div>

@@ -197,50 +197,52 @@ const activeTab = ref('preview')
           <!-- RENDU -->
           <div v-if="activeTab === 'preview'" class="space-y-4">
             <div class="text-sm text-zinc-400">
-              Exemple de rubrique visible dès la page d’accueil
+              Exemple de bandeau cookies conforme et explicatif (visible dès
+              l'arrivée sur le site)
             </div>
-
             <div class="rounded-xl border border-zinc-800 bg-zinc-950 p-5">
-              <div class="flex items-center justify-between">
-                <h3 class="text-base font-semibold text-zinc-100">
-                  Quoi de neuf ?
-                </h3>
-                <span class="text-xs text-zinc-500">Actualités du site</span>
+              <div class="flex flex-col gap-4">
+                <div class="text-base font-semibold text-zinc-100">
+                  Nous utilisons des cookies pour améliorer votre expérience
+                </div>
+
+                <p class="text-sm text-zinc-300">
+                  Ce site utilise des cookies nécessaires au fonctionnement
+                  (authentification, panier) et des cookies optionnels pour :
+                </p>
+
+                <ul class="text-sm text-zinc-400 list-disc pl-5 space-y-2">
+                  <li>Personnaliser les contenus et les publicités</li>
+                  <li>Mesurer l'audience et analyser le trafic</li>
+                  <li>Proposer des fonctionnalités sociales (partage)</li>
+                </ul>
+
+                <p class="text-sm text-zinc-400 italic">
+                  Si vous refusez les cookies non essentiels :
+                  <br />• Vous verrez des publicités génériques (non
+                  personnalisées) <br />• Certaines fonctionnalités (comme les
+                  recommandations) seront limitées <br />• Le site restera
+                  pleinement accessible et utilisable
+                </p>
+
+                <div class="flex flex-wrap gap-3 mt-4">
+                  <button
+                    class="px-5 py-2 bg-zinc-700 text-zinc-100 rounded-lg hover:bg-zinc-600 transition"
+                  >
+                    Accepter tout
+                  </button>
+                  <button
+                    class="px-5 py-2 bg-zinc-800 text-zinc-300 rounded-lg border border-zinc-600 hover:bg-zinc-700 transition"
+                  >
+                    Refuser tout
+                  </button>
+                  <button
+                    class="px-5 py-2 text-zinc-400 underline hover:text-zinc-200 transition"
+                  >
+                    Paramètres avancés
+                  </button>
+                </div>
               </div>
-
-              <ul class="mt-4 space-y-3">
-                <li class="flex items-start justify-between gap-4">
-                  <div>
-                    <div class="flex items-center gap-2">
-                      <span class="text-sm font-medium text-zinc-100">
-                        Nouvelle fonctionnalité publiée
-                      </span>
-                      <span
-                        class="text-[11px] uppercase tracking-wide rounded-full border border-zinc-700 bg-zinc-900 px-2 py-0.5 text-zinc-200"
-                      >
-                        Nouveau
-                      </span>
-                    </div>
-                    <p class="text-sm text-zinc-400">
-                      Mise en ligne d’un nouveau service accessible depuis
-                      l’accueil.
-                    </p>
-                  </div>
-                  <span class="text-xs text-zinc-500">05/01/2026</span>
-                </li>
-
-                <li class="flex items-start justify-between gap-4">
-                  <div>
-                    <span class="text-sm font-medium text-zinc-100">
-                      Mise à jour du contenu éditorial
-                    </span>
-                    <p class="text-sm text-zinc-400">
-                      Actualisation des informations principales du site.
-                    </p>
-                  </div>
-                  <span class="text-xs text-zinc-500">03/01/2026</span>
-                </li>
-              </ul>
             </div>
           </div>
 
@@ -249,54 +251,49 @@ const activeTab = ref('preview')
             <pre
               class="rounded-xl bg-zinc-950 p-5 overflow-x-auto text-sm text-zinc-100"
             >
-<code>
-&lt;div class=&quot;rounded-xl border border-zinc-800 bg-zinc-950 p-5&quot;&gt;
-  &lt;div class=&quot;flex items-center justify-between&quot;&gt;
-    &lt;h3 class=&quot;text-base font-semibold text-zinc-100&quot;&gt;
-      Quoi de neuf ?
-    &lt;/h3&gt;
-    &lt;span class=&quot;text-xs text-zinc-500&quot;&gt;Actualités du site&lt;/span&gt;
-  &lt;/div&gt;
-
-  &lt;ul class=&quot;mt-4 space-y-3&quot;&gt;
-    &lt;li class=&quot;flex items-start justify-between gap-4&quot;&gt;
-      &lt;div&gt;
-        &lt;div class=&quot;flex items-center gap-2&quot;&gt;
-          &lt;span class=&quot;text-sm font-medium text-zinc-100&quot;&gt;
-            Nouvelle fonctionnalité publiée
-          &lt;/span&gt;
-          &lt;span
-            class=&quot;text-[11px] uppercase tracking-wide rounded-full border border-zinc-700 bg-zinc-900 px-2 py-0.5 text-zinc-200&quot;
-          &gt;
-            Nouveau
-          &lt;/span&gt;
+        <code>
+        &lt;div class="rounded-xl border border-zinc-800 bg-zinc-950 p-5"&gt;
+          &lt;div class="flex flex-col gap-4"&gt;
+            &lt;div class="text-base font-semibold text-zinc-100"&gt;
+              Nous utilisons des cookies pour améliorer votre expérience
+            &lt;/div&gt;
+            
+            &lt;p class="text-sm text-zinc-300"&gt;
+              Ce site utilise des cookies nécessaires au fonctionnement (authentification, panier) et des cookies optionnels pour :
+            &lt;/p&gt;
+            
+            &lt;ul class="text-sm text-zinc-400 list-disc pl-5 space-y-2"&gt;
+              &lt;li&gt;Personnaliser les contenus et les publicités&lt;/li&gt;
+              &lt;li&gt;Mésurer l'audience et analyser le trafic&lt;/li&gt;
+              &lt;li&gt;Proposer des fonctionnalités sociales (partage)&lt;/li&gt;
+            &lt;/ul&gt;
+            
+            &lt;p class="text-sm text-zinc-400 italic"&gt;
+              Si vous refusez les cookies non essentiels :
+              &lt;br&gt;• Vous verrez des publicités génériques (non personnalisées)
+              &lt;br&gt;• Certaines fonctionnalités (comme les recommandations) seront limitées
+              &lt;br&gt;• Le site restera pleinement accessible et utilisable
+            &lt;/p&gt;
+            
+            &lt;div class="flex flex-wrap gap-3 mt-4"&gt;
+              &lt;button class="px-5 py-2 bg-zinc-700 text-zinc-100 rounded-lg hover:bg-zinc-600 transition"&gt;
+                Accepter tout
+              &lt;/button&gt;
+              &lt;button class="px-5 py-2 bg-zinc-800 text-zinc-300 rounded-lg border border-zinc-600 hover:bg-zinc-700 transition"&gt;
+                Refuser tout
+              &lt;/button&gt;
+              &lt;button class="px-5 py-2 text-zinc-400 underline hover:text-zinc-200 transition"&gt;
+                Paramètres avancés
+              &lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
         &lt;/div&gt;
-        &lt;p class=&quot;text-sm text-zinc-400&quot;&gt;
-          Mise en ligne d’un nouveau service accessible depuis l’accueil.
-        &lt;/p&gt;
-      &lt;/div&gt;
-      &lt;span class=&quot;text-xs text-zinc-500&quot;&gt;05/01/2026&lt;/span&gt;
-    &lt;/li&gt;
-
-    &lt;li class=&quot;flex items-start justify-between gap-4&quot;&gt;
-      &lt;div&gt;
-        &lt;span class=&quot;text-sm font-medium text-zinc-100&quot;&gt;
-          Mise à jour du contenu éditorial
-        &lt;/span&gt;
-        &lt;p class=&quot;text-sm text-zinc-400&quot;&gt;
-          Actualisation des informations principales du site.
-        &lt;/p&gt;
-      &lt;/div&gt;
-      &lt;span class=&quot;text-xs text-zinc-500&quot;&gt;03/01/2026&lt;/span&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/div&gt;
-</code>
-</pre>
-
+        </code>
+            </pre>
             <p class="mt-3 text-xs text-zinc-500">
-              Le principe essentiel est la visibilité immédiate des nouveautés,
-              sans navigation complexe ni recherche supplémentaire.
+              Le principe essentiel est d'expliquer clairement l'utilité des
+              cookies ET les conséquences concrètes du refus, sans jargon
+              excessif.
             </p>
           </div>
         </div>
