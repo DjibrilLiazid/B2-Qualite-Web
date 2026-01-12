@@ -46,5 +46,215 @@
       "SEO"
     ],
     "objective": "Assurer que les informations essentielles sont facilement accessibles et compréhensibles pour tous les utilisateurs, y compris ceux ayant des besoins spécifiques."
+  },
+  {
+    "id": 29,
+    "title": "L'objectif des cookies et les limitations inhérentes à leur refus sont expliqués.",
+    "authors": ["Ilan OUDOR"],
+    "path": "/rules/29",
+    "description": "Pour le commun des mortels, un cookie, c’est un gâteau. Pour l’internaute averti, c’est un fichier qu’un site web dépose sur son poste et qui est soit un moyen de tracer son utilisation du web, soit une technique potentiellement très efficace pour améliorer la navigation, mémoriser des options, proposer des contenus ciblés. En fait, la technique n’est pas mauvaise en soi et se prête à toutes sortes d’utilisations. Pour rassurer vos visiteurs, il suffit d’expliquer comment et pourquoi elle est utilisée.",
+    "tags": ["Données personnelles", "Editorial", "Privacy"],
+    "objectives": [
+      "Informer l'utilisateur sur les cookies.",
+      "Expliquer leur rôle et leur utilité.",
+      "Renforcer la confiance des utilisateurs sur l’utilisation de leurs données"
+    ],
+    "implementationIntro": "Préciser dans la politique de confidentialité du site si la navigation dans le site nécessite l'acceptation des cookies. Si oui, expliquer la raison de leur utilisation, la nature des données conservées et éventuellement, fournir les liens permettant leur désactivation.",
+    "implementation": [],
+    "control": [
+      "Dans la page des mentions légales, dans la politique de confidentialité ou encore dans la page d'accueil, la page d'à propos, d'aide, ou dans les pages consacrées aux conditions générales d'utilisation : ",
+      "Contrôler que l'objectif de l'utilisation des cookies et les conséquences de leur désactivation sont bien présents."
+    ],
+    "screenshotsSources": [
+      "https://www.cnil.fr/fr/cookies-et-autres-traceurs/regles/cookies/comment-mettre-mon-site-web-en-conformite",
+      "https://www.didomi.io/blog/cnil-cookie-recommendations-compliance",
+      "https://www.fnac.com/Help/cookies"
+    ]
+  },
+  {
+    "id": 30,
+    "title": "L'achat d'un produit ou service est possible sans création de compte.",
+    "authors": ["Ilan OUDOR"],
+    "path": "/rules/30",
+    "description": "Dans l'e-commerce, tous les détails comptent. L’abandon de panier est fréquent, notamment au stade de la création de compte. Un nombre croissant de sites d’e- commerce proposent l’achat direct, qui consiste à fournir uniquement les informations strictement nécessaires au traitement de la commande. C’est un vrai plus pour les clients.",
+    "tags": [
+      "Basics",
+      "Accessibilité",
+      "Conception",
+      "Développement",
+      "E-Commerce",
+      "Privacy",
+      "Écoconception"
+    ],
+    "objectives": [
+      "Permettre à l’acheteur de commander immédiatement.",
+      "Lever la barrière de la création de compte. ",
+      "Augmenter le taux de conversion.",
+      "Renforcer la confiance des utilisateurs sur l’utilisation de leurs données"
+    ],
+    "implementationIntro": "Proposer deux options lors de la commande : commande sans création de compte et commande avec création d’un compte (ou avec un compte existant). ",
+    "implementation": [],
+    "control": [
+      "Démarrer une commande et contrôler si celle-ci peut être menée à terme sans création de compte sur le site."
+    ],
+    "screenshotsSources": [
+      "https://www.convertcart.com/blog/best-one-page-checkout-pages",
+      "https://rextheme.com/what-is-guest-checkout/",
+      "https://www.invespcro.com/blog/revealed-the-biggest-secret-to-ecommerce-checkout-optimization/"
+    ]
+  },
+  {
+    "id": 31,
+    "title": "Le détail de chaque article est consultable depuis le panier.",
+    "authors": ["Ilan OUDOR"],
+    "path": "/rules/31",
+    "description": "Le panier permet d’avoir une vue d’ensemble de ce que l’on va commander. C’est le moment par excellence où l’utilisateur peut avoir besoin de vérifier sa commande. Dans ce cas, le fait de pouvoir consulter le détail directement dans le panier ou à partir du panier est un vrai avantage.",
+    "tags": ["Conception", "Développement", "E-Commerce"],
+    "objectives": [
+      "Permettre à l’utilisateur de vérifier sa commande.",
+      "Prévenir les erreurs de commande"
+    ],
+    "implementationIntro": "Permettre à l'utilisateur d'accéder directement depuis le panier soit à la fiche de chaque produit sélectionné, par un lien, soit d'une autre manière à l'ensemble des informations présentes dans celle-ci.",
+    "implementation": [],
+    "control": [
+      "Vérifier après avoir sélectionné des produits qu'il est possible de revenir à la fiche produit de chacun d'entre eux depuis le panier, ou d'accéder d'une autre manière à l'ensemble des informations présentes dans celle-ci."
+    ],
+    "screenshotsSources": [
+      "https://www.justinmind.com/ui-design/shopping-cart",
+      "https://www.justinmind.com/ui-design/shopping-cart",
+      "https://www.justinmind.com/ui-design/shopping-cart"
+    ]
+  },
+  {
+    "id": 32,
+    "title": "Aucun produit ni service annexe n'est ajouté au panier de commande sans que cette action soit déclenchée par l'utilisateur.",
+    "authors": ["Ilan OUDOR"],
+    "path": "/rules/32",
+    "description": "Quelle serait votre réaction dans un supermarché si un personnel du magasin venait jeter des produits supplémentaires dans votre panier juste avant que vous ne passiez en caisse ?",
+    "tags": ["Conception", "E-Commerce"],
+    "objectives": [
+      "Laisser à l'utilisateur le contrôle de sa commande. ",
+      "Ne pas compromettre la relation de confiance avec l'utilisateur.",
+      "Éviter toute forme de vente forcée."
+    ],
+    "implementationIntro": "N'inclure dans le panier de l'utilisateur que des produits ou services qu'il a explicitement sélectionnés.",
+    "implementation": [],
+    "control": [
+      "Dans un site d'e-commerce, dans la page affichant le panier, vérifier qu'une commande finalisée ne donne pas lieu à des ajouts au panier de produits ou services non sélectionnés. "
+    ],
+    "screenshotsSources": [
+      "https://www.justinmind.com/ui-design/shopping-cart",
+      "https://www.justinmind.com/ui-design/shopping-cart",
+      "https://www.justinmind.com/ui-design/shopping-cart"
+    ]
+  },
+  {
+    "id": 33,
+    "title": "L'inscription à des services annexes n'est pas activée par défaut.",
+    "authors": ["Ilan OUDOR"],
+    "path": "/rules/33",
+    "description": "Il est fort agaçant de voir publier un message sous une forme dégradée ou de constater après envoi que l’on a écrit une grosse bêtise. La prévisualisation permet de voir les contenus en contexte et donne la possibilité de les corriger ou de les peaufiner.",
+    "tags": ["Conception", "Développement", "E-Commerce"],
+    "objectives": [
+      "Laisser à l’utilisateur le libre choix de ses actions.",
+      "Prévenir les commandes involontaires et les réclamations associées. "
+    ],
+    "implementationIntro": "Les éventuels services annexes ajoutés au panier de l'utilisateur (inscription à une newsletter, extension de garantie, service ou produit complémentaire) ne sont pas validés par défaut (opt-out) mais doivent être explicitement validés par l'utilisateur (opt-in).",
+    "implementation": [],
+    "control": [
+      "Vérifier que, lors du processus de commande, les éventuels services annexes ajoutés au panier de l'utilisateur (inscription à une newsletter, extension de garantie, service ou produit complémentaire) ne sont pas validés par défaut (opt-out) mais sont à valider par l'utilisateur (opt-in)."
+    ],
+    "screenshotsSources": [
+      "https://www.laredoute.fr",
+      "https://corporate.zalando.com/en/zalando-data-protection-statement",
+      "https://www.fnac.com"
+    ]
+  },
+  {
+    "id": 34,
+    "title": "La disponibilité des produits est indiquée avant la validation définitive de la commande.",
+    "authors": ["Ilan OUDOR"],
+    "path": "/rules/34",
+    "description": "Il est fort tentant de proposer des produits indisponibles ou disponibles sur commande, mais attention, faites en sorte de ne pas induire vos internautes en erreur.",
+    "tags": ["Conception", "E-Commerce", "Editorial", "Écoconception"],
+    "objectives": [
+      "Permettre d'anticiper d'éventuelles difficultés et une augmentation du délai de livraison."
+    ],
+    "implementationIntro": "Indiquer avant la commande et sur le formulaire récapitulatif la disponibilité des produits sélectionnés.",
+    "implementation": [],
+    "control": [
+      "Dans les pages produits et dans le formulaire récapitulant la commande : ",
+      "Contrôler que les informations relatives à la disponibilité des produits sélectionnés sont bien disponibles avant de débuter la commande et après validation (dans le panier, dans les pages produits, sur le formulaire récapitulatif de commande)."
+    ],
+    "screenshotsSources": [
+      "https://www.fnac.com",
+      "https://www.amazon.fr",
+      "https://www.cdiscount.com"
+    ]
+  },
+  {
+    "id": 35,
+    "title": "Le délai de livraison estimé est indiqué avant la validation définitive de la commande.",
+    "authors": ["Ilan OUDOR"],
+    "path": "/rules/35",
+    "description": "Apprendre, après validation de la commande, qu’un produit ne sera livré que dans plusieurs semaines est une mésaventure fréquente et insatisfaisante pour les utilisateurs. Pour garder vos clients et les fidéliser, tâchez de les prévenir avant la fin de la commande.",
+    "tags": ["Conception", "E-Commerce", "Editorial"],
+    "objectives": [
+      "Permettre aux utilisateurs d'identifier la date estimée à laquelle le bien commandé sera effectivement en leur possession."
+    ],
+    "implementationIntro": "Indiquer, sur le récapitulatif de la commande et avant validation définitive, les informations relatives aux délais de livraison estimés.",
+    "implementation": [],
+    "control": [
+      "Dans la page présentant le récapitulatif de la commande, vérifier la présence, avant validation définitive de la commande, des informations relatives aux délais de livraison estimés. "
+    ],
+    "screenshotsSources": [
+      "https://www.amazon.com/gp/help/customer/display.html?nodeId=GV8H5D3MMAR7JBLF",
+      "https://www.fnac.com",
+      "https://www.cdiscount.com"
+    ]
+  },
+  {
+    "id": 36,
+    "title": "Les frais de livraison estimés sont indiqués avant la validation définitive de la commande.",
+    "authors": ["Ilan OUDOR"],
+    "path": "/rules/36",
+    "description": "Les frais de livraison font partie des informations essentielles pour décider du bien-fondé d’une commande. Rien de plus désagréable pour un utilisateur que de se rendre compte que le coût de la livraison va coûter autant voire bien plus que le prix de son article. Alors bien évidemment, faites l’impossible pour donner cette information le plus tôt possible dans le processus..",
+    "tags": ["Conception", "E-Commerce", "Editorial"],
+    "objectives": [
+      "Permettre à l’utilisateur de décider en connaissance de cause. Faire gagner du temps à l’utilisateur.",
+      "Limiter les abandons de commande et la frustration de l'utilisateur."
+    ],
+    "implementationIntro": "Proposer pour chaque produit, dans la page de celui-ci ou dans une page disponible avant la commande (conditions générales de vente, conditions de livraison) le tarif ou une estimation du coût de livraison en fonction du type ou du poids des produits et du lieu de livraison.",
+    "implementation": [],
+    "control": [
+      "Vérifier que, pour chaque produit, le tarif ou une estimation du coût de livraison en fonction du type ou du poids des produits et du lieu de livraison est disponible dans la page produit ou dans une page disponible avant la commande (conditions générales de vente, conditions de livraison)."
+    ],
+    "screenshotsSources": [
+      "https://www.amazon.fr",
+      "https://www.fnac.com",
+      "https://www.cdiscount.com"
+    ]
+  },
+  {
+    "id": 37,
+    "title": "Les modalités de récupération d'un bien dématérialisé sont précisées avant la commande.",
+    "authors": ["Ilan OUDOR"],
+    "path": "/rules/37",
+    "description": "Acheter un film à télécharger depuis son smartphone en prévision de la soirée en s’attendant à le télécharger une fois à domicile, puis s’apercevoir après finalisation de la commande que le téléchargement n’est disponible que pendant une heure… Mieux vaut éviter ce genre de déception à vos clients, n’est-ce pas ?",
+    "tags": ["Conception", "E-Commerce", "Editorial"],
+    "objectives": [
+      "Permettre à l’utilisateur d’anticiper les conditions et les moyens d’accès au service ou au bien dématérialisé.",
+      "Éviter les déceptions et le traitement de réclamations."
+    ],
+    "implementationIntro": "Préciser dans la fiche produit ou dans une page dédiée accessible avant le début de la commande par quel moyen l’utilisateur accédera-t-il au bien concerné : délai, durée de disponibilité, format, canal (e-mail, téléchargement, accès en ligne, etc.).",
+    "implementation": [],
+    "control": [
+      "Contrôler manuellement la présence des informations sur les modalités de récupération du produit, accessibles avant le début de la commande."
+    ],
+    "screenshotsSources": [
+      "https://www.fnac.com/help/cgv-ebook",
+      "https://www.amazon.com/gp/help/customer/display.html?nodeId=GBD3WM89VCT74TUA",
+      "https://help.steampowered.com/en/faqs/view/68D2-35AB-09A9-7678"
+    ]
   }
 ]
