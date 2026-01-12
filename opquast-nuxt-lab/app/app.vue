@@ -40,16 +40,3 @@
     </footer>
   </div>
 </template>
-
-<script setup>
-useHead({
-  link: [
-    {
-      rel: 'alternate',
-      type: 'application/rss+xml',
-      title: 'Opquast Lab — RSS',
-      href: '/rss.xml',
-    },
-  ],
-})
-</script>
