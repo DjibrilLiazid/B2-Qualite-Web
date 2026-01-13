@@ -207,5 +207,100 @@
       "Vérifier que chaque élément optgroup est doté d'un attribut label associant un libellé pertinent au groupe d'options concern"
     ],
     "screenshotsSources": []
+  },
+  {
+    "id": 108,
+    "title": "Les délais de réponse aux demandes d'information sont indiqués.",
+    "authors": ["Lilian LE PIVER"],
+    "path": "/rules/108",
+    "description": "La simple mention d’un délai de réponse permet de lever beaucoup d’inquiétudes. Avant l’expiration de ce délai, un internaute ne s’inquiètera pas de ne pas avoir reçu de réponse. Cette règle s’assure que tout formulaire de demande d’information précise clairement le délai attendu pour une réponse.",
+    "tags": [
+      "Conception",
+      "Éditorial",
+      "Identification et contact"
+    ],
+    "objectives": [
+      "Informer les utilisateurs sur les délais chiffrés de réponse.",
+      "Limiter les risques de relance de la part des utilisateurs.",
+      "Rassurer sur la capacité à prendre en compte les demandes."
+    ],
+    "implementationIntro": "Indiquer le délai chiffré de réponse prévu pour chaque formulaire de demande d'information.",
+    "implementation": [
+      "Indiquer le délai chiffré de réponse prévu pour chaque formulaire de demande d'information."
+    ],
+    "control": [
+      "Dans toute page comportant un formulaire de contact, vérifier qu'une indication chiffrée de délai de réponse est présente.",
+      "Vérifier que l’indication de délai est compréhensible et visible par l’utilisateur."
+    ],
+    "screenshotsSources": [
+      "https://www.nouveauxmarchands.com/faq",
+      "https://virtualservices.fr/contact/",
+      "https://www.plus.transformation.gouv.fr/engagement/votre-demande-est-traitee-dans-les-delais-annonces"
+    ]
+  },
+  {
+    "id": 109,
+    "title": "Les horaires et tarifs de fonctionnement des services mis à la disposition des utilisateurs sont indiqués.",
+    "authors": ["Lilian LE PIVER"],
+    "path": "/rules/109",
+    "description": "Pour les services qui ne sont pas disponibles en permanence ou qui impliquent un coût (comme un support téléphonique ou un service de chat), l'utilisateur doit être informé des heures d'ouverture et du coût éventuel. Cela évite les tentatives d'appel infructueuses et les mauvaises surprises sur la facture.",
+    "tags": [
+      "Éditorial",
+      "Identification et contact",
+      "Services",
+      "Écoconception"
+    ],
+    "objectives": [
+      "Permettre aux utilisateurs de connaître les services mis à leur disposition et leur fonctionnement."
+    ],
+    "implementationIntro": "Préciser les horaires et les tarifs pour chaque moyen de contact mis à disposition.",
+    "implementation": [
+      "Indiquer les jours et heures d'ouverture pour le support (téléphone, messagerie instantanée).",
+      "Mentionner le tarif de l'appel à proximité immédiate du numéro (ex: 'Appel non surtaxé').",
+      "Préciser les fuseaux horaires si le service s'adresse à des utilisateurs sur plusieurs zones géographiques."
+    ],
+    "control": [
+      "Vérifier la présence des horaires d'ouverture pour chaque service de support.",
+      "Vérifier que le coût de l'appel ou du service est explicitement mentionné.",
+      "Vérifier que ces informations sont lisibles et accessibles avant la mise en relation."
+    ],
+    "screenshotsSources": [
+      "https://www.picard.fr/picard-a-votre-service/service-info-consommateur/",
+      "https://www.opquast.com/contact/",
+      "https://clients.cdiscount.com/frequentlyaskedquestions.html?userinput=Comment+contacter+Cdiscount+%3F"
+    ]
+  },
+  {
+    "id": 110,
+    "title": "Chaque demande d'information fait l'objet d'un accusé de réception.",
+    "authors": ["Lilian LE PIVER"],
+    "path": "/rules/110",
+    "description": "L’envoi d’un accusé de réception immédiat après la soumission d’un formulaire permet de confirmer à l’utilisateur que sa démarche a bien été prise en compte par le système. Cela évite les doutes sur le succès de l'envoi et limite les tentatives multiples de soumission pour une même demande.",
+    "tags": [
+      "Basics",
+      "Accessibilité",
+      "Développement",
+      "Editorial",
+      "Identification et contact"
+    ],
+    "objectives": [
+      "Informer les utilisateurs de la prise en compte de leur demande.",
+      "Permettre aux utilisateurs d’obtenir une confirmation archivable de la bonne réception de leur demande d’information."
+    ],
+    "implementationIntro": "Mettre en place un système d'envoi automatique d'accusé de réception pour tout formulaire de contact ou de demande.",
+    "implementation": [
+      "Afficher un message de confirmation clair immédiatement après la validation du formulaire.",
+      "Envoyer un e-mail automatique récapitulant la demande et confirmant sa réception.",
+      "Inclure un numéro de suivi ou une référence de dossier dans l'accusé de réception si possible."
+    ],
+    "control": [
+      "Adresser une demande d’information fictive en utilisant une adresse e-mail réelle.",
+      "Contrôler qu’un accusé de réception est bien reçu à cette adresse."
+    ],
+    "screenshotsSources": [
+      "https://www.plus.transformation.gouv.fr/experiences/4547966_demande-de-documents-inutile-ou-deja-transmis",
+      "https://www.service-public.gouv.fr/particuliers/vosdroits/F33312",
+      "https://www.plus.transformation.gouv.fr/experiences/6025103_plus-daccuse-reception-de-la-declaration"
+    ]
   }
 ]
