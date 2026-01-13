@@ -250,47 +250,20 @@ const activeTab = ref('preview')
               class="rounded-xl bg-zinc-950 p-5 overflow-x-auto text-sm text-zinc-100"
             >
 <code>
-&lt;div class=&quot;rounded-xl border border-zinc-800 bg-zinc-950 p-5&quot;&gt;
-  &lt;div class=&quot;flex items-center justify-between&quot;&gt;
-    &lt;h3 class=&quot;text-base font-semibold text-zinc-100&quot;&gt;
-      Quoi de neuf ?
-    &lt;/h3&gt;
-    &lt;span class=&quot;text-xs text-zinc-500&quot;&gt;Actualités du site&lt;/span&gt;
+&lt;form class=&quot;space-y-4 rounded-xl border border-zinc-200 bg-white p-6 shadow-sm&quot;&gt;
+  &lt;div&gt;
+    &lt;label class=&quot;block text-sm font-medium text-zinc-700&quot;&gt;Nom&lt;/label&gt;
+    &lt;!-- La value est préservée ici --&gt;
+    &lt;input type=&quot;text&quot; value=&quot;Martin&quot; class=&quot;mt-1 block w-full rounded-md border-zinc-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm&quot; /&gt;
   &lt;/div&gt;
-
-  &lt;ul class=&quot;mt-4 space-y-3&quot;&gt;
-    &lt;li class=&quot;flex items-start justify-between gap-4&quot;&gt;
-      &lt;div&gt;
-        &lt;div class=&quot;flex items-center gap-2&quot;&gt;
-          &lt;span class=&quot;text-sm font-medium text-zinc-100&quot;&gt;
-            Nouvelle fonctionnalité publiée
-          &lt;/span&gt;
-          &lt;span
-            class=&quot;text-[11px] uppercase tracking-wide rounded-full border border-zinc-700 bg-zinc-900 px-2 py-0.5 text-zinc-200&quot;
-          &gt;
-            Nouveau
-          &lt;/span&gt;
-        &lt;/div&gt;
-        &lt;p class=&quot;text-sm text-zinc-400&quot;&gt;
-          Mise en ligne d’un nouveau service accessible depuis l’accueil.
-        &lt;/p&gt;
-      &lt;/div&gt;
-      &lt;span class=&quot;text-xs text-zinc-500&quot;&gt;05/01/2026&lt;/span&gt;
-    &lt;/li&gt;
-
-    &lt;li class=&quot;flex items-start justify-between gap-4&quot;&gt;
-      &lt;div&gt;
-        &lt;span class=&quot;text-sm font-medium text-zinc-100&quot;&gt;
-          Mise à jour du contenu éditorial
-        &lt;/span&gt;
-        &lt;p class=&quot;text-sm text-zinc-400&quot;&gt;
-          Actualisation des informations principales du site.
-        &lt;/p&gt;
-      &lt;/div&gt;
-      &lt;span class=&quot;text-xs text-zinc-500&quot;&gt;03/01/2026&lt;/span&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/div&gt;
+  
+  &lt;div&gt;
+    &lt;label class=&quot;block text-sm font-medium text-zinc-700&quot;&gt;Code Postal&lt;/label&gt;
+    &lt;!-- Champ en erreur mais qui ne vide pas le champ Nom --&gt;
+    &lt;input type=&quot;text&quot; class=&quot;mt-1 block w-full rounded-md border-red-300 text-red-900 focus:border-red-500 focus:ring-red-500 sm:text-sm&quot; /&gt;
+    &lt;span class=&quot;text-xs text-red-600&quot;&gt;Ce champ est requis.&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/form&gt;
 </code>
 </pre>
 

@@ -250,46 +250,22 @@ const activeTab = ref('preview')
               class="rounded-xl bg-zinc-950 p-5 overflow-x-auto text-sm text-zinc-100"
             >
 <code>
-&lt;div class=&quot;rounded-xl border border-zinc-800 bg-zinc-950 p-5&quot;&gt;
-  &lt;div class=&quot;flex items-center justify-between&quot;&gt;
-    &lt;h3 class=&quot;text-base font-semibold text-zinc-100&quot;&gt;
-      Quoi de neuf ?
-    &lt;/h3&gt;
-    &lt;span class=&quot;text-xs text-zinc-500&quot;&gt;Actualités du site&lt;/span&gt;
+&lt;div class=&quot;w-full max-w-sm&quot;&gt;
+  &lt;label for=&quot;email&quot; class=&quot;block text-sm font-medium text-zinc-700&quot;&gt;Votre email&lt;/label&gt;
+  &lt;div class=&quot;relative mt-1 rounded-md shadow-sm&quot;&gt;
+    &lt;input type=&quot;email&quot; name=&quot;email&quot; id=&quot;email&quot; 
+      class=&quot;block w-full rounded-md border-red-300 pr-10 text-red-900 placeholder-red-300 focus:border-red-500 focus:outline-none focus:ring-red-500 sm:text-sm&quot; 
+      value=&quot;jean.dupont&quot; 
+      aria-invalid=&quot;true&quot; 
+    /&gt;
+    &lt;div class=&quot;pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3&quot;&gt;
+      &lt;!-- Heroicon exclamation-circle --&gt;
+      &lt;svg class=&quot;h-5 w-5 text-red-500&quot; viewBox=&quot;0 0 20 20&quot; fill=&quot;currentColor&quot;&gt;
+        &lt;path fill-rule=&quot;evenodd&quot; d=&quot;M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z&quot; clip-rule=&quot;evenodd&quot; /&gt;
+      &lt;/svg&gt;
+    &lt;/div&gt;
   &lt;/div&gt;
-
-  &lt;ul class=&quot;mt-4 space-y-3&quot;&gt;
-    &lt;li class=&quot;flex items-start justify-between gap-4&quot;&gt;
-      &lt;div&gt;
-        &lt;div class=&quot;flex items-center gap-2&quot;&gt;
-          &lt;span class=&quot;text-sm font-medium text-zinc-100&quot;&gt;
-            Nouvelle fonctionnalité publiée
-          &lt;/span&gt;
-          &lt;span
-            class=&quot;text-[11px] uppercase tracking-wide rounded-full border border-zinc-700 bg-zinc-900 px-2 py-0.5 text-zinc-200&quot;
-          &gt;
-            Nouveau
-          &lt;/span&gt;
-        &lt;/div&gt;
-        &lt;p class=&quot;text-sm text-zinc-400&quot;&gt;
-          Mise en ligne d’un nouveau service accessible depuis l’accueil.
-        &lt;/p&gt;
-      &lt;/div&gt;
-      &lt;span class=&quot;text-xs text-zinc-500&quot;&gt;05/01/2026&lt;/span&gt;
-    &lt;/li&gt;
-
-    &lt;li class=&quot;flex items-start justify-between gap-4&quot;&gt;
-      &lt;div&gt;
-        &lt;span class=&quot;text-sm font-medium text-zinc-100&quot;&gt;
-          Mise à jour du contenu éditorial
-        &lt;/span&gt;
-        &lt;p class=&quot;text-sm text-zinc-400&quot;&gt;
-          Actualisation des informations principales du site.
-        &lt;/p&gt;
-      &lt;/div&gt;
-      &lt;span class=&quot;text-xs text-zinc-500&quot;&gt;03/01/2026&lt;/span&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
+  &lt;p class=&quot;mt-2 text-sm text-red-600&quot; id=&quot;email-error&quot;&gt;Le format de l'email est invalide (il manque le @).&lt;/p&gt;
 &lt;/div&gt;
 </code>
 </pre>
