@@ -2,7 +2,9 @@
   {
     "id": 1,
     "title": "Il est possible de connaître les nouveaux contenus ou services",
-    "authors": ["Marco BARONI"],
+    "authors": [
+      "Marco BARONI"
+    ],
     "path": "/rules/1",
     "description": "Une image vaut souvent mieux qu’un long discours. Certes, mais tout d’abord, il peut s’avérer difficile de véritablement comprendre un graphique (courbe, diagramme, histogramme, camembert...) si l’on n'a pas les données qui ont permis de le créer. D’autre part, certains utilisateurs ne pourront pas avoir accès au rendu graphique, et l’accès aux données leur permettra de comprendre les contenus.",
     "tags": [
@@ -50,10 +52,15 @@
   {
     "id": 10,
     "title": "Les contenus ou fichiers destinés à des espaces publics peuvent être vérifiés avant leur envoi définitif.",
-    "authors": ["Marco BARONI"],
+    "authors": [
+      "Marco BARONI"
+    ],
     "path": "/rules/10",
     "description": "Il est fort agaçant de voir publier un message sous une forme dégradée ou de constater après envoi que l’on a écrit une grosse bêtise. La prévisualisation permet de voir les contenus en contexte et donne la possibilité de les corriger ou de les peaufiner.",
-    "tags": ["Contenus", "Développement"],
+    "tags": [
+      "Contenus",
+      "Développement"
+    ],
     "objectives": [
       "Permettre à l’utilisateur de vérifier sa saisie en contexte et, si nécessaire, de la corriger avant envoi.",
       "Diminuer le nombre de demandes de rectification ou de suppression."
@@ -72,12 +79,276 @@
     ]
   },
   {
+    "id": 15,
+    "title": "La politique de confidentialité et de respect de la vie privée est disponible depuis toutes les pages.",
+    "authors": [
+      "Michel [Votre Nom]"
+    ],
+    "path": "/rules/15",
+    "description": "Une très grande partie du business d'Internet repose sur le commerce et la valorisation des données personnelles. Cette bonne pratique est de nature à rassurer et à informer l'internaute sur la protection de ses données privées.",
+    "tags": [
+      "Conception",
+      "Données personnelles",
+      "Editorial",
+      "Privacy"
+    ],
+    "objectives": [
+      "Permettre aux utilisateurs de connaître les conditions de conservation de leurs données personnelles.",
+      "Renforcer la confiance des utilisateurs sur l'utilisation de leurs données."
+    ],
+    "implementationIntro": "Indiquer ou rendre disponible sur chaque page du site la politique de confidentialité du site.",
+    "implementation": [
+      "Ajouter un lien vers la politique de confidentialité dans le pied de page (footer) présent sur toutes les pages.",
+      "Alternativement, intégrer les informations dans les mentions légales accessibles depuis toutes les pages.",
+      "S'assurer que le lien est visible et facilement identifiable."
+    ],
+    "control": [
+      "Vérifier que les informations relatives à la politique de confidentialité et de respect de la vie privée du site sont disponibles depuis chaque page.",
+      "Vérifier la présence d'un lien dans le pied de page ou dans les mentions légales.",
+      "Confirmer que le lien est fonctionnel et mène vers une page dédiée ou une section appropriée."
+    ],
+    "screenshotsSources": [
+      "https://www.service-public.fr/",
+      "https://www.cnil.fr/",
+      "https://www.gouvernement.fr/"
+    ]
+  },
+  {
+    "id": 16,
+    "title": "La procédure d'accès et de rectification des données personnelles est décrite.",
+    "authors": [
+      "Michel [Votre Nom]"
+    ],
+    "path": "/rules/16",
+    "description": "Cette bonne pratique est souvent traitée comme une mention à poser sur un site. Elle a pourtant une vraie valeur ajoutée, puisqu'elle impose aux administrateurs du site de se poser la question de la mise à jour et de la pérennité des données personnelles.",
+    "tags": [
+      "Données personnelles",
+      "Editorial",
+      "Privacy"
+    ],
+    "objectives": [
+      "Informer l'utilisateur sur l'utilisation de ses données personnelles.",
+      "Faciliter la gestion des demandes liées aux données personnelles.",
+      "Renforcer la confiance des utilisateurs sur l'utilisation de leurs données."
+    ],
+    "implementationIntro": "Indiquer à l'utilisateur dans une section de contenu dédiée par quelles procédures ou moyens de contact il peut effectuer une demande d'accès, de suppression ou de rectification de ses données personnelles.",
+    "implementation": [
+      "Créer une section dédiée dans la politique de confidentialité ou les mentions légales.",
+      "Indiquer clairement les moyens de contact : email, formulaire, adresse postale.",
+      "Décrire la procédure étape par étape pour effectuer une demande RGPD."
+    ],
+    "control": [
+      "Vérifier la présence d'informations sur la procédure d'accès ou de rectification des données personnelles dans la page d'accueil, les mentions légales, la page d'aide ou la politique de confidentialité.",
+      "La nature de la procédure en question n'est pas évaluée ici : seule sa présence est contrôlée."
+    ],
+    "screenshotsSources": [
+      "https://www.cnil.fr/",
+      "https://www.service-public.fr/",
+      "https://www.ameli.fr/"
+    ]
+  },
+  {
+    "id": 17,
+    "title": "La création de compte est possible sans recours à un système d'identification tiers.",
+    "authors": [
+      "Michel [Votre Nom]"
+    ],
+    "path": "/rules/17",
+    "description": "Les systèmes d'identification tiers proposés par Facebook, LinkedIn et bien d'autres sont très pratiques. Ils évitent aux utilisateurs d'avoir à créer un identifiant et un mot de passe et ils permettent aux créateurs de sites de se reposer sur des acteurs de référence. Mais le prix est élevé. La fermeture ou la désactivation d'un compte chez le fournisseur tiers rendra la connexion impossible.",
+    "tags": [
+      "Basics",
+      "Accessibilité",
+      "Conception",
+      "Données personnelles",
+      "Développement",
+      "Privacy"
+    ],
+    "objectives": [
+      "Laisser l'utilisateur libre de son choix d'utiliser ou non un service tiers.",
+      "Fournir un moyen alternatif d'accès au service.",
+      "Réduire le risque de blocage à la connexion pour des utilisateurs en situation de handicap.",
+      "Fournir un moyen d'accès maîtrisé par les administrateurs du service.",
+      "Limiter la dépendance à un acteur tiers dont la politique et la stratégie commerciale ou technique ne manqueront pas d'évoluer dans le temps.",
+      "Renforcer la confiance des utilisateurs sur l'utilisation de leurs données."
+    ],
+    "implementationIntro": "Mettre en place une procédure de création de compte par saisie ou création d'un identifiant et d'un mot de passe propres au service.",
+    "implementation": [
+      "Créer un formulaire d'inscription classique avec email/mot de passe.",
+      "Si des options d'authentification tierce sont proposées (OAuth), toujours offrir l'alternative traditionnelle.",
+      "Valider les champs selon les bonnes pratiques de sécurité."
+    ],
+    "control": [
+      "Vérifier qu'il est possible de créer un compte sans avoir recours à un service tiers.",
+      "Confirmer la présence d'un formulaire de saisie d'identifiant et de mot de passe propres au service."
+    ],
+    "screenshotsSources": [
+      "https://www.leboncoin.fr/",
+      "https://www.vinted.fr/",
+      "https://www.doctolib.fr/"
+    ]
+  },
+  {
+    "id": 18,
+    "title": "La création d'un compte est soumise à un processus de confirmation.",
+    "authors": [
+      "Michel [Votre Nom]"
+    ],
+    "path": "/rules/18",
+    "description": "Pour créer un compte sur un site web, il est généralement nécessaire de saisir une adresse de courriel. Cette adresse peut alors être utilisée pour vérifier que la personne à l'origine de la demande de création de compte et le propriétaire du mail saisi sont la même personne. En l'absence d'une telle vérification, n'importe qui pourrait vous créer un compte.",
+    "tags": [
+      "Basics",
+      "Données personnelles",
+      "Développement",
+      "Privacy"
+    ],
+    "objectives": [
+      "Réduire les risques d'inscription de l'utilisateur à son insu.",
+      "Renforcer la confiance des utilisateurs sur l'utilisation de leurs données."
+    ],
+    "implementationIntro": "Avant activation du compte créé en ligne, envoyer une demande de confirmation automatique à l'adresse e-mail correspondant à celui-ci.",
+    "implementation": [
+      "Générer un token de validation unique lors de la création du compte.",
+      "Envoyer un email de confirmation avec un lien contenant ce token.",
+      "Activer le compte uniquement après validation via le lien email.",
+      "Prévoir une expiration du token (24-48h) pour des raisons de sécurité."
+    ],
+    "control": [
+      "Créer un compte en ligne.",
+      "Contrôler qu'il n'est activé qu'à partir de l'e-mail de demande de confirmation qui suit l'envoi du formulaire d'inscription."
+    ],
+    "screenshotsSources": [
+      "https://www.github.com/",
+      "https://www.linkedin.com/",
+      "https://www.amazon.fr/"
+    ]
+  },
+  {
+    "id": 19,
+    "title": "Un mécanisme de prévention des usurpations de compte ou d'identité est proposé.",
+    "authors": [
+      "Michel [Votre Nom]"
+    ],
+    "path": "/rules/19",
+    "description": "Le nombre de tentatives d'usurpations de compte ou de vol d'identité sur le web est considérable. Pour éviter cela, les services web peuvent mettre en place des mécanismes permettant de vérifier qu'il s'agit bien de vous, et que c'est bien vous qui souhaitez effectuer vos opérations en ligne.",
+    "tags": [
+      "Données personnelles",
+      "Développement",
+      "Privacy"
+    ],
+    "objectives": [
+      "Renforcer la sécurité et la confiance de l'utilisateur.",
+      "Prévenir les risques d'usurpation d'identité.",
+      "Limiter les coûts de traitement des usurpations pour l'utilisateur et le service en ligne.",
+      "Renforcer la confiance des utilisateurs sur l'utilisation de leurs données."
+    ],
+    "implementationIntro": "Mettre en place un système de type authentification à double facteur ou autre authentification forte, et non une identification simple de type identifiant/mot de passe.",
+    "implementation": [
+      "Implémenter une authentification à deux facteurs (2FA) via SMS, application d'authentification ou email.",
+      "Proposer l'activation de la 2FA dans les paramètres du compte.",
+      "Détecter les connexions suspectes (changement de localisation, nouvel appareil) et demander une vérification supplémentaire.",
+      "Permettre la gestion des appareils de confiance."
+    ],
+    "control": [
+      "Vérifier lors de la connexion aux espaces privés la présence d'un mécanisme de type authentification à double facteur ou autre authentification forte.",
+      "Tester l'activation et l'utilisation du système 2FA."
+    ],
+    "screenshotsSources": [
+      "https://www.google.com/",
+      "https://www.github.com/",
+      "https://www.paypal.com/"
+    ]
+  },
+  {
+    "id": 20,
+    "title": "Les comptes ou abonnements ouverts en ligne peuvent être fermés par le même moyen.",
+    "authors": [
+      "Michel [Votre Nom]"
+    ],
+    "path": "/rules/20",
+    "description": "De nombreux services et sites Internet proposent, voire même exigent, la création directe d'un compte pour accéder aux contenus et services. La fermeture du compte doit pouvoir se faire avec la même facilité que son ouverture.",
+    "tags": [
+      "Accessibilité",
+      "Conception",
+      "Données personnelles",
+      "Développement",
+      "Privacy",
+      "Écoconception"
+    ],
+    "objectives": [
+      "Faciliter la gestion des comptes utilisateurs.",
+      "Éviter à l'utilisateur une recherche de contact.",
+      "Conforter la confiance dans le site ou le service.",
+      "Renforcer la confiance des utilisateurs sur l'utilisation de leurs données."
+    ],
+    "implementationIntro": "Fournir dans le site une procédure de clôture de compte automatisée si la création de compte est elle-même automatisée, ou un formulaire de demande de clôture si la création de compte est différée.",
+    "implementation": [
+      "Ajouter une option 'Supprimer mon compte' dans les paramètres utilisateur.",
+      "Implémenter une confirmation en deux étapes pour éviter les suppressions accidentelles.",
+      "Informer l'utilisateur des conséquences de la suppression (données perdues, etc.).",
+      "Permettre un délai de rétractation avant suppression définitive (optionnel)."
+    ],
+    "control": [
+      "Créer un compte.",
+      "Contrôler la possibilité de le clore ou de demander sa clôture en ligne, via un processus similaire à la création."
+    ],
+    "screenshotsSources": [
+      "https://www.twitter.com/",
+      "https://www.netflix.com/",
+      "https://www.spotify.com/"
+    ]
+  },
+  {
+    "id": 21,
+    "title": "Si un espace personnel ou abonné est proposé, il est possible de télécharger les contenus personnels.",
+    "authors": [
+      "Michel [Votre Nom]"
+    ],
+    "path": "/rules/21",
+    "description": "Une défaillance ou un arrêt du service sont toujours possibles. Pour prévenir les accidents et parer aux reproches éventuels, prévoyez systématiquement cette possibilité de sauvegarde des données, que le service soit payant ou gratuit.",
+    "tags": [
+      "Données personnelles",
+      "Développement",
+      "Privacy",
+      "Écoconception"
+    ],
+    "objectives": [
+      "Permettre l'archivage des contenus créés par l'utilisateur.",
+      "Éviter à l'utilisateur d'éventuelles saisies redoublées en cas de réutilisation des contenus.",
+      "Permettre la réutilisation de documents précédemment ajoutés.",
+      "Renforcer la confiance des utilisateurs sur l'utilisation de leurs données."
+    ],
+    "implementationIntro": "Fournir une solution d'exportation des contenus dans un format bureautique courant, dans un format XML courant ou dans un format dont les spécifications sont publiques.",
+    "implementation": [
+      "Créer une fonctionnalité 'Exporter mes données' accessible depuis les paramètres.",
+      "Proposer plusieurs formats d'export : JSON, CSV, XML selon le type de données.",
+      "Générer une archive ZIP contenant tous les contenus utilisateur.",
+      "Inclure un fichier README expliquant la structure des données exportées."
+    ],
+    "control": [
+      "Saisir différents types de contenus dans l'espace personnel (images, documents, données).",
+      "Vérifier qu'il est possible d'exporter les contenus personnellement saisis ou créés dans un format standard.",
+      "Contrôler que l'export contient bien toutes les données saisies."
+    ],
+    "screenshotsSources": [
+      "https://www.google.com/takeout",
+      "https://www.facebook.com/",
+      "https://www.twitter.com/"
+    ]
+  },
+  {
     "id": 87,
     "title": "Les processus complexes sont accompagnés de la liste de leurs étapes.",
-    "authors": ["Adrien LECOMTE"],
+    "authors": [
+      "Adrien LECOMTE"
+    ],
     "path": "/rules/87",
     "description": "Il est toujours appréciable de connaître à l’avance le nombre d’étapes et de pouvoir estimer le temps nécessaire pour réaliser une longue démarche",
-    "tags": ["Basics", "Accessibilité", "Conception", "Formulaires"],
+    "tags": [
+      "Basics",
+      "Accessibilité",
+      "Conception",
+      "Formulaires"
+    ],
     "objectives": [
       "Donner de la visibilité à l'utilisateur sur les actions qu'il va réaliser (ordre des étapes, informations nécessaires pour les accomplir, etc.). ",
       "Éviter que l'utilisateur ne se sente piégé dans un processus dont il n'avait pas prévu la durée."
@@ -92,10 +363,16 @@
   {
     "id": 88,
     "title": "L'étape en cours d'un processus complexe est indiquée.",
-    "authors": ["Adrien LECOMTE"],
+    "authors": [
+      "Adrien LECOMTE"
+    ],
     "path": "/rules/88",
     "description": "Ne vous êtes-vous jamais demandé, au beau milieu d’une démarche un peu longue répartie sur plusieurs formulaires successifs, où vous étiez exactement ?",
-    "tags": ["Accessibilité", "Conception", "Formulaires"],
+    "tags": [
+      "Accessibilité",
+      "Conception",
+      "Formulaires"
+    ],
     "objectives": [
       "Permettre à l'utilisateur d'identifier le degré d'avancement dans un processus.",
       "Rassurer l'utilisateur lors de la réalisation d'un processus complexe."
@@ -112,10 +389,17 @@
   {
     "id": 89,
     "title": "Chaque étape d'un processus complexe permet de revenir à l'étape précédente.",
-    "authors": ["Adrien LECOMTE"],
+    "authors": [
+      "Adrien LECOMTE"
+    ],
     "path": "/rules/89",
     "description": "Après avoir décidé de passer à l’étape suivante d’un processus complexe, il arrive souvent d’avoir besoin de vérifier ce qu’on a saisi précédemment. Laissez aux internautes la possibilité de douter, de vérifier, et de se tromper, bien sûr.",
-    "tags": ["Accessibilité","Développement", "Conception", "Formulaires"],
+    "tags": [
+      "Accessibilité",
+      "Développement",
+      "Conception",
+      "Formulaires"
+    ],
     "objectives": [
       "Faciliter l’utilisation des formulaires répartis sur plusieurs pages successives.",
       "Réduire les risques d’erreurs de saisie. Limiter les risques d’abandon en cours de processus."
@@ -130,10 +414,18 @@
   {
     "id": 90,
     "title": "L'utilisateur est averti de la perte d'information en cas d'utilisation de l'historique de son navigateur dans un processus complexe.",
-    "authors": ["Adrien LECOMTE"],
+    "authors": [
+      "Adrien LECOMTE"
+    ],
     "path": "/rules/90",
     "description": "Ne vous est-il jamais arrivé de croire que vous pouviez tout simplement retourner voir ce que vous aviez saisi à l’étape précédente lors de votre déclaration d’impôts, par exemple, et de constater peu après que tout ce que vous aviez saisi avant ce remords était perdu ? Évitons ce genre de déception à nos utilisateurs.",
-    "tags": ["Basics", "Accessibilité", "Conception","Développement", "Formulaires"],
+    "tags": [
+      "Basics",
+      "Accessibilité",
+      "Conception",
+      "Développement",
+      "Formulaires"
+    ],
     "objectives": [
       "Faciliter l’utilisation des formulaires répartis sur plusieurs pages successives.",
       "Limiter les risques d’abandon en cours de processus."
@@ -148,10 +440,15 @@
   {
     "id": 91,
     "title": "La navigation dans un processus complexe ne provoque pas la perte des données précédemment soumises.",
-    "authors": ["Adrien LECOMTE"],
+    "authors": [
+      "Adrien LECOMTE"
+    ],
     "path": "/rules/91",
     "description": "Il est certes extrêmement confortable pour l’utilisateur de pouvoir naviguer dans les différentes étapes d’un processus complexe. Il est évidemment essentiel de l’avertir lorsque des données peuvent être perdues. C’est d’ailleurs l’objet d’une autre des règles assurance qualité web. Il est encore plus utile de s’assurer que l’ensemble des données saisies par l’utilisateur sont enregistrées à tout moment.",
-    "tags": ["Développement", "Formulaires"],
+    "tags": [
+      "Développement",
+      "Formulaires"
+    ],
     "objectives": [
       "Faciliter la saisie et sa correction dans les formulaires répartis par étapes.",
       "Limiter les risques d’abandon en cours de procédure."
@@ -166,10 +463,17 @@
   {
     "id": 92,
     "title": "Le copier coller est possible dans les champs de formulaire.",
-    "authors": ["Adrien LECOMTE"],
+    "authors": [
+      "Adrien LECOMTE"
+    ],
     "path": "/rules/92",
     "description": "Saisissez votre adresse e-mail. C’est bon, c’est fait ? Et si maintenant je vous demande de la saisir de nouveau, vous allez peut-être avoir la flemme de le faire et voudrez la copier depuis le premier champ pour la coller dans le deuxième. De quel droit certains sites voudraient-ils vous empêcher de faire cela ? Vive le copier-coller libre !",
-    "tags": ["Basics", "Accessibilité", "Développement", "Formulaires"],
+    "tags": [
+      "Basics",
+      "Accessibilité",
+      "Développement",
+      "Formulaires"
+    ],
     "objectives": [
       "Faciliter la saisie dans les formulaires."
     ],
@@ -187,10 +491,17 @@
   {
     "id": 93,
     "title": "Les éléments d'une liste déroulante qui peuvent être regroupés le sont de manière appropriée.",
-    "authors": ["Adrien LECOMTE"],
+    "authors": [
+      "Adrien LECOMTE"
+    ],
     "path": "/rules/93",
     "description": "Le contenu de certaines listes déroulantes est suffisamment homogène pour se suffire à lui-même, mais, dans certains cas, la liste sera plus aisée à consulter en étant mieux organisée. Dans ce cas, l’élément optgroup est votre ami.",
-    "tags": ["Basics", "Accessibilité", "Conception", "Formulaires"],
+    "tags": [
+      "Basics",
+      "Accessibilité",
+      "Conception",
+      "Formulaires"
+    ],
     "objectives": [
       "Permettre aux aides techniques de restituer à l’utilisateur une liste dont l’organisation est clairement perceptible et qui facilite le passage d’un élément de la liste à un autre.",
       "Favoriser un rendu approprié des listes déroulantes complexes dans tous les navigateurs.",
