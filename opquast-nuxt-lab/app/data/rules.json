@@ -240,7 +240,10 @@
         }
       ],
       "screenshotsSources": [
-        "https://checklists.opquast.com/fr/qualite-numerique/les-mecanismes-de-fermeture-de-fenetres-sont-visuellement-rattachees-a-leur-contenu"
+        "w3.org/WAI/ARIA/apg/patterns/dialog-modal/examples/dialog/",
+        "w3schools.com/howto/howto_css_modals.asp",
+        "systeme-de-design.gouv.fr/composants-et-modeles/composants/modale"
+
       ]
     },
     {
@@ -268,7 +271,9 @@
         }
       ],
       "screenshotsSources": [
-        "https://checklists.opquast.com/fr/assurance-qualite-web/les-mecanismes-de-fermetures-de-fenetres-sont-immediatement-disponibles"
+        "w3.org/WAI/ARIA/apg/patterns/dialog-modal/examples/dialog/",
+        "w3schools.com/howto/howto_css_modals.asp",
+        "systeme-de-design.gouv.fr/composants-et-modeles/composants/modale"
       ]
     },
     {
@@ -296,7 +301,9 @@
         }
       ],
       "screenshotsSources": [
-        "https://checklists.opquast.com/fr/assurance-qualite-web/les-nouvelles-fenetres-dimensionnees-et-les-fenetres-modales-sont-dotees-dun-bouton-de-fermeture-explicite"
+       "https://amazon.com/",
+        "https://google.com/",
+        "https://fnac.com/"
       ]
     },
     {
@@ -323,7 +330,7 @@
         }
       ],
       "screenshotsSources": [
-        "https://checklists.opquast.com/fr/assurance-qualite-web/les-mecanismes-de-fermetures-de-fenetres-sont-affiches-aux-memes-emplacements-sur-toutes-les-pages"
+        "https://www.airbnb.fr/","https://www.airbnb.fr/"
       ]
     },
     {
@@ -352,7 +359,9 @@
         }
       ],
       "screenshotsSources": [
-        "https://checklists.opquast.com/fr/assurance-qualite-web/chaque-page-contient-des-liens-dacces-rapide-places-au-debut-du-code-source"
+        "https://www.amazon.fr/",
+        "https://www.apple.com/",
+        "https://www.ovhcloud.com/"
       ]
     },
     {
@@ -382,7 +391,9 @@
         }
       ],
       "screenshotsSources": [
-        "https://checklists.opquast.com/fr/qualite-numerique/le-focus-clavier-nest-ni-supprime-ni-masque"
+        "https://www.wikipedia.com/",
+        "https://www.amazon.fr/",
+        "https://www.ovhcloud.com/"
       ]
     },
     {
@@ -410,7 +421,9 @@
         }
       ],
       "screenshotsSources": [
-        "https://checklists.opquast.com/fr/assurance-qualite-web/le-site-est-integralement-utilisable-au-clavier"
+        "https://www.airbnb.fr/",
+        "https://www.amazon.com/",
+        "https://www.apple.com/"
       ]
     }
   ]

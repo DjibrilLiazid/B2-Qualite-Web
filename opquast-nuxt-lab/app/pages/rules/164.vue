@@ -1,7 +1,7 @@
 <script setup>
 import { getRuleById } from '~/data/rules'
 
-const ruleId = 166
+const ruleId = 164
 const rule = getRuleById(ruleId)
 const activeTab = ref('preview')
 </script>
@@ -191,201 +191,160 @@ const activeTab = ref('preview')
           <!-- RENDU -->
           <div v-if="activeTab === 'preview'" class="space-y-4">
             <div class="text-sm text-zinc-400">
-              Exemples d'interfaces entièrement accessibles au clavier
+              Exemples de liens d'accès rapide (skip links)
             </div>
 
-            <!-- Bonne pratique : tous les éléments interactifs -->
+            <!-- Bonne pratique : Skip links visibles au focus -->
             <div class="rounded-xl border border-zinc-800 bg-zinc-950 p-5">
-              <div class="text-sm text-zinc-400 mb-3">✓ Bonne pratique : navigation complète au clavier</div>
+              <div class="text-sm text-zinc-400 mb-3">✓ Bonne pratique : liens d'accès rapide au début du code</div>
 
-              <div class="rounded-lg border border-zinc-700 bg-zinc-900 p-4 space-y-4">
-                <div class="text-xs text-zinc-500 mb-2">Utilisez Tab, Entrée, Espace et les flèches</div>
+              <div class="rounded-lg border border-zinc-700 bg-zinc-900 p-4">
+                <div class="text-xs text-zinc-500 mb-3">Appuyez sur Tab pour voir les liens d'accès rapide</div>
 
-                <!-- Boutons -->
-                <div class="space-y-2">
-                  <button class="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm rounded transition focus:outline-none focus:ring-2 focus:ring-blue-400">
-                    Bouton cliquable (Entrée/Espace)
-                  </button>
-                </div>
-
-                <!-- Liens -->
-                <div class="space-y-2">
-                  <a href="#" class="inline-block text-blue-400 hover:text-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded px-1">
-                    Lien activable (Entrée)
+                <!-- Simulation de skip links -->
+                <div class="space-y-2 mb-4">
+                  <a href="#main" class="block px-3 py-2 bg-blue-600 text-white text-sm rounded focus:outline-none focus:ring-2 focus:ring-blue-400">
+                    Aller au contenu principal
+                  </a>
+                  <a href="#nav" class="block px-3 py-2 bg-blue-600 text-white text-sm rounded focus:outline-none focus:ring-2 focus:ring-blue-400">
+                    Aller à la navigation
+                  </a>
+                  <a href="#search" class="block px-3 py-2 bg-blue-600 text-white text-sm rounded focus:outline-none focus:ring-2 focus:ring-blue-400">
+                    Aller à la recherche
                   </a>
                 </div>
 
-                <!-- Champs de formulaire -->
-                <div class="space-y-2">
-                  <input
-                      type="text"
-                      placeholder="Champ texte"
-                      class="w-full bg-zinc-950 border border-zinc-700 rounded px-3 py-2 text-sm text-zinc-100 focus:outline-none focus:border-blue-500"
-                  />
-
-                  <select class="w-full bg-zinc-950 border border-zinc-700 rounded px-3 py-2 text-sm text-zinc-100 focus:outline-none focus:border-blue-500">
-                    <option>Option 1</option>
-                    <option>Option 2</option>
-                  </select>
-
-                  <label class="flex items-center gap-2 text-sm text-zinc-300">
-                    <input type="checkbox" class="focus:outline-none focus:ring-2 focus:ring-blue-400" />
-                    Case à cocher (Espace)
-                  </label>
-                </div>
-
-                <!-- Menu déroulant -->
-                <div class="relative">
-                  <button class="px-4 py-2 bg-zinc-700 hover:bg-zinc-600 text-zinc-100 text-sm rounded transition focus:outline-none focus:ring-2 focus:ring-zinc-400">
-                    Menu ▼
-                  </button>
-                </div>
-
-                <div class="text-xs text-green-400 mt-3">
-                  ✓ Tous les éléments sont accessibles avec Tab
-                  <br/>✓ Toutes les actions sont réalisables au clavier
+                <div class="text-xs text-zinc-400 space-y-1">
+                  <div>✓ Placés au tout début du code source</div>
+                  <div>✓ Visibles au focus clavier</div>
+                  <div>✓ Permettent de sauter les éléments répétitifs</div>
                 </div>
               </div>
             </div>
 
-            <!-- Mauvaise pratique : div cliquable non accessible -->
-            <div class="rounded-xl border border-red-900/50 bg-zinc-950 p-5">
-              <div class="text-sm text-red-400 mb-3">❌ Mauvaise pratique : div cliquable sans tabindex</div>
+            <!-- Exemple d'utilisation dans une page -->
+            <div class="rounded-xl border border-zinc-800 bg-zinc-950 p-5">
+              <div class="text-sm text-zinc-400 mb-3">Exemple : structure de page avec skip links</div>
 
               <div class="rounded-lg border border-zinc-700 bg-zinc-900 p-4 space-y-3">
-                <div class="px-4 py-2 bg-blue-900/30 border border-blue-700 text-blue-200 text-sm rounded cursor-pointer hover:bg-blue-900/50">
-                  Div cliquable (non accessible au clavier)
+                <div class="bg-blue-900/30 border border-blue-700 rounded p-2">
+                  <div class="text-xs text-blue-300 font-medium">Skip Links (visibles au focus)</div>
+                  <div class="text-xs text-blue-400 mt-1">→ Contenu | Navigation | Recherche</div>
                 </div>
 
-                <div class="text-xs text-red-400">
-                  ⚠️ Impossible de sélectionner avec Tab
-                  <br/>⚠️ Pas d'action possible au clavier
+                <div class="bg-zinc-800 rounded p-2">
+                  <div class="text-xs text-zinc-400">Header / Logo / Menu</div>
+                </div>
+
+                <div id="main" class="bg-zinc-800 rounded p-2">
+                  <div class="text-xs text-zinc-400">Contenu principal (zone #main)</div>
+                </div>
+
+                <div class="bg-zinc-800 rounded p-2">
+                  <div class="text-xs text-zinc-400">Footer</div>
                 </div>
               </div>
             </div>
 
-            <!-- Exemple correct de composant personnalisé -->
-            <div class="rounded-xl border border-zinc-800 bg-zinc-950 p-5">
-              <div class="text-sm text-zinc-400 mb-3">✓ Composant personnalisé accessible</div>
+            <!-- Mauvaise pratique -->
+            <div class="rounded-xl border border-red-900/50 bg-zinc-950 p-5">
+              <div class="text-sm text-red-400 mb-3">❌ Mauvaise pratique : pas de skip links</div>
 
-              <div class="rounded-lg border border-zinc-700 bg-zinc-900 p-4">
-                <div
-                    tabindex="0"
-                    role="button"
-                    class="px-4 py-2 bg-green-600 hover:bg-green-700 text-white text-sm rounded transition focus:outline-none focus:ring-2 focus:ring-green-400 cursor-pointer"
-                >
-                  Div avec tabindex et role
+              <div class="rounded-lg border border-zinc-700 bg-zinc-900 p-4 space-y-3">
+                <div class="bg-zinc-800 rounded p-2">
+                  <div class="text-xs text-zinc-400">Header / Logo / Menu (30+ liens)</div>
                 </div>
 
-                <div class="text-xs text-green-400 mt-2">
-                  ✓ tabindex="0" pour le rendre focusable
-                  <br/>✓ role="button" pour la sémantique
-                  <br/>✓ Gestion des événements clavier (Entrée/Espace)
+                <div class="bg-zinc-800 rounded p-2">
+                  <div class="text-xs text-zinc-400">Sidebar (20+ liens)</div>
                 </div>
+
+                <div class="bg-zinc-800 rounded p-2">
+                  <div class="text-xs text-zinc-400">Contenu principal</div>
+                </div>
+              </div>
+
+              <div class="text-xs text-red-400 mt-2">
+                ⚠️ L'utilisateur au clavier doit parcourir tous les liens répétitifs
               </div>
             </div>
 
             <div class="mt-6 pt-6 border-t border-zinc-800 text-xs text-zinc-400 space-y-1">
-              <div>✓ Tous les éléments interactifs accessibles avec Tab</div>
-              <div>✓ Toutes les actions réalisables au clavier (Entrée, Espace, flèches)</div>
-              <div>✓ Utiliser des éléments HTML natifs quand possible</div>
-              <div>✓ Ajouter tabindex="0" et les rôles ARIA si nécessaire</div>
+              <div>✓ Liens placés au tout début du code HTML (avant le header)</div>
+              <div>✓ Visibles uniquement au focus clavier (ou toujours visibles)</div>
+              <div>✓ Permettent d'accéder directement aux zones principales</div>
+              <div>✓ Améliorent l'accessibilité pour les utilisateurs au clavier</div>
             </div>
           </div>
 
           <!-- CODE -->
           <div v-else>
-            <pre class="rounded-xl bg-zinc-950 p-5 overflow-x-auto text-sm text-zinc-100"><code>&lt;!-- ✅ Bonne pratique : Éléments natifs --&gt;
-&lt;button&gt;Bouton natif&lt;/button&gt;
-&lt;a href=&quot;#&quot;&gt;Lien natif&lt;/a&gt;
-&lt;input type=&quot;text&quot;&gt;
-&lt;select&gt;...&lt;/select&gt;
-&lt;!-- Tous accessibles automatiquement --&gt;
+            <pre class="rounded-xl bg-zinc-950 p-5 overflow-x-auto text-sm text-zinc-100"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;fr&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;title&gt;Page avec liens d'accès rapide&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;!-- ✅ Skip links au début du code --&gt;
+  &lt;a href=&quot;#main&quot; class=&quot;skip-link&quot;&gt;
+    Aller au contenu principal
+  &lt;/a&gt;
+  &lt;a href=&quot;#navigation&quot; class=&quot;skip-link&quot;&gt;
+    Aller à la navigation
+  &lt;/a&gt;
+  &lt;a href=&quot;#search&quot; class=&quot;skip-link&quot;&gt;
+    Aller à la recherche
+  &lt;/a&gt;
 
-&lt;!-- ✅ Composant personnalisé accessible --&gt;
-&lt;div
-  tabindex=&quot;0&quot;
-  role=&quot;button&quot;
-  aria-label=&quot;Ouvrir le menu&quot;
-  onclick=&quot;handleClick()&quot;
-  onkeydown=&quot;handleKeyDown(event)&quot;
-  class=&quot;custom-button&quot;
-&gt;
-  Cliquez-moi
-&lt;/div&gt;
+  &lt;header&gt;
+    &lt;!-- Header content --&gt;
+  &lt;/header&gt;
 
-&lt;script&gt;
-function handleKeyDown(event) {
-  // Gérer Entrée et Espace
-  if (event.key === 'Enter' || event.key === ' ') {
-    event.preventDefault();
-    handleClick();
-  }
+  &lt;nav id=&quot;navigation&quot;&gt;
+    &lt;!-- Navigation --&gt;
+  &lt;/nav&gt;
+
+  &lt;main id=&quot;main&quot;&gt;
+    &lt;!-- Contenu principal --&gt;
+  &lt;/main&gt;
+
+  &lt;footer&gt;
+    &lt;!-- Footer --&gt;
+  &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+&lt;!-- CSS pour les skip links --&gt;
+&lt;style&gt;
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #000;
+  color: #fff;
+  padding: 8px;
+  text-decoration: none;
+  z-index: 100;
 }
 
-function handleClick() {
-  // Action du bouton
-  console.log('Clicked');
+.skip-link:focus {
+  top: 0;
+  /* Devient visible au focus */
 }
-&lt;/script&gt;
 
-&lt;!-- ❌ Mauvaise pratique : Div non accessible --&gt;
-&lt;div onclick=&quot;doSomething()&quot; class=&quot;clickable&quot;&gt;
-  Cliquez-moi
-&lt;/div&gt;
-&lt;!-- Problèmes :
-  - Pas de tabindex (pas focusable)
-  - Pas de role
-  - Pas de gestion clavier
---&gt;
-
-&lt;!-- ✅ Menu accessible au clavier --&gt;
-&lt;nav role=&quot;navigation&quot;&gt;
-  &lt;ul role=&quot;menubar&quot;&gt;
-    &lt;li role=&quot;none&quot;&gt;
-      &lt;a href=&quot;#&quot; role=&quot;menuitem&quot;&gt;Accueil&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li role=&quot;none&quot;&gt;
-      &lt;button
-        role=&quot;menuitem&quot;
-        aria-haspopup=&quot;true&quot;
-        aria-expanded=&quot;false&quot;
-      &gt;
-        Services
-      &lt;/button&gt;
-      &lt;ul role=&quot;menu&quot; aria-label=&quot;Services&quot;&gt;
-        &lt;li role=&quot;none&quot;&gt;
-          &lt;a href=&quot;#&quot; role=&quot;menuitem&quot;&gt;Service 1&lt;/a&gt;
-        &lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/nav&gt;
-
-&lt;!-- ✅ Slider accessible --&gt;
-&lt;div
-  role=&quot;slider&quot;
-  aria-valuemin=&quot;0&quot;
-  aria-valuemax=&quot;100&quot;
-  aria-valuenow=&quot;50&quot;
-  aria-label=&quot;Volume&quot;
-  tabindex=&quot;0&quot;
-  onkeydown=&quot;handleSliderKeys(event)&quot;
-&gt;&lt;/div&gt;
-
-&lt;script&gt;
-function handleSliderKeys(event) {
-  // Flèches gauche/droite pour ajuster
-  if (event.key === 'ArrowLeft') {
-    decreaseValue();
-  } else if (event.key === 'ArrowRight') {
-    increaseValue();
-  }
+/* Alternative : toujours visible */
+.skip-link-visible {
+  display: block;
+  padding: 8px;
+  background: #0066cc;
+  color: white;
+  text-align: center;
 }
-&lt;/script&gt;</code></pre>
+&lt;/style&gt;</code></pre>
 
             <p class="mt-3 text-xs text-zinc-500">
-              La navigation au clavier doit permettre d'interagir avec l'intégralité des contenus et services. Tous les éléments interactifs doivent être accessibles avec Tab et activables au clavier (Entrée, Espace, flèches). Privilégiez les éléments HTML natifs et ajoutez tabindex, rôles ARIA et gestion d'événements clavier pour les composants personnalisés.
+              Les liens d'accès rapide (skip links) doivent être placés au tout début du code source, avant le header. Ils permettent aux utilisateurs naviguant au clavier de sauter directement aux zones principales du contenu sans avoir à parcourir tous les liens de navigation.
             </p>
           </div>
         </div>
