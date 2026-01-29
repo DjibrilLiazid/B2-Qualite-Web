@@ -148,6 +148,39 @@
     "screenshotsSources": []
   },
   {
+    "id": 25,
+    "title": "L'en-tête HTTP Referrer-Policy est configuré",
+    "authors": ["Marco BARONI"],
+    "path": "/rules/25",
+    "description": "Contrôler les informations transmises par le serveur concernant la navigation des utilisateurs",
+    "tags": [
+      "Sécurité",
+      "Confidentialité",
+      "Headers HTTP",
+      "Protection des données"
+    ],
+    "objectives": [
+      "Protéger les utilisateurs de la divulgation d'éventuelles informations sensibles concernant leur navigation.",
+      "Sécuriser le chargement des ressources externes.",
+      "Maîtriser les informations transmises par le serveur.",
+      "Renforcer la confiance des utilisateurs sur l'utilisation de leurs données"
+    ],
+    "implementationIntro": "Pour chaque page du site, configurer le serveur pour envoyer l'entête HTTP Referrer-Policy avec comme valeur, par ordre de préférence :",
+    "implementation": [
+      "Configurer l'en-tête Referrer-Policy avec la valeur 'no-referrer' (recommandé pour la sécurité maximale)",
+      "Alternativement utiliser 'same-origin' (inclure le référent uniquement pour les requêtes même-origine)",
+      "Ou utiliser 'strict-origin' (inclure l'origine uniquement, jamais le chemin complet)",
+      "Ou utiliser 'strict-origin-when-cross-origin' (strict-origin pour les requêtes cross-origin, référent complet pour same-origin)",
+      "Tester et valider l'en-tête sur toutes les pages du site"
+    ],
+    "control": [
+      "Vérifier pour chaque page du site, la présence de l'entête HTTP Referrer-Policy",
+      "Confirmer que la valeur utilisée est parmi les suivantes : no-referrer, same-origin, strict-origin, ou strict-origin-when-cross-origin",
+      "Tester avec les outils de développement du navigateur (onglet Network / Headers) que l'en-tête est correctement envoyé"
+    ],
+    "screenshotsSources": []
+  },
+  {
     "id": 87,
     "title": "Les processus complexes sont accompagnés de la liste de leurs étapes.",
     "authors": ["Adrien LECOMTE"],
