@@ -213,6 +213,39 @@
     "screenshotsSources": []
   },
   {
+    "id": 27,
+    "title": "Un certificat de sécurité informatique valide est en place",
+    "authors": ["Marco BARONI"],
+    "path": "/rules/27",
+    "description": "Utiliser HTTPS et un certificat SSL valide pour protéger les données sensibles des utilisateurs",
+    "tags": ["Sécurité", "HTTPS", "SSL", "Certificats", "Chiffrement"],
+    "objectives": [
+      "Conforter la confiance de l'utilisateur.",
+      "Permettre à l'utilisateur de saisir des données sensibles en sachant qu'elles seront protégées.",
+      "Minimiser les risques d'utilisation frauduleuse des données des utilisateurs.",
+      "Renforcer la confiance des utilisateurs sur l'utilisation de leurs données"
+    ],
+    "implementationIntro": "Mettre en place un certificat de sécurité informatique (SSL/TLS) valide supporté par les versions récentes des navigateurs, et recourir à des services d'authentification décentralisés comme OpenID.",
+    "implementation": [
+      "Obtenir un certificat SSL/TLS auprès d'une autorité de certification reconnue",
+      "Configurer le serveur pour servir le site en HTTPS",
+      "Rediriger automatiquement le trafic HTTP vers HTTPS",
+      "Utiliser un certificat supporté par les navigateurs modernes (RSA 2048+, ECDSA 256+)",
+      "Mettre à jour le certificat avant expiration",
+      "Implémenter des en-têtes de sécurité (HSTS, CSP, X-Frame-Options)",
+      "Considérer OpenID pour l'authentification décentralisée"
+    ],
+    "control": [
+      "Accéder au site en HTTP et vérifier la redirection automatique vers HTTPS",
+      "Vérifier que les pages contenant des données sensibles (login, paiement, données personnelles) sont en HTTPS",
+      "Utiliser les outils du navigateur pour vérifier le certificat SSL/TLS valide",
+      "Vérifier la présence du cadenas dans la barre de navigation",
+      "Si données sensibles sur page HTTP, vérifier que l'attribut action du formulaire pointe vers une URL HTTPS",
+      "Vérifier l'en-tête HSTS est présent pour forcer HTTPS"
+    ],
+    "screenshotsSources": []
+  },
+  {
     "id": 87,
     "title": "Les processus complexes sont accompagnés de la liste de leurs étapes.",
     "authors": ["Adrien LECOMTE"],
