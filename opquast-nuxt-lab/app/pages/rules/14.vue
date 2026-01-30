@@ -201,72 +201,46 @@ const activeTab = ref('preview')
             </div>
 
             <div class="rounded-xl border border-zinc-800 bg-zinc-950 p-5">
-              <div class="flex items-center justify-between">
-                <h3 class="text-base font-semibold text-zinc-100">
-                  Quoi de neuf ?
-                </h3>
-                <span class="text-xs text-zinc-500">Actualités du site</span>
-              </div>
-
-              <ul class="mt-4 space-y-3">
-                <li class="flex items-start justify-between gap-4">
-                  <div>
-                    <div class="flex items-center gap-2">
-                      <span class="text-sm font-medium text-zinc-100">
-                        Nouvelle fonctionnalité publiée
-                      </span>
-                      <span
-                        class="text-[11px] uppercase tracking-wide rounded-full border border-zinc-700 bg-zinc-900 px-2 py-0.5 text-zinc-200"
-                      >
-                        Nouveau
-                      </span>
-                    </div>
-                    <p class="text-sm text-zinc-400">
-                      Mise en ligne d’un nouveau service accessible depuis
-                      l’accueil.
-                    </p>
-                  </div>
-                  <span class="text-xs text-zinc-500">05/01/2026</span>
-                </li>
-
-                <li class="flex items-start justify-between gap-4">
-                  <div>
-                    <span class="text-sm font-medium text-zinc-100">
-                      Mise à jour du contenu éditorial
-                    </span>
-                    <p class="text-sm text-zinc-400">
-                      Actualisation des informations principales du site.
-                    </p>
-                  </div>
-                  <span class="text-xs text-zinc-500">03/01/2026</span>
-                </li>
-              </ul>
+            <div class="rounded-xl border border-zinc-800 bg-zinc-950 p-5">
+              <footer class="border-t border-zinc-700 pt-4">
+                <div class="flex flex-wrap gap-4 text-sm">
+                  <a href="#" class="text-zinc-400 hover:text-zinc-200">
+                    Politique de confidentialité
+                  </a>
+                  <a href="#" class="text-zinc-400 hover:text-zinc-200">
+                    Conditions d'utilisation
+                  </a>
+                  <a href="#" class="text-zinc-400 hover:text-zinc-200">
+                    Sécurité des données
+                  </a>
+                  <a href="#" class="text-zinc-400 hover:text-zinc-200">
+                    Cookies
+                  </a>
+                </div>
+                
+                <div class="mt-3 flex items-center gap-2">
+                  <span class="text-xs text-green-400">🔒 Connexion sécurisée</span>
+                </div>
+              </footer>
             </div>
+          </div>
           </div>
 
           <!-- CODE -->
           <div v-else>
             <pre
               class="rounded-xl border border-zinc-800 bg-zinc-950 p-5 overflow-auto text-xs text-zinc-200"
-            ><code>&lt;section aria-labelledby="news-title"&gt;
-  &lt;h2 id="news-title"&gt;Quoi de neuf ?&lt;/h2&gt;
-
-  &lt;ul&gt;
-    &lt;li&gt;
-      &lt;strong&gt;Nouvelle fonctionnalité publiée&lt;/strong&gt;
-      &lt;span&gt;Nouveau&lt;/span&gt;
-      &lt;p&gt;
-        Mise en ligne d’un nouveau service accessible
-        depuis l’accueil.
-      &lt;/p&gt;
-      &lt;time datetime="2026-01-05"&gt;05/01/2026&lt;/time&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/section&gt;</code></pre>
+            ><code>&lt;footer&gt;
+  &lt;nav aria-label=&quot;Informations légales&quot;&gt;
+    &lt;a href=&quot;/privacy&quot;&gt;Politique de confidentialité&lt;/a&gt;
+    &lt;a href=&quot;/terms&quot;&gt;Conditions d'utilisation&lt;/a&gt;
+    &lt;a href=&quot;/security&quot;&gt;Sécurité&lt;/a&gt;
+    &lt;a href=&quot;/cookies&quot;&gt;Cookies&lt;/a&gt;
+  &lt;/nav&gt;
+&lt;/footer&gt;</code></pre>
 
             <p class="mt-3 text-xs text-zinc-500">
-              Le principe essentiel est la visibilité immédiate des nouveautés,
-              sans navigation complexe ni recherche supplémentaire.
+              Les informations de sécurité doivent être facilement accessibles.
             </p>
           </div>
         </div>

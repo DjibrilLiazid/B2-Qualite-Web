@@ -201,72 +201,52 @@ const activeTab = ref('preview')
             </div>
 
             <div class="rounded-xl border border-zinc-800 bg-zinc-950 p-5">
-              <div class="flex items-center justify-between">
-                <h3 class="text-base font-semibold text-zinc-100">
-                  Quoi de neuf ?
-                </h3>
-                <span class="text-xs text-zinc-500">Actualités du site</span>
+            <div class="rounded-xl border border-zinc-800 bg-zinc-950 p-5">
+              <div class="mb-4">
+                <input 
+                  type="search" 
+                  placeholder="Rechercher sur le site..."
+                  class="w-full px-4 py-2 rounded border border-zinc-700 bg-zinc-900 text-zinc-200 placeholder-zinc-500"
+                />
               </div>
-
-              <ul class="mt-4 space-y-3">
-                <li class="flex items-start justify-between gap-4">
-                  <div>
-                    <div class="flex items-center gap-2">
-                      <span class="text-sm font-medium text-zinc-100">
-                        Nouvelle fonctionnalité publiée
-                      </span>
-                      <span
-                        class="text-[11px] uppercase tracking-wide rounded-full border border-zinc-700 bg-zinc-900 px-2 py-0.5 text-zinc-200"
-                      >
-                        Nouveau
-                      </span>
-                    </div>
-                    <p class="text-sm text-zinc-400">
-                      Mise en ligne d’un nouveau service accessible depuis
-                      l’accueil.
-                    </p>
-                  </div>
-                  <span class="text-xs text-zinc-500">05/01/2026</span>
-                </li>
-
-                <li class="flex items-start justify-between gap-4">
-                  <div>
-                    <span class="text-sm font-medium text-zinc-100">
-                      Mise à jour du contenu éditorial
-                    </span>
-                    <p class="text-sm text-zinc-400">
-                      Actualisation des informations principales du site.
-                    </p>
-                  </div>
-                  <span class="text-xs text-zinc-500">03/01/2026</span>
-                </li>
-              </ul>
+              
+              <div class="text-sm text-zinc-400 mb-3">
+                12 résultats trouvés
+              </div>
+              
+              <div class="space-y-2">
+                <div class="p-3 rounded border border-zinc-700 bg-zinc-900">
+                  <h4 class="text-sm font-semibold text-zinc-200 mb-1">
+                    Résultat 1
+                  </h4>
+                  <p class="text-xs text-zinc-400">
+                    Extrait du contenu correspondant...
+                  </p>
+                </div>
+              </div>
             </div>
+          </div>
           </div>
 
           <!-- CODE -->
           <div v-else>
             <pre
               class="rounded-xl border border-zinc-800 bg-zinc-950 p-5 overflow-auto text-xs text-zinc-200"
-            ><code>&lt;section aria-labelledby="news-title"&gt;
-  &lt;h2 id="news-title"&gt;Quoi de neuf ?&lt;/h2&gt;
+            ><code>&lt;form role=&quot;search&quot;&gt;
+  &lt;input type=&quot;search&quot; placeholder=&quot;Rechercher...&quot; /&gt;
+  &lt;button type=&quot;submit&quot;&gt;Rechercher&lt;/button&gt;
+&lt;/form&gt;
 
-  &lt;ul&gt;
-    &lt;li&gt;
-      &lt;strong&gt;Nouvelle fonctionnalité publiée&lt;/strong&gt;
-      &lt;span&gt;Nouveau&lt;/span&gt;
-      &lt;p&gt;
-        Mise en ligne d’un nouveau service accessible
-        depuis l’accueil.
-      &lt;/p&gt;
-      &lt;time datetime="2026-01-05"&gt;05/01/2026&lt;/time&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/section&gt;</code></pre>
+&lt;div&gt;
+  &lt;p&gt;12 résultats trouvés&lt;/p&gt;
+  &lt;article&gt;
+    &lt;h3&gt;Résultat 1&lt;/h3&gt;
+    &lt;p&gt;Extrait...&lt;/p&gt;
+  &lt;/article&gt;
+&lt;/div&gt;</code></pre>
 
             <p class="mt-3 text-xs text-zinc-500">
-              Le principe essentiel est la visibilité immédiate des nouveautés,
-              sans navigation complexe ni recherche supplémentaire.
+              Le nombre de résultats doit être affiché.
             </p>
           </div>
         </div>

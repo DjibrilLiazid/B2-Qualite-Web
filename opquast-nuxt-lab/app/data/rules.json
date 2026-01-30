@@ -48,30 +48,6 @@
     "objective": "Assurer que les informations essentielles sont facilement accessibles et compréhensibles pour tous les utilisateurs, y compris ceux ayant des besoins spécifiques."
   },
   {
-    "id": 10,
-    "title": "Les contenus ou fichiers destinés à des espaces publics peuvent être vérifiés avant leur envoi définitif.",
-    "authors": ["Marco BARONI"],
-    "path": "/rules/10",
-    "description": "Il est fort agaçant de voir publier un message sous une forme dégradée ou de constater après envoi que l’on a écrit une grosse bêtise. La prévisualisation permet de voir les contenus en contexte et donne la possibilité de les corriger ou de les peaufiner.",
-    "tags": ["Contenus", "Développement"],
-    "objectives": [
-      "Permettre à l’utilisateur de vérifier sa saisie en contexte et, si nécessaire, de la corriger avant envoi.",
-      "Diminuer le nombre de demandes de rectification ou de suppression."
-    ],
-    "implementationIntro": "Mettre en place une prévisualisation des informations saisies avant la soumission définitive du formulaire, avec possibilité de les modifier.",
-    "implementation": [],
-    "control": [
-      "Pour chaque espace public du site (zone de commentaire, forum, page personnelle publique, avatar, portfolio de documents, etc.) :",
-      "Saisir des informations destinées à être rendues publiques telles que des images associées à un compte ou un commentaire.",
-      "Vérifier que la soumission définitive du formulaire de saisie est précédée d'une étape permettant, si l'utilisateur le souhaite, de contrôler et de modifier le résultat de sa saisie avant publication."
-    ],
-    "screenshotsSources": [
-      "https://www.gmail.com/",
-      "https://www.nuxt.com/blog",
-      "https://developer.mozilla.org/fr/"
-    ]
-  },
-  {
     "id": 8,
     "title": "Les contenus publicitaires ou sponsorisés sont identifiés comme tels.",
     "authors": ["Abdulmalek ESUGHI"],
@@ -93,7 +69,9 @@
       "Vérifier que les utilisateurs peuvent facilement identifier les contenus sponsorisés."
     ],
     "screenshotsSources": [
-
+      "https://www.service-public.fr/",
+      "https://www.nuxt.com/blog",
+      "https://developer.mozilla.org/fr/"
     ]
   },
   {
@@ -118,13 +96,15 @@
       "Vérifier que les utilisateurs peuvent accéder aux contenus substitutifs de façon équitable."
     ],
     "screenshotsSources": [
-
+      "",
+      "",
+      ""
     ]
   },
   {
     "id": 10,
     "title": "Les contenus ou fichiers destinés à des espaces publics peuvent être vérifiés avant leur envoi définitif.",
-    "authors": ["Marco BARONI"],
+    "authors": ["Abdulmalek ESUGHI"],
     "path": "/rules/10",
     "description": "Il est fort agaçant de voir publier un message sous une forme dégradée ou de constater après envoi que l’on a écrit une grosse bêtise. La prévisualisation permet de voir les contenus en contexte et donne la possibilité de les corriger ou de les peaufiner.",
     "tags": ["Contenus", "Développement"],
