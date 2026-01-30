@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Il est possible de connaître les nouveaux contenus ou services",
-    "authors": ["Marco BARONI"],
+    "authors": ["Alexandre CHARLIER"],
     "path": "/rules/1",
     "description": "Une image vaut souvent mieux qu’un long discours. Certes, mais tout d’abord, il peut s’avérer difficile de véritablement comprendre un graphique (courbe, diagramme, histogramme, camembert...) si l’on n'a pas les données qui ont permis de le créer. D’autre part, certains utilisateurs ne pourront pas avoir accès au rendu graphique, et l’accès aux données leur permettra de comprendre les contenus.",
     "tags": [
@@ -35,16 +35,187 @@
   },
   {
     "id": 2,
-    "title": "Les informations importantes sont accessibles et compréhensibles",
+    "title": "Les informations relatives aux droits de copie et de réutilisation sont disponibles depuis toutes les pages.",
+    "authors": ["Alexandre CHARLIER"],
     "path": "/rules/2",
+    "description": "Sur Internet, rien n’est plus facile que de copier un texte, une image, un son. Quels que soient vos choix en matière de réutilisation de vos contenus, il est essentiel d’informer les internautes sur leurs droits dans ce domaine.",
+    "tags": [
+      "Conception",
+      "Contenus",
+      "Éditorial"
+    ],
+    "objectives": [
+      "Informer les utilisateurs sur les conditions sous lesquelles sont publiés les contenus.",
+      "Informer les utilisateurs sur les conditions de copie et de réutilisation."
+    ],
+    "implementationIntro": "Indiquer les droits de copie et de réutilisation des divers éléments du site sur chaque page ou via un hyperlien pointant vers une page spécifique (mentions légales, conditions générales d'utilisation, à propos, etc.)",
+    "controlIntro": "Dans chacune des pages évaluées, vérifier la présence de la mention complète des droits de copie et de réutilisation ou d'un lien donnant directement accès à la mention des droits de copie et de réutilisation.",
+    "screenshotsSources": [
+      "https://checklists.opquast.com/fr/qualite-numerique/les-informations-relatives-aux-droits-de-copie-et-de-reutilisation-sont-disponibles-depuis-toutes-les-pages",
+      "https://www.flickr.com/",
+      "https://www.service-public.gouv.fr/"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Le code source de chaque page contient une métadonnée qui en décrit le contenu.",
+    "authors": ["Alexandre CHARLIER"],
+    "path": "/rules/3",
+    "description": "Une métadonnée est une information contenue dans le code source d’une page web qui permet de la décrire ou de fournir des informations à son propos. Cette règle concerne la métadonnée description qui, comme son nom l’indique, permet de décrire la page.",
+    "tags": [
+      "Basics",
+      "Contenus",
+      "Développement",
+      "Editorial",
+      "SEO"
+    ],
+    "objectives": [
+      "Permettre aux outils de recherche et d'indexation d'extraire des informations à propos du contenu des pages.",
+      "Améliorer la restitution aux utilisateurs des résultats de recherche.",
+      "Améliorer la prise en compte des contenus par les moteurs de recherche et outils d’indexation."
+    ],
+    "implementationIntro": "Renseigner la balise <meta name='description' content='' />, ou à défaut un élément spécifique ayant la même fonction, avec une description du contenu de la page ou du site.",
+    "controlIntro": "Dans le code source de chaque page examinée :",
+    "control": [
+      "Vérifier la présence de la balise <meta name='description' content='' /> ou d'un équivalent à l'aide, par exemple, des outils de développement des navigateurs.",
+      "Contrôler que le texte de cette balise décrit effectivement, de façon spécifique ou plus générique, le contenu de la page."
+    ],
+    "screenshotsSources": [
+      "https://www.lemonde.fr/",
+      "https://www.fnac.com/",
+      "https://checklists.opquast.com/fr/qualite-numerique/le-code-source-de-chaque-page-contient-une-metadonnee-qui-en-decrit-le-contenu"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Les dates sont présentées dans des formats explicites.",
+    "authors": ["Alexandre CHARLIER"],
+    "path": "/rules/4",
+    "description": "Le 12/11/10 fait-il référence au 12 novembre 2010 (format de date européen) ou au 11 décembre 2010 (format américain) ? À vous de faire en sorte que vos utilisateurs n’aient jamais à se poser cette question.",
     "tags": [
       "Accessibilité",
       "Conception",
       "Contenus",
-      "Éditorial",
-      "UX",
+      "Editorial"
+    ],
+    "objectives": [
+      "Éviter aux utilisateurs les risques de méprise sur le sens d’une date.",
+      "Faciliter la compréhension et la réutilisation des contenus concernés."
+    ],
+    "implementation": [
+      "S’assurer que le mois est écrit en toutes lettres (« décembre ») ou en abrégé (« déc. »), mais pas au format numérique.",
+      "Indiquer les 4 chiffres de l’année."
+    ],
+    "implementationConclusion" : "Cette exigence doit être prévue dans les systèmes de gestion de contenu où la datation est automatisée.",
+    "controlIntro": "Identifier les pages comportant des dates, et pour chacune des dates trouvées :",
+    "control": [
+      "Vérifier que le mois n’est pas indiqué dans un format numérique, mais en lettre (complet ou abrégé).",
+      "Vérifier que l’année est indiquée sur quatre chiffres et non deux."
+    ],
+    "controlConclusion":"Les dates à saisir par l’utilisateur final dans les formulaires ne sont pas concernées par cette bonne pratique : leur format, quel qu'il soit, est considéré comme suffisamment explicite, dès lors que la saisie s’effectue via un datepicker ou bien manuellement mais avec une indication du format attendu (du type \"JJ/MM/AA\").",
+    "screenshotsSources": [
+      "https://www.laprovence.com/",
+      "https://www.sncf-connect.com/",
+      "https://medium.com/"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "La première occurrence d'une abréviation ou d'un acronyme dans le corps de chaque page donne accès à sa signification.",
+    "authors": ["Alexandre CHARLIER"],
+    "path": "/rules/5",
+    "description": "SIG, TVA, AVT, VAT, DTC, XML… les abréviations, sigles et acronymes pullulent sur le web, notamment dans les domaines techniques et administratifs. En les explicitant, vous rendez un fier service à vos utilisateurs et vous améliorez votre référencement.",
+    "tags": [
+      "Basics",
+      "Accessibilité",
+      "Conception",
+      "Contenus",
+      "Développement",
+      "Editorial"
+    ],
+    "objectives": [
+      "Permettre à l’utilisateur d’accéder rapidement à la signification d’un sigle.",
+      "Permettre l’exploitation du contenu par un robot (pour l’établissement d’un index des sigles).",
+      "Favoriser le référencement du contenu.",
+      "Améliorer l’accessibilité des contenus aux personnes handicapées."
+    ],
+    "implementationIntro": "Au moins lors de la première apparition d’un sigle, acronyme ou abréviation dans la page, il s’agira de veiller à recourir à au moins l’une des méthodes ci-dessous :",
+    "implementation": [
+      "Expliciter sa signification au sein même du texte, par exemple : « une DTD (déclaration de type de document) ».",
+      "Fournir un lien donnant accès à sa signification dans une page de glossaire ou via un affichage dynamique (bulle d’aide JavaScript).",
+      "Baliser avec l’élément HTML abbr et renseigner l’attribut title de celui-ci pour indiquer sa signification."
+    ],
+    "implementationConclusion": "La bonne pratique ne fait cette exigence que pour la première occurrence dans la page : cela peut être fait ou non pour les suivantes.",
+    "controlIntro": "Dans chaque page examinée, identifier visuellement chaque sigle, abréviation ou acronyme présent dans la page, puis vérifier, pour sa première occurrence dans la page, la présence, au moins :",
+    "control": [
+      "de sa signification immédiatement indiquée dans le contexte, par exemple entre parenthèses,",
+      "d’un lien sur le sigle donnant accès à sa signification, par exemple dans un glossaire,",
+      "ou de l’élément abbr doté d’un attribut title explicitant sa signification."
+    ],
+    "screenshotsSources": [
+      "https://developer.mozilla.org/en-US/docs/Web/Accessibility",
+      "https://www.w3.org/WAI/fundamentals/accessibility-intro",
+      "https://www.service-public.gouv.fr"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "La date de publication des contenus qui le nécessitent est indiquée.",
+    "authors": ["Alexandre CHARLIER"],
+    "path": "/rules/6",
+    "description": "Dans la vraie vie, lorsque vous trouvez une revue ou un vieux journal, la première chose que vous regardez est la date de publication. C’est normal, vous avez absolument besoin de cette information pour comprendre le contenu et pour le remettre en contexte. Sur le web, c’est la même chose, certaines informations doivent absolument être accompagnées de leur date de publication.",
+    "tags": [
+      "Conception",
+      "Contenus"
+    ],
+    "objectives": [
+      "Permettre à l’utilisateur de remettre l’information en contexte.",
+      "Prévenir la diffusion d’informations obsolètes.",
+      "Renforcer la confiance dans les informations et faciliter les citations"
+    ],
+    "implementationIntro": "Associer à chaque contenu qui le nécessite (article, actualité, produit, etc.) sa date de publication affichée.",
+    "controlIntro": "Vérifier que les contenus qui le nécessitent sont tous associés à une date de publication affichée.",
+    "screenshotsSources": [
+      "https://www.lemonde.fr",
+      "https://learn.microsoft.com",
+      "https://www.service-public.gouv.fr"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Un lexique ou un glossaire adapté au public visé explique le vocabulaire sectoriel ou technique.",
+    "authors": ["Alexandre CHARLIER"],
+    "path": "/rules/7",
+    "description": "Les auteurs de ce livre sont des exemples vivants de la capacité quasi instantanée de l’être humain à jargonner dès qu’il accumule quelques connaissances. Un petit lexique ou un glossaire, et hop, le visiteur du site peut appréhender les contenus.",
+    "tags": [
+      "Accessibilité",
+      "Contenus",
+      "Editorial",
       "SEO"
     ],
-    "objective": "Assurer que les informations essentielles sont facilement accessibles et compréhensibles pour tous les utilisateurs, y compris ceux ayant des besoins spécifiques."
+    "objectives": [
+      "Permettre aux utilisateurs de comprendre les contenus sectoriels ou à caractère technique.",
+      "Faciliter l'utilisation d'un service.",
+      "Améliorer le référencement sur des mots-clés ou expressions techniques.",
+      "Améliorer l’accessibilité des contenus aux personnes handicapées.",
+      "Améliorer la prise en compte des contenus par les moteurs de recherche et outils d’indexation."
+
+    ],
+    "implementationIntro": "Pour mettre en œuvre cette bonne pratique, il s'agira de fournir :",
+    "implementation": [
+      "Une section, une page ou une série de pages de glossaire explicitant le vocabulaire technique ou sectoriel utilisé dans le contenu du site. Ce glossaire devra être disponible directement depuis chaque page du site.",
+      "Ou bien un mécanisme permettant à l'utilisateur d'accéder à la définition des termes du vocabulaire technique ou sectoriel, depuis au moins leur première occurrence dans chaque page du site."
+    ],
+    "controlIntro": "Pour chaque page contenant du vocabulaire spécifique, contrôler qu'il est possible d'accéder :",
+    "control": [
+      "À une section jouant le rôle de glossaire dans chaque page concernée.",
+      "À une page ou une série de pages de glossaire disponible via les menus de navigation.",
+      "Ou directement à la définition des termes depuis au moins leur première occurrence dans chaque page du site via un lien ou un tooltip."
+    ],
+    "screenshotsSources": [
+      "https://www.cnil.fr",
+      "https://www.ameli.fr",
+      "https://www.w3.org"
+    ]
   }
 ]
