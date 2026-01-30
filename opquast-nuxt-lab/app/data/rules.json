@@ -207,5 +207,173 @@
       "Vérifier que chaque élément optgroup est doté d'un attribut label associant un libellé pertinent au groupe d'options concern"
     ],
     "screenshotsSources": []
+  },
+  {
+    "id": 189,
+    "title": "Les pictogrammes typographiques sont dotés d'une alternative appropriée.",
+    "authors": ["Léo Velazquez"],
+    "path": "/rules/189",
+    "description": "L'utilisation de caractères spéciaux ou d'images vectorielles pour représenter des icônes peut poser des problèmes d'accessibilité si leur sens n'est pas explicité pour les utilisateurs de technologies d'assistance.",
+    "tags": ["Accessibilité", "Conception", "Iconographie"],
+    "objectives": [
+      "Assurer la compréhension des icônes par tous les utilisateurs.",
+      "Permettre aux logiciels de lecture d'écran de restituer le sens des icônes."
+    ],
+    "implementationIntro": "Fournir une alternative textuelle aux pictogrammes.",
+    "implementation": [
+      "Utiliser l'attribut aria-label ou un texte masqué accessible pour décrire le pictogramme.",
+      "Si le pictogramme est purement décoratif, utiliser aria-hidden='true'."
+    ],
+    "control": [
+      "Vérifier manuellement que chaque pictogramme porteur d'information dispose d'une alternative textuelle pertinente.",
+      "Vérifier que les pictogrammes décoratifs sont ignorés par les lecteurs d'écran."
+    ],
+    "screenshotsSources": []
+  },
+  {
+    "id": 190,
+    "title": "Une famille générique de police est indiquée comme dernier élément de substitution.",
+    "authors": ["Léo Velazquez"],
+    "path": "/rules/190",
+    "description": "Lors de la définition des polices de caractères en CSS, il est crucial de prévoir une solution de repli générique (serif, sans-serif, monospace, etc.) au cas où les polices spécifiques ne seraient pas disponibles sur le système de l'utilisateur.",
+    "tags": ["Design", "CSS", "Intégration"],
+    "objectives": [
+      "Garantir la lisibilité du contenu même si les polices personnalisées ne se chargent pas.",
+      "Assurer une cohérence visuelle minimale en cas d'échec de chargement des polices web."
+    ],
+    "implementationIntro": "Toujours terminer la déclaration font-family par une famille générique.",
+    "implementation": [
+      "Ajouter serif, sans-serif, cursive, fantasy ou monospace à la fin de la déclaration font-family."
+    ],
+    "control": [
+      "Vérifier les feuilles de style CSS pour s'assurer que chaque propriété font-family se termine par une famille générique."
+    ],
+    "screenshotsSources": []
+  },
+  {
+    "id": 191,
+    "title": "Les styles ne justifient pas le texte.",
+    "authors": ["Léo Velazquez"],
+    "path": "/rules/191",
+    "description": "La justification du texte (alignement à gauche et à droite) crée des espacements irréguliers entre les mots, ce qui peut gêner la lecture, notamment pour les personnes dyslexiques ou malvoyantes.",
+    "tags": ["Accessibilité", "Design", "CSS"],
+    "objectives": [
+      "Améliorer la lisibilité du texte pour tous les utilisateurs.",
+      "Éviter les 'lézardes' (rivières de blanc) dans les blocs de texte."
+    ],
+    "implementationIntro": "Éviter la propriété text-align: justify en CSS.",
+    "implementation": [
+      "Préférer l'alignement à gauche (text-align: left) ou, pour les langues s'écrivant de droite à gauche, l'alignement à droite."
+    ],
+    "control": [
+      "Vérifier que le texte n'est pas justifié dans les feuilles de style CSS."
+    ],
+    "screenshotsSources": []
+  },
+  {
+    "id": 192,
+    "title": "Les mises en majuscules à des fins décoratives sont effectuées à l'aide des styles.",
+    "authors": ["Léo Velazquez"],
+    "path": "/rules/192",
+    "description": "Saisir du texte directement en majuscules dans le code HTML peut nuire à l'accessibilité (lecture par les synthèses vocales) et au référencement. Si l'affichage en majuscules est un choix esthétique, il doit être géré via CSS.",
+    "tags": ["Accessibilité", "SEO", "CSS"],
+    "objectives": [
+      "Séparer le contenu de la présentation.",
+      "Préserver la sémantique et la prononciation correcte du texte par les lecteurs d'écran."
+    ],
+    "implementationIntro": "Utiliser la propriété text-transform pour gérer la casse.",
+    "implementation": [
+      "Saisir le texte avec la casse appropriée (minuscules/majuscules selon la grammaire).",
+      "Appliquer text-transform: uppercase en CSS pour l'affichage en majuscules."
+    ],
+    "control": [
+      "Vérifier le code source pour s'assurer que le texte n'est pas saisi entièrement en majuscules (sauf acronymes).",
+      "Vérifier l'utilisation de text-transform dans le CSS."
+    ],
+    "screenshotsSources": []
+  },
+  {
+    "id": 193,
+    "title": "Les fonctionnalités de zoom ne sont pas bloquées.",
+    "authors": ["Léo Velazquez"],
+    "path": "/rules/193",
+    "description": "Empêcher l'utilisateur de zoomer sur la page nuit gravement à l'accessibilité, en particulier pour les personnes malvoyantes qui ont besoin d'agrandir le contenu pour le lire.",
+    "tags": ["Accessibilité", "Mobile", "UX"],
+    "objectives": [
+      "Permettre aux utilisateurs d'adapter la taille de l'affichage à leur vision.",
+      "Assurer la conformité avec les standards d'accessibilité mobile."
+    ],
+    "implementationIntro": "Ne pas utiliser user-scalable=no dans la balise meta viewport.",
+    "implementation": [
+      "Vérifier la balise meta viewport et s'assurer qu'elle ne contient pas user-scalable=no ou maximum-scale=1 (si inférieur à 5)."
+    ],
+    "control": [
+      "Inspecter le code source pour la balise meta viewport.",
+      "Tester le zoom sur un appareil mobile ou en émulation."
+    ],
+    "screenshotsSources": []
+  },
+  {
+    "id": 194,
+    "title": "Un ou plusieurs mécanismes dédiés à l’adaptation aux terminaux mobiles sont proposés.",
+    "authors": ["Léo Velazquez"],
+    "path": "/rules/194",
+    "description": "Avec la prépondérance de la navigation mobile, il est indispensable que les sites s'adaptent aux différentes tailles d'écran pour offrir une expérience utilisateur correcte.",
+    "tags": ["Mobile", "UX", "RWD"],
+    "objectives": [
+      "Garantir l'utilisabilité du site sur les smartphones et tablettes.",
+      "Éviter le défilement horizontal et les éléments trop petits pour être manipulés."
+    ],
+    "implementationIntro": "Utiliser le Responsive Web Design.",
+    "implementation": [
+      "Utiliser les Media Queries CSS pour adapter la mise en page.",
+      "Utiliser des unités relatives (%, rem, vw/vh) plutôt que des pixels fixes pour les largeurs de conteneurs."
+    ],
+    "control": [
+      "Tester le site sur différentes résolutions d'écran (mobile, tablette, desktop)."
+    ],
+    "screenshotsSources": []
+  },
+  {
+    "id": 195,
+    "title": "Des styles dédiés à l'impression sont proposés.",
+    "authors": ["Léo Velazquez"],
+    "path": "/rules/195",
+    "description": "Les utilisateurs peuvent avoir besoin d'imprimer une page pour la lire hors ligne ou l'archiver. Une feuille de style dédiée à l'impression permet de fournir un document propre, lisible et économe en encre.",
+    "tags": ["Accessibilité", "UX", "CSS"],
+    "objectives": [
+      "Fournir une version imprimable lisible et pertinente du contenu.",
+      "Économiser le papier et l'encre en supprimant les éléments inutiles (navigation, publicités)."
+    ],
+    "implementationIntro": "Créer une feuille de style pour le média 'print'.",
+    "implementation": [
+      "Utiliser une Media Query @media print { ... }.",
+      "Masquer les éléments de navigation, les formulaires de recherche, etc. avec display: none.",
+      "Ajuster les polices et les couleurs pour l'impression (noir sur blanc)."
+    ],
+    "control": [
+      "Utiliser la fonction 'Aperçu avant impression' du navigateur pour vérifier le rendu."
+    ],
+    "screenshotsSources": []
+  },
+  {
+    "id": 196,
+    "title": "Le contenu de chaque page est disponible à l'impression sans blocs de navigation.",
+    "authors": ["Léo Velazquez"],
+    "path": "/rules/196",
+    "description": "Lors de l'impression, les menus de navigation, barres latérales et pieds de page complexes sont souvent inutiles et consomment de l'espace et de l'encre. Il est recommandé de les masquer.",
+    "tags": ["Accessibilité", "UX", "Print"],
+    "objectives": [
+      "Focaliser l'impression sur le contenu principal.",
+      "Améliorer la lisibilité du document imprimé."
+    ],
+    "implementationIntro": "Masquer les éléments de navigation en CSS print.",
+    "implementation": [
+      "Dans la feuille de style print, appliquer display: none aux balises <nav>, header, footer (selon le cas), et autres éléments interactifs non pertinents sur papier."
+    ],
+    "control": [
+      "Vérifier via l'aperçu avant impression que seuls le contenu principal et les informations essentielles sont présents."
+    ],
+    "screenshotsSources": []
   }
 ]
