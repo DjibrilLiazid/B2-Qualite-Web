@@ -3366,6 +3366,266 @@
     "control": [
       "Vérifier que les liens internes et externes sont différenciés par le moyen d'une mention textuelle, d'une icône ou d'un comportement propre."
     ],
+    "screenshotsSources": []
+  },
+  {
+    "id": 108,
+    "title": "Les délais de réponse aux demandes d'information sont indiqués.",
+    "authors": ["Lilian LE PIVER"],
+    "path": "/rules/108",
+    "description": "La simple mention d’un délai de réponse permet de lever beaucoup d’inquiétudes. Avant l’expiration de ce délai, un internaute ne s’inquiètera pas de ne pas avoir reçu de réponse. Cette règle s’assure que tout formulaire de demande d’information précise clairement le délai attendu pour une réponse.",
+    "tags": [
+      "Conception",
+      "Éditorial",
+      "Identification et contact"
+    ],
+    "objectives": [
+      "Informer les utilisateurs sur les délais chiffrés de réponse.",
+      "Limiter les risques de relance de la part des utilisateurs.",
+      "Rassurer sur la capacité à prendre en compte les demandes."
+    ],
+    "implementationIntro": "Indiquer le délai chiffré de réponse prévu pour chaque formulaire de demande d'information.",
+    "implementation": [
+      "Indiquer le délai chiffré de réponse prévu pour chaque formulaire de demande d'information."
+    ],
+    "control": [
+      "Dans toute page comportant un formulaire de contact, vérifier qu'une indication chiffrée de délai de réponse est présente.",
+      "Vérifier que l’indication de délai est compréhensible et visible par l’utilisateur."
+    ],
+    "screenshotsSources": [
+      "https://www.nouveauxmarchands.com/faq",
+      "https://virtualservices.fr/contact/",
+      "https://www.plus.transformation.gouv.fr/engagement/votre-demande-est-traitee-dans-les-delais-annonces"
+    ]
+  },
+  {
+    "id": 109,
+    "title": "Les horaires et tarifs de fonctionnement des services mis à la disposition des utilisateurs sont indiqués.",
+    "authors": ["Lilian LE PIVER"],
+    "path": "/rules/109",
+    "description": "Pour les services qui ne sont pas disponibles en permanence ou qui impliquent un coût (comme un support téléphonique ou un service de chat), l'utilisateur doit être informé des heures d'ouverture et du coût éventuel. Cela évite les tentatives d'appel infructueuses et les mauvaises surprises sur la facture.",
+    "tags": [
+      "Éditorial",
+      "Identification et contact",
+      "Services",
+      "Écoconception"
+    ],
+    "objectives": [
+      "Permettre aux utilisateurs de connaître les services mis à leur disposition et leur fonctionnement."
+    ],
+    "implementationIntro": "Préciser les horaires et les tarifs pour chaque moyen de contact mis à disposition.",
+    "implementation": [
+      "Indiquer les jours et heures d'ouverture pour le support (téléphone, messagerie instantanée).",
+      "Mentionner le tarif de l'appel à proximité immédiate du numéro (ex: 'Appel non surtaxé').",
+      "Préciser les fuseaux horaires si le service s'adresse à des utilisateurs sur plusieurs zones géographiques."
+    ],
+    "control": [
+      "Vérifier la présence des horaires d'ouverture pour chaque service de support.",
+      "Vérifier que le coût de l'appel ou du service est explicitement mentionné.",
+      "Vérifier que ces informations sont lisibles et accessibles avant la mise en relation."
+    ],
+    "screenshotsSources": [
+      "https://www.picard.fr/picard-a-votre-service/service-info-consommateur/",
+      "https://www.opquast.com/contact/",
+      "https://clients.cdiscount.com/frequentlyaskedquestions.html?userinput=Comment+contacter+Cdiscount+%3F"
+    ]
+  },
+  {
+    "id": 110,
+    "title": "Chaque demande d'information fait l'objet d'un accusé de réception.",
+    "authors": ["Lilian LE PIVER"],
+    "path": "/rules/110",
+    "description": "L’envoi d’un accusé de réception immédiat après la soumission d’un formulaire permet de confirmer à l’utilisateur que sa démarche a bien été prise en compte par le système. Cela évite les doutes sur le succès de l'envoi et limite les tentatives multiples de soumission pour une même demande.",
+    "tags": [
+      "Basics",
+      "Accessibilité",
+      "Développement",
+      "Editorial",
+      "Identification et contact"
+    ],
+    "objectives": [
+      "Informer les utilisateurs de la prise en compte de leur demande.",
+      "Permettre aux utilisateurs d’obtenir une confirmation archivable de la bonne réception de leur demande d’information."
+    ],
+    "implementationIntro": "Mettre en place un système d'envoi automatique d'accusé de réception pour tout formulaire de contact ou de demande.",
+    "implementation": [
+      "Afficher un message de confirmation clair immédiatement après la validation du formulaire.",
+      "Envoyer un e-mail automatique récapitulant la demande et confirmant sa réception.",
+      "Inclure un numéro de suivi ou une référence de dossier dans l'accusé de réception si possible."
+    ],
+    "control": [
+      "Adresser une demande d’information fictive en utilisant une adresse e-mail réelle.",
+      "Contrôler qu’un accusé de réception est bien reçu à cette adresse."
+    ],
+    "screenshotsSources": [
+      "https://www.plus.transformation.gouv.fr/experiences/4547966_demande-de-documents-inutile-ou-deja-transmis",
+      "https://www.service-public.gouv.fr/particuliers/vosdroits/F33312",
+      "https://www.plus.transformation.gouv.fr/experiences/6025103_plus-daccuse-reception-de-la-declaration"
+    ]
+  },
+  {
+    "id": 111,
+    "title": "Tous les mails fournissent au moins un moyen de contact.",
+    "authors": ["Lilian LE PIVER"],
+    "path": "/rules/111",
+    "description": "\"L'utilisateur doit toujours pouvoir contacter l'expéditeur d'un mail automatisé (confirmation de commande, newsletter, alerte). Si l'adresse d'expédition ne peut pas recevoir de réponses, le corps du mail doit obligatoirement proposer une alternative claire comme un lien vers un formulaire, une adresse mail de support ou un numéro de téléphone.",
+    "tags": [
+      "Interaction",
+      "Identification et contact",
+      "Services"
+    ],
+    "objectives": [
+      "Permettre à l'utilisateur de répondre à une sollicitation par mail.",
+      "Éviter les impasses de communication créées par les adresses 'No-Reply'.",
+      "Améliorer la qualité de la relation client par mail."
+    ],
+    "implementationIntro": "Inclure systématiquement des coordonnées de contact valides dans le pied de page ou le corps de chaque mail envoyé.",
+    "implementation": [
+      "Indiquer une adresse mail de réponse fonctionnelle.",
+      "Fournir un lien direct vers le formulaire de contact du site.",
+      "Préciser un numéro de téléphone ou l'adresse d'un centre d'aide."
+    ],
+    "control": [
+      "Vérifier chaque type de mail envoyé par le site (transactionnel, marketing, alerte).",
+      "S'assurer qu'au moins un moyen de contact (lien, mail ou tel) est présent et visible.",
+      "Vérifier que si l'adresse d'expédition est 'No-Reply', une alternative est proposée dans le texte."
+    ],
+    "screenshotsSources": [
+      "https://www.sncf-connect.com/aide/contact/",
+      "https://info.doctolib.fr/nous-contacter-doctolib/",
+      "https://www.amazon.fr/hz/contact-us/foresight/hubgateway-items-2"
+    ]
+  },
+  {
+    "id": 112,
+    "title": "Le site propose au moins un moyen de contacter le responsable des réclamations.",
+    "authors": ["Lilian LE PIVER"],
+    "path": "/rules/112",
+    "description": "Au-delà du support client classique, l'utilisateur doit pouvoir identifier un responsable ou une entité spécifique (Médiateur, service réclamation) pour déposer une plainte formelle. Cette transparence est une obligation légale pour de nombreux secteurs et renforce la confiance en cas de litige.",
+    "tags": [
+      "Identification et contact",
+      "Confiance",
+      "Juridique"
+    ],
+    "objectives": [
+      "Permettre à l'utilisateur de résoudre un litige de manière formelle.",
+      "Fournir une alternative au service client en cas de blocage.",
+      "Respecter les obligations légales sur la médiation de la consommation."
+    ],
+    "implementationIntro": "Indiquer clairement dans les mentions légales, les CGV ou la page contact les coordonnées du service réclamation ou du médiateur compétent.",
+    "implementation": [
+      "Ajouter une section 'Réclamations' dans la page de contact.",
+      "Mentionner les coordonnées du médiateur dans les Conditions Générales de Vente (CGV).",
+      "Proposer un formulaire spécifique pour les réclamations avec un suivi dédié."
+    ],
+    "control": [
+      "Rechercher dans les pages 'Contact', 'Mentions légales' ou 'CGV' une mention relative aux réclamations.",
+      "Vérifier qu'une adresse postale, un e-mail dédié ou un lien vers un médiateur est présent."
+    ],
+    "screenshotsSources": [
+      "https://www.picard.fr/picard-a-votre-service/service-info-consommateur/",
+      "https://www.sncf-connect.com/aide/reclamations",
+      "https://www.banquepopulaire.fr/votre-banque/reclamation-et-mediation/"
+    ]
+  },
+  {
+    "id": 113,
+    "title": "Le site propose au moins un moyen de contacter le modérateur des espaces publics.",
+    "authors": ["Lilian LE PIVER"],
+    "path": "/rules/113",
+    "description": "Dès que les utilisateurs peuvent s'exprimer publiquement sur un site (avis, commentaires, forum), un dispositif doit permettre de contacter les personnes chargées de la modération. Cela permet de signaler des contenus illicites, inappropriés ou de demander la suppression d'une de ses propres contributions.",
+    "tags": [
+      "Interaction",
+      "Identification et contact",
+      "Contributeurs"
+    ],
+    "objectives": [
+      "Permettre le signalement de contenus inappropriés ou illégaux.",
+      "Faciliter l'exercice du droit de suppression des données par les utilisateurs.",
+      "Assurer la sécurité et la qualité des échanges sur les espaces publics du site."
+    ],
+    "implementationIntro": "Mettre à disposition un lien ou un bouton de signalement à proximité des contenus produits par les utilisateurs.",
+    "implementation": [
+      "Ajouter un lien 'Signaler un abus' ou 'Signaler ce contenu' sous chaque commentaire ou avis.",
+      "Fournir une adresse e-mail dédiée à la modération dans les mentions légales ou les CGU.",
+      "Proposer un formulaire de contact spécifique pour les demandes de modération."
+    ],
+    "control": [
+      "Identifier les espaces d'expression publique (avis, commentaires, forums).",
+      "Vérifier la présence d'un moyen de contact (bouton, lien, e-mail) vers le modérateur.",
+      "S'assurer que ce moyen est facilement accessible et visible."
+    ],
+    "screenshotsSources": [
+      "https://www.lequipe.fr/commentaires",
+      "https://www.amazon.fr/product-reviews/",
+      "https://www.tripadvisor.fr/"
+    ]
+  },
+  {
+    "id": 114,
+    "title": "L'identité de la personne ou du service responsable des contenus est indiquée.",
+    "authors": ["Lilian LE PIVER"],
+    "path": "/rules/114",
+    "description": "Pour garantir la transparence et la responsabilité éditoriale, chaque site doit désigner une personne physique (Directeur de la publication) ou un service responsable des contenus publiés. C'est une obligation légale qui permet à l'utilisateur de savoir qui engage sa responsabilité sur les informations diffusées.",
+    "tags": [
+      "Identification et contact",
+      "Confiance",
+      "Juridique"
+    ],
+    "objectives": [
+      "Identifier le responsable légal des contenus du site.",
+      "Renforcer la transparence et la crédibilité de l'information.",
+      "Respecter les obligations légales liées à la confiance dans l'économie numérique."
+    ],
+    "implementationIntro": "Mentionner explicitement le nom du responsable de la publication dans les mentions légales.",
+    "implementation": [
+      "Ajouter une ligne 'Directeur de la publication' suivie d'un nom propre dans les mentions légales.",
+      "Préciser le service responsable (ex: Service Communication) si le site appartient à une grande structure.",
+      "Veiller à ce que cette information soit facilement accessible via un lien permanent en pied de page."
+    ],
+    "control": [
+      "Se rendre sur la page des mentions légales ou 'À propos'.",
+      "Vérifier la présence d'une mention désignant le responsable de la publication ou des contenus.",
+      "S'assurer que l'identité est clairement spécifiée (nom ou service)."
+    ],
+    "screenshotsSources": [
+      "https://www.service-public.fr/mentions-legales",
+      "https://www.lemonde.fr/mentions-legales/",
+      "https://www.sncf-connect.com/mentions-legales"
+    ]
+  },
+  {
+    "id": 115,
+    "title": "Si le site déclare respecter un ou plusieurs standards ou référentiels, un lien est proposé vers chacun d'entre eux.",
+    "authors": ["Lilian LE PIVER"],
+    "path": "/rules/115",
+    "description": "Lorsqu'un site affiche son respect de normes ou de labels (RGAA pour l'accessibilité, RGESN pour l'éco-conception, Opquast pour la qualité), il doit permettre à l'utilisateur de consulter ces standards. Cela garantit la transparence et permet à l'internaute de comprendre les critères sur lesquels le site s'est engagé.",
+    "tags": [
+      "Confiance",
+      "Juridique",
+      "Navigation"
+    ],
+    "objectives": [
+      "Permettre la vérification des engagements de conformité.",
+      "Informer l'utilisateur sur la nature des standards respectés.",
+      "Renforcer la crédibilité des déclarations de conformité."
+    ],
+    "implementationIntro": "Associer chaque mention de conformité à un lien hypertexte pointant vers la version officielle du référentiel cité.",
+    "implementation": [
+      "Ajouter un lien vers le RGAA à côté de la déclaration d'accessibilité.",
+      "Lier le logo Opquast ou la mention 'Qualité Web' vers le site opquast.com.",
+      "Fournir des liens vers les standards techniques (W3C) si le site revendique leur respect."
+    ],
+    "control": [
+      "Repérer les mentions de respect de standards ou référentiels dans le site.",
+      "Vérifier que chaque mention est accompagnée d'un lien externe vers le référentiel correspondant.",
+      "S'assurer que le lien est fonctionnel et pointe vers la bonne ressource."
+    ],
+    "screenshotsSources": [
+      "https://www.service-public.fr/accessibilite",
+      "https://www.sncf-connect.com/accessibilite",
+      "https://checklists.opquast.com/fr/qualite-numerique/"
+    ]
     "screenshotsSources": ["Mauvais exemple", "Bon exemple", "Code Source"]
   },
   {
