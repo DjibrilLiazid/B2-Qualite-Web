@@ -2022,5 +2022,292 @@
       "https://github.com"
     ]
   }
+  ,
+  {
+    "id": 142,
+    "title": "Les liens internes et externes sont différenciés",
+    "authors": ["Gourrin Dimitri"],
+    "path": "/rules/142",
+    "description": "Avertir l’internaute du fait qu’il va quitter le service en ligne qu’il est en train de visiter. Faciliter le repérage des liens externes.",
+    "tags": ["Accessibilité", "UX", "Navigation"],
+    "objectives": [
+      "Avertir clairement l’internaute du fait qu’il va quitter le service en ligne.",
+      "Faciliter le repérage des liens externes."
+    ],
+    "implementationIntro": "Différencier visuellement les liens :",
+    "implementation": [
+      "Ajouter une icône (ex: flèche ↗) pour les liens externes.",
+      "Utiliser une classe CSS spécifique.",
+      "Ajouter une infobulle (title) si nécessaire."
+    ],
+    "control": [
+      "Vérifier que les liens internes et externes sont différenciés par le moyen d'une mention textuelle, d'une icône ou d'un comportement propre."
+    ],
+    "screenshotsSources": [
+      "Mauvais exemple",
+      "Bon exemple",
+      "Code Source"
+    ]
+  },
+  {
+    "id": 143,
+    "title": "Les liens internes vers les contenus à accès limité sont différenciés",
+    "authors": ["Gourrin Dimitri"],
+    "path": "/rules/143",
+    "description": "Si votre site propose des liens réservés à des abonnés, prévoyez une vraie différenciation de ces liens par rapport à des liens en accès libre.",
+    "tags": ["Accessibilité", "Ergonomie", "Commerce"],
+    "objectives": [
+      "Éviter aux utilisateurs des clics inutiles et une perte de temps.",
+      "Prévenir la déception des utilisateurs face à un paywall."
+    ],
+    "implementationIntro": "Marquer visuellement les liens restreints :",
+    "implementation": [
+      "Utiliser des pictogrammes (cadenas).",
+      "Utiliser des propriétés CSS (couleur, gras).",
+      "Ajouter une mention textuelle (Abonnés)."
+    ],
+    "control": [
+      "Identifier les liens internes vers des contenus dont l'accès nécessite une authentification.",
+      "Vérifier que ces liens se différencient visuellement des autres liens internes."
+    ],
+    "screenshotsSources": [
+      "Mauvais exemple",
+      "Bon exemple",
+      "Code Source"
+    ]
+  },
+  {
+    "id": 144,
+    "title": "Les liens provoquant l'ouverture d'un logiciel externe ont un libellé explicite",
+    "authors": ["Gourrin Dimitri"],
+    "path": "/rules/144",
+    "description": "Le cas le plus fréquent est l’ouverture imprévue de votre logiciel de messagerie après un clic sur un lien « Contact ». Il faut prévenir.",
+    "tags": ["Accessibilité", "Liens", "Logiciel"],
+    "objectives": [
+      "Éviter sur le poste client l'ouverture inopinée d'un autre logiciel que le navigateur web.",
+      "Améliorer l’accessibilité des contenus."
+    ],
+    "implementationIntro": "Rédiger les libellés de liens de manière explicite :",
+    "implementation": [
+      "Écrire « Envoyer un mail » plutôt que « Contact ».",
+      "Utiliser des icônes explicites."
+    ],
+    "control": [
+      "Examiner le contenu pour y détecter les liens mailto ou tel.",
+      "Vérifier que le libellé du lien est suffisamment explicite."
+    ],
+    "screenshotsSources": [
+      "Mauvais exemple",
+      "Bon exemple",
+      "Code Source"
+    ]
+  },
+  {
+    "id": 145,
+    "title": "Les numéros de téléphone sont activables via le protocole approprié",
+    "authors": ["Gourrin Dimitri"],
+    "path": "/rules/145",
+    "description": "En contexte mobile, le simple clic sur un numéro doit ouvrir les fonctionnalités téléphoniques de votre mobile.",
+    "tags": ["Mobile", "Dev", "Liens"],
+    "objectives": [
+      "Faciliter l’utilisation des numéros de téléphone, notamment sur les terminaux mobiles."
+    ],
+    "implementationIntro": "Utiliser le balisage HTML standard :",
+    "implementation": [
+      "Baliser les numéros avec un lien a href='tel:+xx...'"
+    ],
+    "control": [
+      "Vérifier dans le code HTML le balisage des numéros de téléphone sous la forme a href='tel:...'."
+    ],
+    "screenshotsSources": [
+      "Mauvais exemple",
+      "Bon exemple",
+      "Code Source"
+    ]
+  },
+  {
+    "id": 146,
+    "title": "L'utilisateur est averti des ouvertures de nouvelles fenêtres",
+    "authors": ["Gourrin Dimitri"],
+    "path": "/rules/146",
+    "description": "Si vous choisissez d'ouvrir une nouvelle fenêtre (target blank), il faut absolument prévenir les utilisateurs.",
+    "tags": ["Accessibilité", "Liens", "UX"],
+    "objectives": [
+      "Permettre à l'utilisateur d'anticiper le résultat de l'activation d'un lien.",
+      "Éviter aux utilisateurs d'aides techniques d'être désorientés."
+    ],
+    "implementationIntro": "Prévenir explicitement l'utilisateur :",
+    "implementation": [
+      "Ajouter une mention « (nouvelle fenêtre) » dans le lien.",
+      "Utiliser l'attribut title pour compléter le libellé."
+    ],
+    "control": [
+      "Identifier les liens avec target='_blank'.",
+      "Vérifier la présence d'un avertissement explicite."
+    ],
+    "screenshotsSources": [
+      "Mauvais exemple",
+      "Bon exemple",
+      "Code Source"
+    ]
+  }
+  ,
+  {
+    "id": 147,
+    "title": "Le format des fichiers proposés en téléchargement est indiqué",
+    "authors": ["Gourrin Dimitri"],
+    "path": "/rules/147",
+    "description": "L'utilisateur doit savoir si le fichier est un PDF, un Word ou un Excel avant de cliquer.",
+    "tags": ["Accessibilité", "Développement", "Liens", "Écoconception"],
+    "objectives": [
+      "Permettre aux utilisateurs de savoir en temps utile si leurs outils les autorisent à consulter les fichiers.",
+      "Réduire la charge serveur en évitant les téléchargements inutiles."
+    ],
+    "implementationIntro": "Indiquer le format clairement :",
+    "implementation": [
+      "Indiquer le format dans le texte du lien (ex: PDF).",
+      "Utiliser une icône explicite."
+    ],
+    "control": [
+      "Vérifier que chaque lien de téléchargement indique son format."
+    ],
+    "screenshotsSources": [
+      "Mauvais exemple",
+      "Bon exemple",
+      "Code Source"
+    ]
+  }
+  ,
+  {
+    "id": 148,
+    "title": "La taille des fichiers internes proposés en téléchargement est indiquée",
+    "authors": ["Gourrin Dimitri"],
+    "path": "/rules/148",
+    "description": "Cette mention permet aux internautes de décider du meilleur moment pour télécharger (Wifi vs 4G).",
+    "tags": ["Basics", "Accessibilité", "Écoconception"],
+    "objectives": [
+      "Informer de façon préventive sur la quantité de données.",
+      "Permettre de différer le téléchargement en connexion bas débit."
+    ],
+    "implementationIntro": "Indiquer le poids (Ko, Mo, Go) :",
+    "implementation": [
+      "Prévoir une mention du poids à côté de chaque lien.",
+      "Indiquer l'unité de mesure appropriée."
+    ],
+    "control": [
+      "Vérifier que le poids est indiqué pour chaque fichier téléchargeable."
+    ],
+    "screenshotsSources": [
+      "Mauvais exemple",
+      "Bon exemple",
+      "Code Source"
+    ]
+  }
+  ,
+  {
+    "id": 149,
+    "title": "La langue des fichiers en téléchargement est précisée lorsqu'elle diffère",
+    "authors": ["Gourrin Dimitri"],
+    "path": "/rules/149",
+    "description": "Information essentielle avant de télécharger : savoir si on pourra lire la langue du document.",
+    "tags": ["Basics", "Accessibilité", "Editorial", "Liens"],
+    "objectives": [
+      "Éviter aux utilisateurs des téléchargements inutiles.",
+      "Informer les utilisateurs du contenu des fichiers."
+    ],
+    "implementationIntro": "Indiquer la langue du contenu :",
+    "implementation": [
+      "Dans le libellé du lien (ex: 'en anglais').",
+      "Via l'attribut title du lien."
+    ],
+    "control": [
+      "Pour chaque fichier en langue étrangère, vérifier que l'information est disponible avant le clic."
+    ],
+    "screenshotsSources": [
+      "Mauvais exemple",
+      "Bon exemple",
+      "Code Source"
+    ]
+  }
+  ,
+  {
+    "id": 150,
+    "title": "Le nommage des fichiers internes permet d'en identifier le contenu et la provenance",
+    "authors": ["Gourrin Dimitri"],
+    "path": "/rules/150",
+    "description": "Un nom de fichier explicite évite les confusions une fois le document téléchargé sur l'ordinateur de l'utilisateur.",
+    "tags": ["Accessibilité", "Editorial", "Liens"],
+    "objectives": [
+      "Améliorer l’identification des fichiers internes.",
+      "Éviter les confusions pour l’utilisateur (facture.pdf vs edf-facture-2024.pdf)."
+    ],
+    "implementationIntro": "Nommer les fichiers avec soin :",
+    "implementation": [
+      "Mentionner la provenance (nom du site/service).",
+      "Mentionner la nature du contenu (facture, devis).",
+      "Utiliser des tirets pour séparer les mots."
+    ],
+    "control": [
+      "Vérifier que le nom du fichier téléchargé contient bien la source et le type de contenu."
+    ],
+    "screenshotsSources": [
+      "Mauvais exemple",
+      "Bon exemple",
+      "Code Source"
+    ]
+  }
+  ,
+  {
+    "id": 151,
+    "title": "La mise en place de liens entrants n’est ni interdite ni restreinte",
+    "authors": ["Gourrin Dimitri"],
+    "path": "/rules/151",
+    "description": "Les backlinks sont vitaux pour le SEO. Les mentions légales ne doivent pas les interdire.",
+    "tags": ["Editorial", "Liens", "SEO"],
+    "objectives": [
+      "Faciliter le référencement naturel.",
+      "Augmenter la visibilité du site."
+    ],
+    "implementationIntro": "Ne pas restreindre les liens :",
+    "implementation": [
+      "Supprimer les clauses d'interdiction dans les Mentions Légales.",
+      "Autoriser explicitement les liens entrants."
+    ],
+    "control": [
+      "Vérifier les Mentions Légales et CGU."
+    ],
+    "screenshotsSources": [
+      "Mauvais exemple",
+      "Bon exemple",
+      "Code Source"
+    ]
+  }
+  ,
+  {
+    "id": 152,
+    "title": "Tous les liens internes sont valides",
+    "authors": ["Gourrin Dimitri"],
+    "path": "/rules/152",
+    "description": "Les erreurs 404 internes doivent être évitées absolument.",
+    "tags": ["Développement", "Editorial", "Liens", "SEO"],
+    "objectives": [
+      "Éviter les erreurs 404 en cours de navigation.",
+      "Faciliter un accès rapide à tous les contenus.",
+      "Améliorer le SEO."
+    ],
+    "implementationIntro": "Assurer la maintenance des liens :",
+    "implementation": [
+      "Vérifier régulièrement l'absence de liens morts.",
+      "Corriger immédiatement toute erreur 404 détectée."
+    ],
+    "control": [
+      "Vérifier l'absence de liens internes menant à des erreurs 404."
+    ],
+    "screenshotsSources": [
+      "Mauvais exemple",
+      "Bon exemple",
+      "Code Source"
+    ]
+  }
 ]
 
