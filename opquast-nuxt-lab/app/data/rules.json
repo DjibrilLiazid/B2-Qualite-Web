@@ -250,10 +250,7 @@
     "authors": ["Abdulmalek ESUGHI"],
     "path": "/rules/10",
     "description": "Il est fort agaçant de voir publier un message sous une forme dégradée ou de constater après envoi que l’on a écrit une grosse bêtise. La prévisualisation permet de voir les contenus en contexte et donne la possibilité de les corriger ou de les peaufiner.",
-    "tags": [
-      "Contenus",
-      "Développement"
-    ],
+    "tags": ["Contenus", "Développement"],
     "objectives": [
       "Permettre à l’utilisateur de vérifier sa saisie en contexte et, si nécessaire, de la corriger avant envoi.",
       "Diminuer le nombre de demandes de rectification ou de suppression."
@@ -426,17 +423,10 @@
   {
     "id": 15,
     "title": "La politique de confidentialité et de respect de la vie privée est disponible depuis toutes les pages.",
-    "authors": [
-      "Michel [Votre Nom]"
-    ],
+    "authors": ["Michel [Votre Nom]"],
     "path": "/rules/15",
     "description": "Une très grande partie du business d'Internet repose sur le commerce et la valorisation des données personnelles. Cette bonne pratique est de nature à rassurer et à informer l'internaute sur la protection de ses données privées.",
-    "tags": [
-      "Conception",
-      "Données personnelles",
-      "Editorial",
-      "Privacy"
-    ],
+    "tags": ["Conception", "Données personnelles", "Editorial", "Privacy"],
     "objectives": [
       "Permettre aux utilisateurs de connaître les conditions de conservation de leurs données personnelles.",
       "Renforcer la confiance des utilisateurs sur l'utilisation de leurs données."
@@ -461,16 +451,10 @@
   {
     "id": 16,
     "title": "La procédure d'accès et de rectification des données personnelles est décrite.",
-    "authors": [
-      "Michel [Votre Nom]"
-    ],
+    "authors": ["Michel [Votre Nom]"],
     "path": "/rules/16",
     "description": "Cette bonne pratique est souvent traitée comme une mention à poser sur un site. Elle a pourtant une vraie valeur ajoutée, puisqu'elle impose aux administrateurs du site de se poser la question de la mise à jour et de la pérennité des données personnelles.",
-    "tags": [
-      "Données personnelles",
-      "Editorial",
-      "Privacy"
-    ],
+    "tags": ["Données personnelles", "Editorial", "Privacy"],
     "objectives": [
       "Informer l'utilisateur sur l'utilisation de ses données personnelles.",
       "Faciliter la gestion des demandes liées aux données personnelles.",
@@ -495,9 +479,7 @@
   {
     "id": 17,
     "title": "La création de compte est possible sans recours à un système d'identification tiers.",
-    "authors": [
-      "Michel [Votre Nom]"
-    ],
+    "authors": ["Michel [Votre Nom]"],
     "path": "/rules/17",
     "description": "Les systèmes d'identification tiers proposés par Facebook, LinkedIn et bien d'autres sont très pratiques. Ils évitent aux utilisateurs d'avoir à créer un identifiant et un mot de passe et ils permettent aux créateurs de sites de se reposer sur des acteurs de référence. Mais le prix est élevé. La fermeture ou la désactivation d'un compte chez le fournisseur tiers rendra la connexion impossible.",
     "tags": [
@@ -535,17 +517,10 @@
   {
     "id": 18,
     "title": "La création d'un compte est soumise à un processus de confirmation.",
-    "authors": [
-      "Michel [Votre Nom]"
-    ],
+    "authors": ["Michel [Votre Nom]"],
     "path": "/rules/18",
     "description": "Pour créer un compte sur un site web, il est généralement nécessaire de saisir une adresse de courriel. Cette adresse peut alors être utilisée pour vérifier que la personne à l'origine de la demande de création de compte et le propriétaire du mail saisi sont la même personne. En l'absence d'une telle vérification, n'importe qui pourrait vous créer un compte.",
-    "tags": [
-      "Basics",
-      "Données personnelles",
-      "Développement",
-      "Privacy"
-    ],
+    "tags": ["Basics", "Données personnelles", "Développement", "Privacy"],
     "objectives": [
       "Réduire les risques d'inscription de l'utilisateur à son insu.",
       "Renforcer la confiance des utilisateurs sur l'utilisation de leurs données."
@@ -570,16 +545,10 @@
   {
     "id": 19,
     "title": "Un mécanisme de prévention des usurpations de compte ou d'identité est proposé.",
-    "authors": [
-      "Michel [Votre Nom]"
-    ],
+    "authors": ["Michel [Votre Nom]"],
     "path": "/rules/19",
     "description": "Le nombre de tentatives d'usurpations de compte ou de vol d'identité sur le web est considérable. Pour éviter cela, les services web peuvent mettre en place des mécanismes permettant de vérifier qu'il s'agit bien de vous, et que c'est bien vous qui souhaitez effectuer vos opérations en ligne.",
-    "tags": [
-      "Données personnelles",
-      "Développement",
-      "Privacy"
-    ],
+    "tags": ["Données personnelles", "Développement", "Privacy"],
     "objectives": [
       "Renforcer la sécurité et la confiance de l'utilisateur.",
       "Prévenir les risques d'usurpation d'identité.",
@@ -606,9 +575,7 @@
   {
     "id": 20,
     "title": "Les comptes ou abonnements ouverts en ligne peuvent être fermés par le même moyen.",
-    "authors": [
-      "Michel [Votre Nom]"
-    ],
+    "authors": ["Michel [Votre Nom]"],
     "path": "/rules/20",
     "description": "De nombreux services et sites Internet proposent, voire même exigent, la création directe d'un compte pour accéder aux contenus et services. La fermeture du compte doit pouvoir se faire avec la même facilité que son ouverture.",
     "tags": [
@@ -645,9 +612,7 @@
   {
     "id": 21,
     "title": "Si un espace personnel ou abonné est proposé, il est possible de télécharger les contenus personnels.",
-    "authors": [
-      "Michel [Votre Nom]"
-    ],
+    "authors": ["Michel [Votre Nom]"],
     "path": "/rules/21",
     "description": "Une défaillance ou un arrêt du service sont toujours possibles. Pour prévenir les accidents et parer aux reproches éventuels, prévoyez systématiquement cette possibilité de sauvegarde des données, que le service soit payant ou gratuit.",
     "tags": [
@@ -680,132 +645,8 @@
       "https://www.twitter.com/"
     ]
   },
+
   {
-    "id": 87,
-    "title": "Les processus complexes sont accompagnés de la liste de leurs étapes.",
-    "authors": [
-      "Adrien LECOMTE"
-    ],
-    "path": "/rules/87",
-    "description": "Il est toujours appréciable de connaître à l’avance le nombre d’étapes et de pouvoir estimer le temps nécessaire pour réaliser une longue démarche",
-    "tags": [
-      "Basics",
-      "Accessibilité",
-      "Conception",
-      "Formulaires"
-    ],
-    "id": 51,
-    "title": "L'adresse et les conditions de retour des produits sont indiquées.",
-    "authors": ["Tom AMARU"],
-    "path": "/rules/51",
-    "description": "En cas de problème ou de simple changement d'avis, le client doit savoir exactement comment procéder pour retourner un article. L'absence de ces informations (adresse de retour, état requis de l'emballage, délais) est un frein important à l'achat et une source de méfiance.",
-    "tags": ["E-commerce", "Confiance", "Contenus", "Juridique", "Ergonomie"],
-    "objectives": [
-      "Rassurer l'acheteur potentiel sur la possibilité de retourner le produit s'il ne convient pas.",
-      "Faciliter la gestion des retours pour le client et le service après-vente.",
-      "Respecter les obligations légales liées au droit de rétractation (selon les pays)."
-    ],
-    "implementationIntro": "Rendre l'information disponible et facile à trouver sans obliger l'utilisateur à contacter le support.",
-    "implementation": [
-      "Indiquer l'adresse de retour et les conditions (délai, remboursement, échange) dans les Conditions Générales de Vente (CGV).",
-      "Créer une page d'aide spécifique type « Livraisons et Retours » accessible depuis le pied de page.",
-      "Expliquer la procédure de retour dans l'espace client (historique de commande)."
-    ],
-    "control": [
-      "Vérifier que l'adresse postale où renvoyer les produits est présente sur le site.",
-      "Vérifier que les conditions (délais, état du produit, emballage) sont explicitement décrites."
-    ],
-    "screenshotsSources": [
-      "https://fr.louisvuitton.com/fra-fr/homepage",
-      "https://www.nike.com/fr/",
-      "https://www.amazon.fr/"
-    ]
-  },
-  {
-    "id": 88,
-    "title": "L'étape en cours d'un processus complexe est indiquée.",
-    "authors": [
-      "Adrien LECOMTE"
-    ],
-    "path": "/rules/88",
-    "description": "Ne vous êtes-vous jamais demandé, au beau milieu d’une démarche un peu longue répartie sur plusieurs formulaires successifs, où vous étiez exactement ?",
-    "tags": [
-      "Accessibilité",
-      "Conception",
-      "Formulaires"
-    ],
-    "id": 52,
-    "title": "La charge des frais de retour est indiquée avant la validation définitive de la commande.",
-    "authors": ["Tom AMARU"],
-    "path": "/rules/52",
-    "description": "Dans le commerce en ligne, l'essayage n'est pas possible. Le retour produit fait partie du cycle de vie normal d'une vente. L'acheteur doit savoir avant de payer si le retour sera à sa charge ou gratuit.",
-    "tags": ["E-commerce", "Confiance", "Contenus"],
-    "objectives": [
-      "Informer les utilisateurs du coût éventuel en cas de retour.",
-      "Rassurer l'utilisateur avant l'achat pour augmenter le taux de transformation."
-    ],
-    "implementationIntro": "Indiquer clairement si les frais sont offerts ou payants dans le récapitulatif commande ou les CGV accessibles avant paiement.",
-    "implementation": [
-      "Indiquer clairement dans les Conditions Générales de Vente (CGV) si les frais de retour sont à la charge du client ou offerts.",
-      "Afficher une mention explicite 'Retours gratuits' ou 'Retours à votre charge' sur les fiches produits ou dans le récapitulatif du panier.",
-      "Préciser le montant forfaitaire des frais de retour s'ils sont automatiquement déduits du remboursement."
-    ],
-    "control": [
-      "Vérifier la présence de l'information sur les frais de retour dans le tunnel d'achat ou les CGV."
-    ],
-    "screenshotsSources": ["https://fr.louisvuitton.com/fra-fr/homepage"]
-  },
-  {
-    "id": 89,
-    "title": "Chaque étape d'un processus complexe permet de revenir à l'étape précédente.",
-    "authors": [
-      "Adrien LECOMTE"
-    ],
-    "path": "/rules/89",
-    "description": "Après avoir décidé de passer à l’étape suivante d’un processus complexe, il arrive souvent d’avoir besoin de vérifier ce qu’on a saisi précédemment. Laissez aux internautes la possibilité de douter, de vérifier, et de se tromper, bien sûr.",
-    "tags": [
-      "Accessibilité",
-      "Développement",
-      "Conception",
-      "Formulaires"
-    ],
-    "tags": ["Accessibilité", "Développement", "Conception", "Formulaires"],
-    "id": 53,
-    "title": "Les conditions de remboursement et de résiliation sont indiquées.",
-    "authors": ["Tom AMARU"],
-    "path": "/rules/53",
-    "description": "L'utilisateur doit savoir comment et sous quels délais il sera remboursé s'il rend un produit ou annule un service.",
-    "tags": ["E-commerce", "Confiance", "Contenus", "Juridique"],
-    "objectives": [
-      "Anticiper les demandes au support client.",
-      "Rassurer l'acheteur sur la possibilité de récupérer son argent."
-    ],
-    "implementationIntro": "Préciser les délais et les modes de remboursement (virement, avoir, etc.) dans les CGV ou une page d'aide.",
-    "implementation": [
-      "Dédier une section claire des CGV ou de la FAQ aux modalités et délais de remboursement.",
-      "Préciser les conditions de résiliation pour les abonnements (durée d'engagement, préavis, frais éventuels).",
-      "Indiquer le mode de remboursement (crédit sur le moyen de paiement utilisé, avoir, virement)."
-    ],
-    "control": [
-      "Vérifier que les conditions de remboursement sont expliquées et accessibles."
-    ],
-    "screenshotsSources": []
-  },
-  {
-    "id": 90,
-    "title": "L'utilisateur est averti de la perte d'information en cas d'utilisation de l'historique de son navigateur dans un processus complexe.",
-    "authors": [
-      "Adrien LECOMTE"
-    ],
-    "path": "/rules/90",
-    "description": "Ne vous est-il jamais arrivé de croire que vous pouviez tout simplement retourner voir ce que vous aviez saisi à l’étape précédente lors de votre déclaration d’impôts, par exemple, et de constater peu après que tout ce que vous aviez saisi avant ce remords était perdu ? Évitons ce genre de déception à nos utilisateurs.",
-    "tags": [
-      "Basics",
-      "Accessibilité",
-      "Conception",
-      "Développement",
-      "Formulaires"
-    ],
     "id": 54,
     "title": "Les matériels et logiciels nécessaires au fonctionnement du service sont indiqués avant la validation de la commande.",
     "authors": ["Tom AMARU"],
@@ -831,17 +672,6 @@
     ]
   },
   {
-    "id": 91,
-    "title": "La navigation dans un processus complexe ne provoque pas la perte des données précédemment soumises.",
-    "authors": [
-      "Adrien LECOMTE"
-    ],
-    "path": "/rules/91",
-    "description": "Il est certes extrêmement confortable pour l’utilisateur de pouvoir naviguer dans les différentes étapes d’un processus complexe. Il est évidemment essentiel de l’avertir lorsque des données peuvent être perdues. C’est d’ailleurs l’objet d’une autre des règles assurance qualité web. Il est encore plus utile de s’assurer que l’ensemble des données saisies par l’utilisateur sont enregistrées à tout moment.",
-    "tags": [
-      "Développement",
-      "Formulaires"
-    ],
     "id": 55,
     "title": "Les prix affichés mentionnent le détail des taxes et suppléments éventuels ainsi que le montant hors taxes.",
     "authors": ["Tom AMARU"],
@@ -863,43 +693,7 @@
     ],
     "screenshotsSources": ["https://www.amazon.fr/"]
   },
-  {
-    "id": 92,
-    "title": "Le copier coller est possible dans les champs de formulaire.",
-    "authors": [
-      "Adrien LECOMTE"
-    ],
-    "path": "/rules/92",
-    "description": "Saisissez votre adresse e-mail. C’est bon, c’est fait ? Et si maintenant je vous demande de la saisir de nouveau, vous allez peut-être avoir la flemme de le faire et voudrez la copier depuis le premier champ pour la coller dans le deuxième. De quel droit certains sites voudraient-ils vous empêcher de faire cela ? Vive le copier-coller libre !",
-    "tags": [
-      "Basics",
-      "Accessibilité",
-      "Développement",
-      "Formulaires"
-    ],
-    "tags": ["Basics", "Accessibilité", "Développement", "Formulaires"],
-    "objectives": ["Faciliter la saisie dans les formulaires."],
-    "implementationIntro": "",
-    "id": 56,
-    "title": "Une adresse de livraison différente de l'adresse de facturation peut être spécifiée.",
-    "authors": ["Tom AMARU"],
-    "path": "/rules/56",
-    "description": "Utile pour faire un cadeau ou pour les professionnels qui commandent pour une filiale. Ne forcez pas l'adresse de livraison à être identique à celle de facturation.",
-    "tags": ["E-commerce", "Ergonomie", "Formulaires"],
-    "objectives": [
-      "Faciliter l'envoi de cadeaux ou la gestion logistique des entreprises."
-    ],
-    "implementationIntro": "Proposer une case à cocher 'Adresse de livraison différente' ou deux blocs d'adresse distincts dans le tunnel de commande.",
-    "implementation": [
-      "Intégrer une case à cocher 'L'adresse de facturation est identique à l'adresse de livraison' (activée par défaut) permettant d'ouvrir un second formulaire si décochée.",
-      "Proposer des étapes distinctes pour la saisie de l'adresse de livraison et celle de facturation dans le tunnel d'achat.",
-      "Permettre à l'utilisateur de sélectionner une adresse de livraison différente depuis son carnet d'adresses enregistré."
-    ],
-    "control": [
-      "Tenter de passer une commande avec deux adresses différentes."
-    ],
-    "screenshotsSources": ["https://www.amazon.fr/"]
-  },
+
   {
     "id": 57,
     "title": "Le site accepte au moins deux moyens de paiement.",
@@ -921,76 +715,7 @@
     ],
     "screenshotsSources": []
   },
-  {
-    "id": 93,
-    "title": "Les éléments d'une liste déroulante qui peuvent être regroupés le sont de manière appropriée.",
-    "authors": [
-      "Adrien LECOMTE"
-    ],
-    "path": "/rules/93",
-    "description": "Le contenu de certaines listes déroulantes est suffisamment homogène pour se suffire à lui-même, mais, dans certains cas, la liste sera plus aisée à consulter en étant mieux organisée. Dans ce cas, l’élément optgroup est votre ami.",
-    "tags": [
-      "Basics",
-      "Accessibilité",
-      "Conception",
-      "Formulaires"
-    ],
-    "id": 189,
-    "title": "Les pictogrammes typographiques sont dotés d'une alternative appropriée.",
-    "authors": ["Léo Velazquez"],
-    "path": "/rules/189",
-    "description": "L'utilisation de caractères spéciaux ou d'images vectorielles pour représenter des icônes peut poser des problèmes d'accessibilité si leur sens n'est pas explicité pour les utilisateurs de technologies d'assistance.",
-    "tags": ["Accessibilité", "Conception", "Iconographie"],
-    "objectives": [
-      "Assurer la compréhension des icônes par tous les utilisateurs.",
-      "Permettre aux logiciels de lecture d'écran de restituer le sens des icônes."
-    ],
-    "implementationIntro": "Fournir une alternative textuelle aux pictogrammes.",
-    "implementation": [
-      "Utiliser l'attribut aria-label ou un texte masqué accessible pour décrire le pictogramme.",
-      "Si le pictogramme est purement décoratif, utiliser aria-hidden='true'."
-    ],
-    "control": [
-      "Vérifier manuellement que chaque pictogramme porteur d'information dispose d'une alternative textuelle pertinente.",
-      "Vérifier que les pictogrammes décoratifs sont ignorés par les lecteurs d'écran."
-    ],
-    "screenshotsSources": [
-      "https://www.instant-gaming.com/fr/",
-      "https://www.amazon.fr/"
-    ]
-  },
-  {
-    "id": 87,
-    "title": "Les processus complexes sont accompagnés de la liste de leurs étapes.",
-    "authors": ["Adrien LECOMTE"],
-    "path": "/rules/87",
-    "description": "Il est toujours appréciable de connaître à l’avance le nombre d’étapes et de pouvoir estimer le temps nécessaire pour réaliser une longue démarche",
-    "tags": ["Basics", "Accessibilité", "Conception", "Formulaires"],
-    "id": 65,
-    "title": "Les produits indisponibles font l'objet d'une différenciation visuelle et textuelle",
-    "authors": ["Timothé Champieux"],
-    "path": "/rules/65",
-    "description": "Tout produit qui n'est pas disponible à l'achat doit être clairement distinguable des produits en stock, à la fois par son apparence et par une mention écrite.",
-    "tags": ["E-commerce", "Information", "Navigation"],
-    "objectives": [
-      "Éviter la frustration de l'utilisateur qui tente d'acheter un produit qu'il ne peut pas recevoir.",
-      "Permettre à l'utilisateur d'identifier rapidement les produits qu'il peut réellement acquérir.",
-      "Renforcer la crédibilité et la transparence du site marchand."
-    ],
-    "implementationIntro": "La différenciation doit être double : visuelle (pour le scan rapide) et textuelle (pour la certitude et l'accessibilité).",
-    "implementation": [
-      "Ajouter une mention explicite 'Épuisé', 'Indisponible' ou 'Rupture de stock' visible sans survol.",
-      "Modifier l'aspect visuel du produit (opacité réduite, niveau de gris, badge spécifique).",
-      "Désactiver le bouton d'ajout au panier et modifier son libellé.",
-      "S'assurer que l'information est disponible pour les lecteurs d'écran via du texte caché ou des attributs aria."
-    ],
-    "control": [
-      "Dans les listes de produits, vérifier que les articles hors stock sont visuellement distincts.",
-      "Vérifier la présence d'une mention textuelle explicite (pas uniquement une couleur rouge par exemple).",
-      "Contrôler que le bouton d'action est désactivé ou remplacé par une alerte."
-    ],
-    "screenshotsSources": []
-  },
+
   {
     "id": 197,
     "title": "Toutes les pages utilisent le protocole HTTPS.",
@@ -1206,82 +931,7 @@
       "https://www.ubereats.com/"
     ]
   },
-  {
-    "id": 89,
-    "title": "Chaque étape d'un processus complexe permet de revenir à l'étape précédente.",
-    "authors": ["Adrien LECOMTE"],
-    "path": "/rules/89",
-    "description": "Après avoir décidé de passer à l’étape suivante d’un processus complexe, il arrive souvent d’avoir besoin de vérifier ce qu’on a saisi précédemment. Laissez aux internautes la possibilité de douter, de vérifier, et de se tromper, bien sûr.",
-    "tags": ["Accessibilité", "Développement", "Conception", "Formulaires"],
-    "id": 67,
-    "title": "Chaque réclamation fait l'objet d'un accusé de réception",
-    "authors": ["Timothé Champieux"],
-    "path": "/rules/67",
-    "description": "L'utilisateur doit avoir la certitude immédiate que sa réclamation a été transmise au service concerné via une notification visuelle et/ou un email.",
-    "tags": ["Contact", "Service Client", "Feedback"],
-    "objectives": [
-      "Rassurer l'utilisateur sur la prise en compte de son problème.",
-      "Fournir une référence (numéro de ticket) pour le suivi de la demande.",
-      "Informer l'utilisateur des délais de traitement prévisibles."
-    ],
-    "implementationIntro": "L'accusé de réception ne doit pas se contenter d'un simple 'Message envoyé', mais engager la responsabilité du service.",
-    "implementation": [
-      "Afficher un message de confirmation explicite immédiatement après l'envoi du formulaire.",
-      "Envoyer automatiquement un courriel contenant le récapitulatif de la demande et un numéro de dossier.",
-      "Indiquer si possible le délai moyen de réponse."
-    ],
-    "control": [
-      "Envoyer une réclamation via le formulaire de contact ou l'interface de support.",
-      "Vérifier l'affichage immédiat du message de succès.",
-      "Vérifier la réception de l'email de confirmation contenant une référence de suivi."
-    ],
-    "screenshotsSources": [
-      "https://www.ovhcloud.com/fr/",
-      "https://www.paypal.com/fr/disputes/",
-      "https://www.sncf-connect.com/aide"
-    ]
-  },
-  {
-    "id": 90,
-    "title": "L'utilisateur est averti de la perte d'information en cas d'utilisation de l'historique de son navigateur dans un processus complexe.",
-    "authors": ["Adrien LECOMTE"],
-    "path": "/rules/90",
-    "description": "Ne vous est-il jamais arrivé de croire que vous pouviez tout simplement retourner voir ce que vous aviez saisi à l’étape précédente lors de votre déclaration d’impôts, par exemple, et de constater peu après que tout ce que vous aviez saisi avant ce remords était perdu ? Évitons ce genre de déception à nos utilisateurs.",
-    "tags": [
-      "Basics",
-      "Accessibilité",
-      "Conception",
-      "Développement",
-      "Formulaires"
-    ],
-    "id": 68,
-    "title": "La provenance des produits est indiquée",
-    "authors": ["Timothé Champieux"],
-    "path": "/rules/68",
-    "description": "L'origine de fabrication ou d'assemblage des produits vendus doit être clairement affichée sur la fiche produit pour informer le consommateur.",
-    "tags": ["E-commerce", "Transparence", "RSE"],
-    "objectives": [
-      "Permettre au consommateur de faire un choix éclairé (critères éthiques, écologiques, politiques).",
-      "Valoriser les circuits courts ou le savoir-faire local.",
-      "Renforcer la confiance en affichant une transparence totale sur la chaîne d'approvisionnement."
-    ],
-    "implementationIntro": "L'information ne doit pas être cachée dans les conditions générales, mais visible directement sur la fiche produit.",
-    "implementation": [
-      "Ajouter un champ 'Pays de fabrication' ou 'Origine' dans la base de données produits.",
-      "Afficher cette information à proximité du prix ou de la description technique.",
-      "Si possible, distinguer le lieu de fabrication du lieu de provenance des matières premières."
-    ],
-    "control": [
-      "Naviguer sur plusieurs fiches produits.",
-      "Vérifier la présence d'une mention 'Fabriqué en...' ou 'Origine : ...'.",
-      "Vérifier que l'information est compréhensible sans ambiguïté."
-    ],
-    "screenshotsSources": [
-      "https://www.leslipfrancais.fr/",
-      "https://www.patagonia.com/",
-      "https://www.biocoop.fr/"
-    ]
-  },
+
   {
     "id": 69,
     "title": "Chaque champ de formulaire est associé dans le code source à une étiquette qui lui est propre",
@@ -1311,43 +961,7 @@
       "https://accounts.google.com/"
     ]
   },
-  {
-    "id": 92,
-    "title": "Le copier coller est possible dans les champs de formulaire.",
-    "authors": ["Adrien LECOMTE"],
-    "path": "/rules/92",
-    "description": "Saisissez votre adresse e-mail. C’est bon, c’est fait ? Et si maintenant je vous demande de la saisir de nouveau, vous allez peut-être avoir la flemme de le faire et voudrez la copier depuis le premier champ pour la coller dans le deuxième. De quel droit certains sites voudraient-ils vous empêcher de faire cela ? Vive le copier-coller libre !",
-    "tags": ["Basics", "Accessibilité", "Développement", "Formulaires"],
-    "objectives": ["Faciliter la saisie dans les formulaires."],
-    "implementationIntro": "",
-    "id": 70,
-    "title": "Les informations complétant l'étiquette d'un champ sont associées à celui-ci dans le code source",
-    "authors": ["Timothé Champieux"],
-    "path": "/rules/70",
-    "description": "Lorsque des informations supplémentaires (format de saisie, message d'erreur, unité de mesure) accompagnent un champ, elles doivent être reliées techniquement à celui-ci pour être perçues par les technologies d'assistance.",
-    "tags": ["Accessibilité", "Formulaires", "WAI-ARIA"],
-    "objectives": [
-      "Permettre aux utilisateurs non-voyants de connaître le format attendu (ex: JJ/MM/AAAA) avant de remplir le champ.",
-      "Garantir que les messages d'erreur sont lus automatiquement lorsque l'utilisateur corrige sa saisie.",
-      "Éviter les erreurs de saisie en rendant les contraintes explicites pour tous."
-    ],
-    "implementationIntro": "La simple proximité visuelle ne suffit pas. L'utilisation de l'attribut ARIA 'aria-describedby' est la méthode standard.",
-    "implementation": [
-      "Attribuer un 'id' unique à l'élément contenant le texte d'aide ou l'erreur.",
-      "Ajouter l'attribut 'aria-describedby' sur le champ <input>, <select> ou <textarea>.",
-      "Faire pointer cet attribut vers l'identifiant du texte d'aide (ex: aria-describedby='help-text-id')."
-    ],
-    "control": [
-      "Inspecter le code source : vérifier la présence de 'aria-describedby'.",
-      "Vérifier que la valeur de cet attribut correspond bien à un 'id' existant dans la page.",
-      "Tester avec un lecteur d'écran : l'aide doit être vocalisée après le label lors de la prise de focus."
-    ],
-    "screenshotsSources": [
-      "https://www.service-public.fr/",
-      "https://getbootstrap.com/docs/5.3/forms/overview/",
-      "https://github.com/signup"
-    ]
-  },
+
   {
     "id": 71,
     "title": "L'étiquette de chaque champ de formulaire indique si la saisie est obligatoire",
