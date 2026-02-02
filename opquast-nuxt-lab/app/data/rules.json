@@ -642,229 +642,213 @@
     "screenshotsSources": []
   },
 
-
-
-
-
-
-    {
-      "id": 160,
-      "title": "Les mécanismes de fermeture de fenêtres sont visuellement rattachés à leur contenu",
-      "authors": ["Bastien JOUFFRE"],
-      "path": "/rules/160",
-      "description": "Les boutons de fermeture des fenêtres modales ou similaires doivent être placés dans le bloc visuel de la fenêtre afin d’être clairement associés au contenu qu’ils ferment.",
-      "tags": ["Accessibilité", "Conception", "Navigation"],
-      "objectives": [
-        "Limiter le temps d’apprentissage de l’interface.",
-        "Accélérer l’accès aux contenus.",
-        "Faciliter la navigation."
-      ],
-      "implementation": [
-        "Positionner chaque bouton de fermeture dans le bloc visuel de la fenêtre ou de manière contiguë.",
-        "Éviter d’afficher le bouton de fermeture dans une zone éloignée du contenu."
-      ],
-      "control": [
-        "Vérifier que chaque bouton de fermeture de fenêtre modale est placé dans le bloc concerné ou immédiatement adjacent."
-      ],
-      "screenshotsToTake": [
-        {
-          "description": "Fenêtre modale affichée avec bouton de fermeture logiquement rattaché au contenu.",
-          "where": "Interface avec modale ouverte."
-        }
-      ],
-      "screenshotsSources": [
-        "w3.org/WAI/ARIA/apg/patterns/dialog-modal/examples/dialog/",
-        "w3schools.com/howto/howto_css_modals.asp",
-        "systeme-de-design.gouv.fr/composants-et-modeles/composants/modale"
-
-      ]
-    },
-    {
-      "id": 161,
-      "title": "Les mécanismes de fermetures de fenêtres sont immédiatement disponibles",
-      "authors": ["Bastien JOUFFRE"],
-      "path": "/rules/161",
-      "description": "Les fenêtres modales ou similaires doivent pouvoir être fermées immédiatement sans temporisation.",
-      "tags": ["Accessibilité", "Conception", "Développement", "Navigation"],
-      "objectives": [
-        "Limiter le temps d’attente imposé à l’utilisateur.",
-        "Accélérer l’accès aux contenus.",
-        "Réduire le taux de rebond des utilisateurs."
-      ],
-      "implementation": [
-        "Éviter d’utiliser des temporisations empêchant immédiatement de fermer une fenêtre modale ou similaire."
-      ],
-      "control": [
-        "S’assurer que chaque fenêtre peut être fermée dès son affichage sans délai imposé."
-      ],
-      "screenshotsToTake": [
-        {
-          "description": "Fenêtre modale affichée avec bouton de fermeture dès son apparition.",
-          "where": "Interface avec modale ouverte."
-        }
-      ],
-      "screenshotsSources": [
-        "w3.org/WAI/ARIA/apg/patterns/dialog-modal/examples/dialog/",
-        "w3schools.com/howto/howto_css_modals.asp",
-        "systeme-de-design.gouv.fr/composants-et-modeles/composants/modale"
-      ]
-    },
-    {
-      "id": 162,
-      "title": "Les nouvelles fenêtres dimensionnées et les fenêtres modales sont dotées d'un bouton de fermeture explicite",
-      "authors": ["Bastien JOUFFRE"],
-      "path": "/rules/162",
-      "description": "Chaque fenêtre dimensionnée ou fenêtre modale doit proposer un bouton ou un lien de fermeture explicite afin que l’utilisateur sache comment la fermer.",
-      "tags": ["Accessibilité", "Conception", "Développement", "Navigation"],
-      "objectives": [
-        "Donner une indication claire pour fermer chaque fenêtre modale.",
-        "Accélérer l’accès aux contenus."
-      ],
-      "implementation": [
-        "Placer un bouton ou un lien de fermeture explicite dans chaque fenêtre modale ou dimensionnée.",
-        "Associer ce bouton à une action de fermeture identifiable."
-      ],
-      "control": [
-        "Vérifier que chaque fenêtre modale ou dimensionnée contient un bouton de fermeture explicite compréhensible."
-      ],
-      "screenshotsToTake": [
-        {
-          "description": "Modale ou fenêtre dimensionnée avec bouton de fermeture clairement visible.",
-          "where": "Fenêtre modale ouverte."
-        }
-      ],
-      "screenshotsSources": [
-       "https://amazon.com/",
-        "https://google.com/",
-        "https://fnac.com/"
-      ]
-    },
-    {
-      "id": 163,
-      "title": "Les mécanismes de fermetures de fenêtres sont affichés aux mêmes emplacements sur toutes les pages",
-      "authors": ["Bastien JOUFFRE"],
-      "path": "/rules/163",
-      "description": "Les boutons de fermeture des fenêtres modales doivent être placés au même emplacement sur toutes les pages afin de limiter la charge mentale des utilisateurs.",
-      "tags": ["Accessibilité", "Conception", "Navigation"],
-      "objectives": [
-        "Faciliter l’apprentissage de l’interface.",
-        "Accélérer l’accès aux contenus."
-      ],
-      "implementation": [
-        "Choisir un emplacement systématique pour les boutons de fermeture sur toutes les pages (par exemple en haut à droite)."
-      ],
-      "control": [
-        "Vérifier visuellement que tous les boutons de fermeture sont affichés au même emplacement sur toutes les pages."
-      ],
-      "screenshotsToTake": [
-        {
-          "description": "Screenshots de plusieurs pages montrant la fermeture aux mêmes emplacements.",
-          "where": "Exemples de pages avec modales ouvertes."
-        }
-      ],
-      "screenshotsSources": [
-        "https://www.airbnb.fr/","https://www.airbnb.fr/"
-      ]
-    },
-    {
-      "id": 164,
-      "title": "Chaque page contient des liens d’accès rapide placés au début du code source",
-      "authors": ["Bastien JOUFFRE"],
-      "path": "/rules/164",
-      "description": "Pour faciliter la navigation, chaque page doit contenir des liens d’accès rapide en début de code HTML permettant d’atteindre directement les zones principales.",
-      "tags": ["Accessibilité", "Conception", "Développement", "Navigation"],
-      "objectives": [
-        "Permettre aux utilisateurs de sauter rapidement vers les zones principales.",
-        "Améliorer la navigation au clavier et l’accessibilité globale."
-      ],
-      "implementation": [
-        "Fournir des liens d’accès rapide vers le menu principal, le contenu principal et le formulaire de recherche si nécessaire, placés en début de code HTML.",
-        "Ces liens peuvent être masqués au chargement mais doivent être visibles lors de la première tabulation."
-      ],
-      "control": [
-        "Vérifier la présence des liens d’accès rapide et leur placement en début de code.",
-        "Tester qu’ils sont accessibles via tabulation et effectuent la navigation attendue."
-      ],
-      "screenshotsToTake": [
-        {
-          "description": "Arborescence du code source avec les liens d’accès rapide en début.",
-          "where": "Code HTML d’une page."
-        }
-      ],
-      "screenshotsSources": [
-        "https://www.amazon.fr/",
-        "https://www.apple.com/",
-        "https://www.ovhcloud.com/"
-      ]
-    },
-    {
-      "id": 165,
-      "title": "Le focus clavier n'est ni supprimé ni masqué",
-      "authors": ["Bastien JOUFFRE"],
-      "path": "/rules/165",
-      "description": "Le focus clavier doit rester visible pour que les utilisateurs puissent voir où se trouve le curseur lors de la navigation au clavier.",
-      "tags": ["Accessibilité", "Conception", "Développement", "Navigation"],
-      "objectives": [
-        "Permettre la navigation au clavier ou via d’autres périphériques d’entrée.",
-        "Améliorer l’accessibilité des contenus pour les personnes handicapées."
-      ],
-      "implementation": [
-        "Ne pas supprimer ou masquer l’effet visuel de focus clavier.",
-        "Ne pas annuler CSS outline sans alternative visuelle.",
-        "Éviter de supprimer la prise de focus via JavaScript."
-      ],
-      "control": [
-        "Utiliser la touche Tab pour vérifier la visibilité du focus sur chaque élément interactif.",
-        "Vérifier l’indication visuelle spécifique pour les lecteurs d’écran et autres technologies d’assistance."
-      ],
-      "screenshotsToTake": [
-        {
-          "description": "Focus clavier visible sur liens ou champs lors de navigation par tabulation.",
-          "where": "Page avec éléments interactifs."
-        }
-      ],
-      "screenshotsSources": [
-        "https://www.wikipedia.com/",
-        "https://www.amazon.fr/",
-        "https://www.ovhcloud.com/"
-      ]
-    },
-    {
-      "id": 166,
-      "title": "Le site est intégralement utilisable au clavier",
-      "authors": ["Bastien JOUFFRE"],
-      "path": "/rules/166",
-      "description": "La navigation au clavier doit permettre d’interagir avec l’intégralité des contenus et des services du site, sans nécessiter l’usage de la souris.",
-      "tags": ["Accessibilité", "Développement", "Navigation"],
-      "objectives": [
-        "Permettre la consultation et l’usage des services indépendamment du périphérique d’entrée.",
-        "Améliorer l’accessibilité des contenus aux personnes handicapées."
-      ],
-      "implementation": [
-        "Utiliser des gestionnaires d’événements permettant l’accès clavier (`onfocus`, etc.).",
-        "Assurer que toutes les interactions et formulaires sont accessibles via la touche Tab et autres raccourcis clavier."
-      ],
-      "control": [
-        "Tester la navigation complète du site au clavier, vérifier que tous les éléments interactifs sont accessibles."
-      ],
-      "screenshotsToTake": [
-        {
-          "description": "Navigation complète au clavier montrant accès à tous les éléments.",
-          "where": "Séquence de navigation par tabulation."
-        }
-      ],
-      "screenshotsSources": [
-        "https://www.airbnb.fr/",
-        "https://www.amazon.com/",
-        "https://www.apple.com/"
-      ]
-    }
-  ]
-
+  {
+    "id": 160,
+    "title": "Les mécanismes de fermeture de fenêtres sont visuellement rattachés à leur contenu",
+    "authors": ["Bastien JOUFFRE"],
+    "path": "/rules/160",
+    "description": "Les boutons de fermeture des fenêtres modales ou similaires doivent être placés dans le bloc visuel de la fenêtre afin d’être clairement associés au contenu qu’ils ferment.",
+    "tags": ["Accessibilité", "Conception", "Navigation"],
+    "objectives": [
+      "Limiter le temps d’apprentissage de l’interface.",
+      "Accélérer l’accès aux contenus.",
+      "Faciliter la navigation."
+    ],
+    "implementation": [
+      "Positionner chaque bouton de fermeture dans le bloc visuel de la fenêtre ou de manière contiguë.",
+      "Éviter d’afficher le bouton de fermeture dans une zone éloignée du contenu."
+    ],
+    "control": [
+      "Vérifier que chaque bouton de fermeture de fenêtre modale est placé dans le bloc concerné ou immédiatement adjacent."
+    ],
+    "screenshotsToTake": [
+      {
+        "description": "Fenêtre modale affichée avec bouton de fermeture logiquement rattaché au contenu.",
+        "where": "Interface avec modale ouverte."
+      }
+    ],
     "screenshotsSources": [
-      "https://www.google.com/takeout",
-      "https://www.facebook.com/",
-      "https://www.twitter.com/"
+      "w3.org/WAI/ARIA/apg/patterns/dialog-modal/examples/dialog/",
+      "w3schools.com/howto/howto_css_modals.asp",
+      "systeme-de-design.gouv.fr/composants-et-modeles/composants/modale"
+    ]
+  },
+  {
+    "id": 161,
+    "title": "Les mécanismes de fermetures de fenêtres sont immédiatement disponibles",
+    "authors": ["Bastien JOUFFRE"],
+    "path": "/rules/161",
+    "description": "Les fenêtres modales ou similaires doivent pouvoir être fermées immédiatement sans temporisation.",
+    "tags": ["Accessibilité", "Conception", "Développement", "Navigation"],
+    "objectives": [
+      "Limiter le temps d’attente imposé à l’utilisateur.",
+      "Accélérer l’accès aux contenus.",
+      "Réduire le taux de rebond des utilisateurs."
+    ],
+    "implementation": [
+      "Éviter d’utiliser des temporisations empêchant immédiatement de fermer une fenêtre modale ou similaire."
+    ],
+    "control": [
+      "S’assurer que chaque fenêtre peut être fermée dès son affichage sans délai imposé."
+    ],
+    "screenshotsToTake": [
+      {
+        "description": "Fenêtre modale affichée avec bouton de fermeture dès son apparition.",
+        "where": "Interface avec modale ouverte."
+      }
+    ],
+    "screenshotsSources": [
+      "w3.org/WAI/ARIA/apg/patterns/dialog-modal/examples/dialog/",
+      "w3schools.com/howto/howto_css_modals.asp",
+      "systeme-de-design.gouv.fr/composants-et-modeles/composants/modale"
+    ]
+  },
+  {
+    "id": 162,
+    "title": "Les nouvelles fenêtres dimensionnées et les fenêtres modales sont dotées d'un bouton de fermeture explicite",
+    "authors": ["Bastien JOUFFRE"],
+    "path": "/rules/162",
+    "description": "Chaque fenêtre dimensionnée ou fenêtre modale doit proposer un bouton ou un lien de fermeture explicite afin que l’utilisateur sache comment la fermer.",
+    "tags": ["Accessibilité", "Conception", "Développement", "Navigation"],
+    "objectives": [
+      "Donner une indication claire pour fermer chaque fenêtre modale.",
+      "Accélérer l’accès aux contenus."
+    ],
+    "implementation": [
+      "Placer un bouton ou un lien de fermeture explicite dans chaque fenêtre modale ou dimensionnée.",
+      "Associer ce bouton à une action de fermeture identifiable."
+    ],
+    "control": [
+      "Vérifier que chaque fenêtre modale ou dimensionnée contient un bouton de fermeture explicite compréhensible."
+    ],
+    "screenshotsToTake": [
+      {
+        "description": "Modale ou fenêtre dimensionnée avec bouton de fermeture clairement visible.",
+        "where": "Fenêtre modale ouverte."
+      }
+    ],
+    "screenshotsSources": [
+      "https://amazon.com/",
+      "https://google.com/",
+      "https://fnac.com/"
+    ]
+  },
+  {
+    "id": 163,
+    "title": "Les mécanismes de fermetures de fenêtres sont affichés aux mêmes emplacements sur toutes les pages",
+    "authors": ["Bastien JOUFFRE"],
+    "path": "/rules/163",
+    "description": "Les boutons de fermeture des fenêtres modales doivent être placés au même emplacement sur toutes les pages afin de limiter la charge mentale des utilisateurs.",
+    "tags": ["Accessibilité", "Conception", "Navigation"],
+    "objectives": [
+      "Faciliter l’apprentissage de l’interface.",
+      "Accélérer l’accès aux contenus."
+    ],
+    "implementation": [
+      "Choisir un emplacement systématique pour les boutons de fermeture sur toutes les pages (par exemple en haut à droite)."
+    ],
+    "control": [
+      "Vérifier visuellement que tous les boutons de fermeture sont affichés au même emplacement sur toutes les pages."
+    ],
+    "screenshotsToTake": [
+      {
+        "description": "Screenshots de plusieurs pages montrant la fermeture aux mêmes emplacements.",
+        "where": "Exemples de pages avec modales ouvertes."
+      }
+    ],
+    "screenshotsSources": ["https://www.airbnb.fr/", "https://www.airbnb.fr/"]
+  },
+  {
+    "id": 164,
+    "title": "Chaque page contient des liens d’accès rapide placés au début du code source",
+    "authors": ["Bastien JOUFFRE"],
+    "path": "/rules/164",
+    "description": "Pour faciliter la navigation, chaque page doit contenir des liens d’accès rapide en début de code HTML permettant d’atteindre directement les zones principales.",
+    "tags": ["Accessibilité", "Conception", "Développement", "Navigation"],
+    "objectives": [
+      "Permettre aux utilisateurs de sauter rapidement vers les zones principales.",
+      "Améliorer la navigation au clavier et l’accessibilité globale."
+    ],
+    "implementation": [
+      "Fournir des liens d’accès rapide vers le menu principal, le contenu principal et le formulaire de recherche si nécessaire, placés en début de code HTML.",
+      "Ces liens peuvent être masqués au chargement mais doivent être visibles lors de la première tabulation."
+    ],
+    "control": [
+      "Vérifier la présence des liens d’accès rapide et leur placement en début de code.",
+      "Tester qu’ils sont accessibles via tabulation et effectuent la navigation attendue."
+    ],
+    "screenshotsToTake": [
+      {
+        "description": "Arborescence du code source avec les liens d’accès rapide en début.",
+        "where": "Code HTML d’une page."
+      }
+    ],
+    "screenshotsSources": [
+      "https://www.amazon.fr/",
+      "https://www.apple.com/",
+      "https://www.ovhcloud.com/"
+    ]
+  },
+  {
+    "id": 165,
+    "title": "Le focus clavier n'est ni supprimé ni masqué",
+    "authors": ["Bastien JOUFFRE"],
+    "path": "/rules/165",
+    "description": "Le focus clavier doit rester visible pour que les utilisateurs puissent voir où se trouve le curseur lors de la navigation au clavier.",
+    "tags": ["Accessibilité", "Conception", "Développement", "Navigation"],
+    "objectives": [
+      "Permettre la navigation au clavier ou via d’autres périphériques d’entrée.",
+      "Améliorer l’accessibilité des contenus pour les personnes handicapées."
+    ],
+    "implementation": [
+      "Ne pas supprimer ou masquer l’effet visuel de focus clavier.",
+      "Ne pas annuler CSS outline sans alternative visuelle.",
+      "Éviter de supprimer la prise de focus via JavaScript."
+    ],
+    "control": [
+      "Utiliser la touche Tab pour vérifier la visibilité du focus sur chaque élément interactif.",
+      "Vérifier l’indication visuelle spécifique pour les lecteurs d’écran et autres technologies d’assistance."
+    ],
+    "screenshotsToTake": [
+      {
+        "description": "Focus clavier visible sur liens ou champs lors de navigation par tabulation.",
+        "where": "Page avec éléments interactifs."
+      }
+    ],
+    "screenshotsSources": [
+      "https://www.wikipedia.com/",
+      "https://www.amazon.fr/",
+      "https://www.ovhcloud.com/"
+    ]
+  },
+  {
+    "id": 166,
+    "title": "Le site est intégralement utilisable au clavier",
+    "authors": ["Bastien JOUFFRE"],
+    "path": "/rules/166",
+    "description": "La navigation au clavier doit permettre d’interagir avec l’intégralité des contenus et des services du site, sans nécessiter l’usage de la souris.",
+    "tags": ["Accessibilité", "Développement", "Navigation"],
+    "objectives": [
+      "Permettre la consultation et l’usage des services indépendamment du périphérique d’entrée.",
+      "Améliorer l’accessibilité des contenus aux personnes handicapées."
+    ],
+    "implementation": [
+      "Utiliser des gestionnaires d’événements permettant l’accès clavier (`onfocus`, etc.).",
+      "Assurer que toutes les interactions et formulaires sont accessibles via la touche Tab et autres raccourcis clavier."
+    ],
+    "control": [
+      "Tester la navigation complète du site au clavier, vérifier que tous les éléments interactifs sont accessibles."
+    ],
+    "screenshotsToTake": [
+      {
+        "description": "Navigation complète au clavier montrant accès à tous les éléments.",
+        "where": "Séquence de navigation par tabulation."
+      }
+    ],
+    "screenshotsSources": [
+      "https://www.airbnb.fr/",
+      "https://www.amazon.com/",
+      "https://www.apple.com/"
     ]
   },
 
