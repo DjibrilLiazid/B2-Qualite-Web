@@ -3374,11 +3374,7 @@
     "authors": ["Lilian LE PIVER"],
     "path": "/rules/108",
     "description": "La simple mention d’un délai de réponse permet de lever beaucoup d’inquiétudes. Avant l’expiration de ce délai, un internaute ne s’inquiètera pas de ne pas avoir reçu de réponse. Cette règle s’assure que tout formulaire de demande d’information précise clairement le délai attendu pour une réponse.",
-    "tags": [
-      "Conception",
-      "Éditorial",
-      "Identification et contact"
-    ],
+    "tags": ["Conception", "Éditorial", "Identification et contact"],
     "objectives": [
       "Informer les utilisateurs sur les délais chiffrés de réponse.",
       "Limiter les risques de relance de la part des utilisateurs.",
@@ -3469,11 +3465,7 @@
     "authors": ["Lilian LE PIVER"],
     "path": "/rules/111",
     "description": "\"L'utilisateur doit toujours pouvoir contacter l'expéditeur d'un mail automatisé (confirmation de commande, newsletter, alerte). Si l'adresse d'expédition ne peut pas recevoir de réponses, le corps du mail doit obligatoirement proposer une alternative claire comme un lien vers un formulaire, une adresse mail de support ou un numéro de téléphone.",
-    "tags": [
-      "Interaction",
-      "Identification et contact",
-      "Services"
-    ],
+    "tags": ["Interaction", "Identification et contact", "Services"],
     "objectives": [
       "Permettre à l'utilisateur de répondre à une sollicitation par mail.",
       "Éviter les impasses de communication créées par les adresses 'No-Reply'.",
@@ -3502,11 +3494,7 @@
     "authors": ["Lilian LE PIVER"],
     "path": "/rules/112",
     "description": "Au-delà du support client classique, l'utilisateur doit pouvoir identifier un responsable ou une entité spécifique (Médiateur, service réclamation) pour déposer une plainte formelle. Cette transparence est une obligation légale pour de nombreux secteurs et renforce la confiance en cas de litige.",
-    "tags": [
-      "Identification et contact",
-      "Confiance",
-      "Juridique"
-    ],
+    "tags": ["Identification et contact", "Confiance", "Juridique"],
     "objectives": [
       "Permettre à l'utilisateur de résoudre un litige de manière formelle.",
       "Fournir une alternative au service client en cas de blocage.",
@@ -3534,11 +3522,7 @@
     "authors": ["Lilian LE PIVER"],
     "path": "/rules/113",
     "description": "Dès que les utilisateurs peuvent s'exprimer publiquement sur un site (avis, commentaires, forum), un dispositif doit permettre de contacter les personnes chargées de la modération. Cela permet de signaler des contenus illicites, inappropriés ou de demander la suppression d'une de ses propres contributions.",
-    "tags": [
-      "Interaction",
-      "Identification et contact",
-      "Contributeurs"
-    ],
+    "tags": ["Interaction", "Identification et contact", "Contributeurs"],
     "objectives": [
       "Permettre le signalement de contenus inappropriés ou illégaux.",
       "Faciliter l'exercice du droit de suppression des données par les utilisateurs.",
@@ -3567,11 +3551,7 @@
     "authors": ["Lilian LE PIVER"],
     "path": "/rules/114",
     "description": "Pour garantir la transparence et la responsabilité éditoriale, chaque site doit désigner une personne physique (Directeur de la publication) ou un service responsable des contenus publiés. C'est une obligation légale qui permet à l'utilisateur de savoir qui engage sa responsabilité sur les informations diffusées.",
-    "tags": [
-      "Identification et contact",
-      "Confiance",
-      "Juridique"
-    ],
+    "tags": ["Identification et contact", "Confiance", "Juridique"],
     "objectives": [
       "Identifier le responsable légal des contenus du site.",
       "Renforcer la transparence et la crédibilité de l'information.",
@@ -3600,11 +3580,7 @@
     "authors": ["Lilian LE PIVER"],
     "path": "/rules/115",
     "description": "Lorsqu'un site affiche son respect de normes ou de labels (RGAA pour l'accessibilité, RGESN pour l'éco-conception, Opquast pour la qualité), il doit permettre à l'utilisateur de consulter ces standards. Cela garantit la transparence et permet à l'internaute de comprendre les critères sur lesquels le site s'est engagé.",
-    "tags": [
-      "Confiance",
-      "Juridique",
-      "Navigation"
-    ],
+    "tags": ["Confiance", "Juridique", "Navigation"],
     "objectives": [
       "Permettre la vérification des engagements de conformité.",
       "Informer l'utilisateur sur la nature des standards respectés.",
@@ -3626,7 +3602,6 @@
       "https://www.sncf-connect.com/accessibilite",
       "https://checklists.opquast.com/fr/qualite-numerique/"
     ]
-    "screenshotsSources": ["Mauvais exemple", "Bon exemple", "Code Source"]
   },
   {
     "id": 143,
