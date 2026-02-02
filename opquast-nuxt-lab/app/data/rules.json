@@ -471,6 +471,12 @@
     "screenshotsSources": ["https://fr.louisvuitton.com/fra-fr/homepage"]
   },
   {
+    "id": 89,
+    "title": "Chaque étape d'un processus complexe permet de revenir à l'étape précédente.",
+    "authors": ["Adrien LECOMTE"],
+    "path": "/rules/89",
+    "description": "Après avoir décidé de passer à l’étape suivante d’un processus complexe, il arrive souvent d’avoir besoin de vérifier ce qu’on a saisi précédemment. Laissez aux internautes la possibilité de douter, de vérifier, et de se tromper, bien sûr.",
+    "tags": ["Accessibilité", "Développement", "Conception", "Formulaires"],
     "id": 53,
     "title": "Les conditions de remboursement et de résiliation sont indiquées.",
     "authors": ["Tom AMARU"],
@@ -493,6 +499,18 @@
     "screenshotsSources": []
   },
   {
+    "id": 90,
+    "title": "L'utilisateur est averti de la perte d'information en cas d'utilisation de l'historique de son navigateur dans un processus complexe.",
+    "authors": ["Adrien LECOMTE"],
+    "path": "/rules/90",
+    "description": "Ne vous est-il jamais arrivé de croire que vous pouviez tout simplement retourner voir ce que vous aviez saisi à l’étape précédente lors de votre déclaration d’impôts, par exemple, et de constater peu après que tout ce que vous aviez saisi avant ce remords était perdu ? Évitons ce genre de déception à nos utilisateurs.",
+    "tags": [
+      "Basics",
+      "Accessibilité",
+      "Conception",
+      "Développement",
+      "Formulaires"
+    ],
     "id": 54,
     "title": "Les matériels et logiciels nécessaires au fonctionnement du service sont indiqués avant la validation de la commande.",
     "authors": ["Tom AMARU"],
@@ -540,6 +558,14 @@
     "screenshotsSources": ["https://www.amazon.fr/"]
   },
   {
+    "id": 92,
+    "title": "Le copier coller est possible dans les champs de formulaire.",
+    "authors": ["Adrien LECOMTE"],
+    "path": "/rules/92",
+    "description": "Saisissez votre adresse e-mail. C’est bon, c’est fait ? Et si maintenant je vous demande de la saisir de nouveau, vous allez peut-être avoir la flemme de le faire et voudrez la copier depuis le premier champ pour la coller dans le deuxième. De quel droit certains sites voudraient-ils vous empêcher de faire cela ? Vive le copier-coller libre !",
+    "tags": ["Basics", "Accessibilité", "Développement", "Formulaires"],
+    "objectives": ["Faciliter la saisie dans les formulaires."],
+    "implementationIntro": "",
     "id": 56,
     "title": "Une adresse de livraison différente de l'adresse de facturation peut être spécifiée.",
     "authors": ["Tom AMARU"],
@@ -636,6 +662,193 @@
       "Vérifier la présence d'une mention textuelle explicite (pas uniquement une couleur rouge par exemple).",
       "Contrôler que le bouton d'action est désactivé ou remplacé par une alerte."
     ],
+    "screenshotsSources": []
+  },
+  {
+    "id": 197,
+    "title": "Toutes les pages utilisent le protocole HTTPS.",
+    "authors": ["Stephen MICOSA"],
+    "path": "/rules/197",
+    "description": "Le HTTPS qui se trouve au début de la majorité des adresses web actuellement signifie que la page est envoyée par le serveur avec le protocole HyperText Transfer Protocol Secure ou « protocole de transfert hypertextuel sécurisé. » Cela signifie que la page est envoyée avec HTTP et qu’elle est chiffrée pour éviter qu’elle ne puisse être lue directement sur le réseau. Au début réservée au transfert de données sensibles, recommandée notamment par Google, cette approche est maintenant généralisée pour toutes les pages web. Pour les utilisateurs, cela signifie que vos échanges avec le site sont chiffrés.",
+    "tags": ["Basics", "Développement", "Sécurité"],
+    "objectives": [
+      "Prévenir le risque d’interception et de vol de données.",
+      "Améliorer la sécurité du site.",
+      "Rassurer les utilisateurs.",
+      "Consolider le référencement des pages."
+    ],
+    "implementationIntro": "Ne pas utiliser le protocole HTTP, mais uniquement HTTPS pour toutes les ressources de chaque page du site.",
+    "implementation": [],
+    "control": [
+      "Vérifier que chaque page et ressource de page du site utilise le protocole HTTPS et non HTTP."
+    ],
+    "screenshotsSources": [
+      "https://www.service-public.gouv.fr/",
+      "https://www.impots.gouv.fr/accueil"
+    ]
+  },
+  {
+    "id": 198,
+    "title": "Les certificats de sécurité sont signés et en cours de validité.",
+    "authors": ["Stephen MICOSA"],
+    "path": "/rules/198",
+    "description": "La rencontre d’un site dont le certificat est invalide ou périmé provoque des alertes sur le poste de l’internaute. Dans un certain nombre de cas, elles le conduiront à quitter immédiatement le site.",
+    "tags": ["Basics", "Développement", "Sécurité"],
+    "objectives": [
+      "Permettre aux utilisateurs de connaître la validité du certificat et contribuer à la sécurisation de la transaction."
+    ],
+    "implementationIntro": "Faire un suivi rigoureux des certificats de sécurité utilisés sur le site en anticipant les dates de renouvellement.",
+    "implementation": [],
+    "control": [
+      "Vérifier la validité du certificat à l'aide d'un outil en ligne, ou bien à l'aide des outils fournis par les navigateurs",
+      "La plupart des navigateurs affichent également une alerte lorsqu'ils rencontrent un certificat non valide."
+    ],
+    "screenshotsSources": [
+      "https://www.service-public.gouv.fr/",
+      "https://www.impots.gouv.fr/accueil"
+    ]
+  },
+  {
+    "id": 199,
+    "title": "Les pages utilisant HTTPS ont un entête de transport strict.",
+    "authors": ["Stephen MICOSA"],
+    "path": "/rules/199",
+    "description": "Selon Wikipédia, que nous nous refusons à paraphraser ici : « HTTP Strict Transport Security (HSTS) est un mécanisme de politique de sécurité proposé pour HTTP, permettant à un serveur web de déclarer à un agent utilisateur (comme un navigateur web), compatible, qu'il doit interagir avec lui en utilisant une connexion sécurisée (comme HTTPS) ». En résumé, cela signifie que votre serveur est configuré pour ne communiquer avec l’utilisateur que de manière chiffrée. Il s’agit donc d’un niveau de sécurité supplémentaire par rapport au fait d’utiliser HTTPS. Non seulement le serveur parle en HTTPS, mais il refuse de parler de toute autre façon.",
+    "tags": ["Basics", "Développement", "Sécurité"],
+    "objectives": [
+      "Améliorer la sécurité des échanges.",
+      "Prévenir les risques d’attaques."
+    ],
+    "implementationIntro": "Utiliser pour chaque page l'entête HTTP Strict Transport Security et son paramètre max-age pour spécifier que le navigateur doit convertir toutes les requêtes en HTTP en requêtes HTTPS.",
+    "implementation": [],
+    "control": [
+      "Vérifier que le serveur envoie pour chaque page l'entête HTTP Strict Transport Security avec le paramètre max-age spécifiant la durée pendant laquelle le navigateur doit convertir toutes les requêtes en HTTP en requêtes HTTPS"
+    ],
+    "screenshotsSources": [
+      "https://stackoverflow.com/questions",
+      "https://securityheaders.com/?q=https%3A%2F%2Fstackoverflow.com%2Fquestions&followRedirects=on",
+      "https://chatgpt.com/",
+      "https://securityheaders.com/?q=https%3A%2F%2Fchatgpt.com%2F&followRedirects=on"
+    ]
+  },
+  {
+    "id": 200,
+    "title": "Les pages utilisant le protocole HTTPS ne proposent pas de ressources HTTP.",
+    "authors": ["Stephen MICOSA"],
+    "path": "/rules/200",
+    "description": "Lorsque les utilisateurs naviguent sur les sites proposant HTTPS, les utilisateurs voient s’afficher un cadenas. Lorsque le site propose dans la même page certaines ressources en HTTP et d’autres en HTTPS, le navigateur pourra afficher une alerte de sécurité concernant le site visité. Lorsque vous proposez un site en HTTPS, veillez bien à ce que toutes les ressources appelées soient également en HTTPS",
+    "tags": ["Développement", "Sécurité"],
+    "objectives": [
+      "Prévenir les alertes de type \"site non sécurisé\" dans les outils de consultation.",
+      "Améliorer la sécurité pour l’ensemble des ressources du site."
+    ],
+    "implementationIntro": "Pour chaque page du site envoyée par le serveur en HTTPS, fournir toutes les ressources qui la composent (images, fichiers CSS, JS, etc.) via le protocole HTTPS et non via HTTP.",
+    "implementation": [],
+    "control": [
+      "Pour chaque page du site envoyée par le serveur en HTTPS, vérifier qu'aucune des ressources qui la composent (images, fichiers CSS, JS, etc.) n'est fournie via le protocole HTTP."
+    ],
+    "screenshotsSources": [
+      "https://web.dev/articles/fixing-mixed-content",
+      "https://www.whynopadlock.com/results/3d701c75-4163-4973-a0b8-0b5233a4b3c0",
+      "https://extranet.ynov.com/home",
+      "https://www.wpoven.com/blog/how-to-fix-mixed-content-warning-on-wordpress/"
+    ]
+  },
+  {
+    "id": 201,
+    "title": "Les opérations relatives aux mots de passe peuvent être effectuées intégralement en ligne.",
+    "authors": ["Stephen MICOSA"],
+    "path": "/rules/201",
+    "description": "Vous ne retrouvez plus votre mot de passe, pas de problème ! Saisissez votre nom, votre prénom, votre date de naissance, le nom de jeune fille de votre grand-père, vous recevrez votre nouveau mot de passe dans quelques jours par courrier postal. D’ici là, nous vous souhaitons de ne pas avoir trop besoin de notre service. Si ce message plus ou moins imaginaire fait écho à vos propres expériences – bancaires, par exemple -, vous n’avez même pas besoin qu’on vous explique l’intérêt de pouvoir modifier ou réinitialiser son mot de passe en ligne.",
+    "tags": ["Accessibilité", "Conception", "Développement", "Sécurité"],
+    "objectives": [
+      "Fournir une solution immédiate au problème de l’utilisateur.",
+      "Limiter les difficultés liées à l’utilisation d’autres modes de communication."
+    ],
+    "implementationIntro": "Permettre à l'utilisateur d'effectuer toutes les actions liées au mot de passe (réinitialisation de passe perdu, modification, etc.) intégralement en ligne. Par exemple : pas d'envoi d'un rappel de mot de passe ou d'un nouveau mot de passe par courrier postal.",
+    "implementation": [],
+    "control": [
+      "Vérifier qu'il est possible d'effectuer intégralement en ligne toutes les actions liées au mot de passe (réinitialisation de mot de passe perdu, modification, etc.)."
+    ],
+    "screenshotsSources": [
+      "https://www.bershka.com/fr/h-man.html",
+      "https://www.bershka.com/fr/h-man.html",
+      "https://www.bershka.com/fr/h-man.html"
+    ]
+  },
+  {
+    "id": 202,
+    "title": "Les mots de passe peuvent être choisis ou changés par l'utilisateur.",
+    "authors": ["Stephen MICOSA"],
+    "path": "/rules/202",
+    "description": "Pour de nombreux utilisateurs, les mots de passe choisis par défaut sont trop complexes à mémoriser. Le fait de pouvoir choisir ou changer son mot de passe présente une vraie valeur ajoutée pour ces internautes.",
+    "tags": ["Accessibilité", "Développement", "Sécurité"],
+    "objectives": [
+      "Permettre aux utilisateurs de choisir un mot de passe personnalisé.",
+      "Éviter aux utilisateurs de rechercher leur mot de passe à chaque connexion."
+    ],
+    "implementationIntro": "Fournir une procédure en ligne permettant le choix d'un mot de passe personnalisé dès la création du compte ou la modification ultérieure des mots de passe automatiquement générés.\n Fournir un accès à la modification du mot de passe depuis la gestion du compte utilisateur ou à défaut dans le contexte du formulaire d'identification.",
+    "implementation": [],
+    "control": [
+      "Vérifier qu'il est possible de saisir le mot de passe de son choix à la création du compte ou, dans le cas où le mot de passe est automatiquement généré par le service en ligne, contrôler qu'il est possible de le modifier après l'inscription."
+    ],
+    "screenshotsSources": [
+      "https://tinyurl.com/instant-gaming-registration",
+      "https://www.instant-gaming.com/en/"
+    ]
+  },
+  {
+    "id": 203,
+    "title": "Un dispositif sensibilise l'utilisateur sur le degré de sécurisation du mot de passe qu'il choisit.",
+    "authors": ["Stephen MICOSA"],
+    "path": "/rules/203",
+    "description": "Un mot de passe doit avoir un niveau minimum de complexité pour ne pas être facilement deviné à des fins malveillantes. Il est souhaitable d’avertir l’utilisateur si le mot de passe qu’il a choisi n’est pas assez complexe. Certains systèmes permettent même de l’en informer en direct pendant la saisie.",
+    "tags": [
+      "Basics",
+      "Accessibilité",
+      "Conception",
+      "Développement",
+      "Sécurité"
+    ],
+    "objectives": [
+      "Informer les utilisateurs sur le niveau de sécurité du mot de passe choisi et donc sur les risques de détournement."
+    ],
+    "implementationIntro": "La saisie du mot de passe donne lieu à une validation et à un retour indiquant son degré de sécurité, avant soumission définitive du formulaire d’inscription ou de changement de mot de passe.",
+    "implementation": [],
+    "control": [
+      "Pour tout formulaire d’inscription ou de changement de mot de passe :",
+      "Saisir un mot de passe et s’assurer que cette saisie donne lieu à une validation et à un retour indiquant son degré de sécurité, et ce, avant la soumission définitive du formulaire.",
+      "Cette validation peut être plus ou moins exigeante : contrôle du nombre de caractères, de l’absence de l’identifiant du compte dans le mot de passe, du type de caractères présents, etc. "
+    ],
+    "screenshotsSources": [
+      "https://dribbble.com/shots/4467712-Password-Strength-Meter/attachments/4467712-Password-Strength-Meter?mode=media",
+      "https://www.dropbox.com/"
+    ]
+  },
+  {
+    "id": 204,
+    "title": "Les mots de passe peuvent être réinitialisés.",
+    "authors": ["Stephen MICOSA"],
+    "path": "/rules/204",
+    "description": "Perdre son identifiant ou son mot de passe arrive à tout le monde. La procédure à suivre pour le réinitialiser doit être simple, possible à faire en ligne et sécurisée. Un mot de passe perdu peut être synonyme d’utilisateur perdu.",
+    "tags": ["Accessibilité", "Développement", "Sécurité"],
+    "objectives": [
+      "Permettre à l'utilisateur d'accéder à son compte en cas de perte du mot de passe.",
+      "Simplifier la gestion des comptes utilisateurs. ",
+      "Renforcer la sécurité en évitant le stockage de mots de passe non chiffrés afin de pouvoir les communiquer de nouveau à l'utilisateur."
+    ],
+    "implementationIntro": "Fournir un lien permettant l'envoi d'un mail à l'adresse associée au compte indiquant la procédure de réinitialisation.\n Placer de préférence ce lien dans le formulaire de connexion.",
+    "implementation": [],
+    "control": [
+      "Dans un site proposant un compte personnel protégé par mot de passe :",
+      "Sans être identifié sur le site, vérifier la présence d'un lien du type « Mot de passe oublié ? » à proximité du formulaire de connexion ;",
+      "Vérifier la présence d'une procédure permettant la création d'un nouveau mot de passe sur la page pointée par le lien « Mot de passe oublié ? » ;",
+      "Vérifier qu'il s'agit bien d'une procédure de réinitialisation et non pas d'un simple renvoi du mot de passe actuel."
+    ],
+    "screenshotsSources": [
+      "https://www.bershka.com/fr/h-man.html",
+      "https://www.bershka.com/fr/h-man.html"
+    ]
     "screenshotsSources": [
       "https://www.amazon.fr/",
       "https://www.decathlon.fr/",
