@@ -272,6 +272,204 @@
       "https://pay.google.com",
       "https://www.fnac.com"
     ]
+  },{
+    "id": 65,
+    "title": "Les produits indisponibles font l'objet d'une différenciation visuelle et textuelle",
+    "authors": ["Timothé Champieux"],
+    "path": "/rules/65",
+    "description": "Tout produit qui n'est pas disponible à l'achat doit être clairement distinguable des produits en stock, à la fois par son apparence et par une mention écrite.",
+    "tags": ["E-commerce", "Information", "Navigation"],
+    "objectives": [
+      "Éviter la frustration de l'utilisateur qui tente d'acheter un produit qu'il ne peut pas recevoir.",
+      "Permettre à l'utilisateur d'identifier rapidement les produits qu'il peut réellement acquérir.",
+      "Renforcer la crédibilité et la transparence du site marchand."
+    ],
+    "implementationIntro": "La différenciation doit être double : visuelle (pour le scan rapide) et textuelle (pour la certitude et l'accessibilité).",
+    "implementation": [
+      "Ajouter une mention explicite 'Épuisé', 'Indisponible' ou 'Rupture de stock' visible sans survol.",
+      "Modifier l'aspect visuel du produit (opacité réduite, niveau de gris, badge spécifique).",
+      "Désactiver le bouton d'ajout au panier et modifier son libellé.",
+      "S'assurer que l'information est disponible pour les lecteurs d'écran via du texte caché ou des attributs aria."
+    ],
+    "control": [
+      "Dans les listes de produits, vérifier que les articles hors stock sont visuellement distincts.",
+      "Vérifier la présence d'une mention textuelle explicite (pas uniquement une couleur rouge par exemple).",
+      "Contrôler que le bouton d'action est désactivé ou remplacé par une alerte."
+    ],
+    "screenshotsSources": [
+      "https://www.amazon.fr/",
+      "https://www.decathlon.fr/",
+      "https://www.asos.com/fr/"
+    ]
+  },{
+    "id": 66,
+    "title": "Un mail indiquant la référence de la transaction et les données de la commande est envoyé suite à la validation",
+    "authors": ["Timothé Champieux"],
+    "path": "/rules/66",
+    "description": "Après validation d'un achat ou d'une commande, l'utilisateur doit recevoir un courriel récapitulatif contenant une référence unique et le détail de sa transaction.",
+    "tags": ["E-commerce", "Sécurité", "Confiance"],
+    "objectives": [
+      "Permettre à l'utilisateur de conserver une trace contractuelle de sa commande.",
+      "Rassurer l'utilisateur sur la bonne prise en compte de sa transaction.",
+      "Faciliter les échanges ultérieurs avec le service client grâce à la référence."
+    ],
+    "implementationIntro": "Cet email doit être envoyé automatiquement (transactionnel) immédiatement après le paiement.",
+    "implementation": [
+      "Configurer le système e-commerce pour envoyer un mail de confirmation automatique.",
+      "Inclure impérativement : le numéro de commande, la liste des produits/services, le montant total et les coordonnées du vendeur.",
+      "S'assurer que l'email ne tombe pas en spam (authentification SPF/DKIM)."
+    ],
+    "control": [
+      "Effectuer une commande test complète.",
+      "Vérifier la réception du mail de confirmation dans les minutes qui suivent.",
+      "Contrôler la présence de la référence unique et de l'exactitude des données (produits, prix)."
+    ],
+    "screenshotsSources": [
+      "https://www.amazon.fr/",
+      "https://www.fnac.com/",
+      "https://www.ubereats.com/"
+    ]
+  },{
+    "id": 67,
+    "title": "Chaque réclamation fait l'objet d'un accusé de réception",
+    "authors": ["Timothé Champieux"],
+    "path": "/rules/67",
+    "description": "L'utilisateur doit avoir la certitude immédiate que sa réclamation a été transmise au service concerné via une notification visuelle et/ou un email.",
+    "tags": ["Contact", "Service Client", "Feedback"],
+    "objectives": [
+      "Rassurer l'utilisateur sur la prise en compte de son problème.",
+      "Fournir une référence (numéro de ticket) pour le suivi de la demande.",
+      "Informer l'utilisateur des délais de traitement prévisibles."
+    ],
+    "implementationIntro": "L'accusé de réception ne doit pas se contenter d'un simple 'Message envoyé', mais engager la responsabilité du service.",
+    "implementation": [
+      "Afficher un message de confirmation explicite immédiatement après l'envoi du formulaire.",
+      "Envoyer automatiquement un courriel contenant le récapitulatif de la demande et un numéro de dossier.",
+      "Indiquer si possible le délai moyen de réponse."
+    ],
+    "control": [
+      "Envoyer une réclamation via le formulaire de contact ou l'interface de support.",
+      "Vérifier l'affichage immédiat du message de succès.",
+      "Vérifier la réception de l'email de confirmation contenant une référence de suivi."
+    ],
+    "screenshotsSources": [
+      "https://www.ovhcloud.com/fr/",
+      "https://www.paypal.com/fr/disputes/",
+      "https://www.sncf-connect.com/aide"
+    ]
+  },{
+    "id": 68,
+    "title": "La provenance des produits est indiquée",
+    "authors": ["Timothé Champieux"],
+    "path": "/rules/68",
+    "description": "L'origine de fabrication ou d'assemblage des produits vendus doit être clairement affichée sur la fiche produit pour informer le consommateur.",
+    "tags": ["E-commerce", "Transparence", "RSE"],
+    "objectives": [
+      "Permettre au consommateur de faire un choix éclairé (critères éthiques, écologiques, politiques).",
+      "Valoriser les circuits courts ou le savoir-faire local.",
+      "Renforcer la confiance en affichant une transparence totale sur la chaîne d'approvisionnement."
+    ],
+    "implementationIntro": "L'information ne doit pas être cachée dans les conditions générales, mais visible directement sur la fiche produit.",
+    "implementation": [
+      "Ajouter un champ 'Pays de fabrication' ou 'Origine' dans la base de données produits.",
+      "Afficher cette information à proximité du prix ou de la description technique.",
+      "Si possible, distinguer le lieu de fabrication du lieu de provenance des matières premières."
+    ],
+    "control": [
+      "Naviguer sur plusieurs fiches produits.",
+      "Vérifier la présence d'une mention 'Fabriqué en...' ou 'Origine : ...'.",
+      "Vérifier que l'information est compréhensible sans ambiguïté."
+    ],
+    "screenshotsSources": [
+      "https://www.leslipfrancais.fr/",
+      "https://www.patagonia.com/",
+      "https://www.biocoop.fr/"
+    ]
+  },{
+    "id": 69,
+    "title": "Chaque champ de formulaire est associé dans le code source à une étiquette qui lui est propre",
+    "authors": ["Timothé Champieux"],
+    "path": "/rules/69",
+    "description": "Tout élément de formulaire permettant une interaction (input, select, textarea) doit être programmatiquement relié à son libellé via l'attribut 'label' ou 'aria-label'.",
+    "tags": ["Accessibilité", "Formulaires", "Code"],
+    "objectives": [
+      "Permettre aux lecteurs d'écran d'annoncer la fonction du champ lorsqu'il reçoit le focus.",
+      "Agrandir la zone de clic : cliquer sur le libellé active le champ (très utile sur mobile).",
+      "Améliorer le référencement naturel en structurant sémantiquement les formulaires."
+    ],
+    "implementationIntro": "L'association visuelle (placer le texte à côté du champ) ne suffit pas. L'association doit être dans le code.",
+    "implementation": [
+      "Utiliser la balise <label> avec l'attribut 'for' pointant vers l'attribut 'id' du champ.",
+      "Alternativement, imbriquer le champ <input> directement à l'intérieur de la balise <label>.",
+      "Pour les champs sans libellé visible (ex: barre de recherche), utiliser 'aria-label' ou un label caché avec une classe CSS 'sr-only'."
+    ],
+    "control": [
+      "Inspecter le code source et vérifier la correspondance for/id.",
+      "Cliquer sur le texte du label : le curseur doit se placer automatiquement dans le champ.",
+      "Utiliser un lecteur d'écran (NVDA, VoiceOver) : le nom du champ doit être lu à la prise de focus."
+    ],
+    "screenshotsSources": [
+      "https://www.service-public.fr/",
+      "https://github.com/signup",
+      "https://accounts.google.com/"
+    ]
+  },{
+    "id": 70,
+    "title": "Les informations complétant l'étiquette d'un champ sont associées à celui-ci dans le code source",
+    "authors": ["Timothé Champieux"],
+    "path": "/rules/70",
+    "description": "Lorsque des informations supplémentaires (format de saisie, message d'erreur, unité de mesure) accompagnent un champ, elles doivent être reliées techniquement à celui-ci pour être perçues par les technologies d'assistance.",
+    "tags": ["Accessibilité", "Formulaires", "WAI-ARIA"],
+    "objectives": [
+      "Permettre aux utilisateurs non-voyants de connaître le format attendu (ex: JJ/MM/AAAA) avant de remplir le champ.",
+      "Garantir que les messages d'erreur sont lus automatiquement lorsque l'utilisateur corrige sa saisie.",
+      "Éviter les erreurs de saisie en rendant les contraintes explicites pour tous."
+    ],
+    "implementationIntro": "La simple proximité visuelle ne suffit pas. L'utilisation de l'attribut ARIA 'aria-describedby' est la méthode standard.",
+    "implementation": [
+      "Attribuer un 'id' unique à l'élément contenant le texte d'aide ou l'erreur.",
+      "Ajouter l'attribut 'aria-describedby' sur le champ <input>, <select> ou <textarea>.",
+      "Faire pointer cet attribut vers l'identifiant du texte d'aide (ex: aria-describedby='help-text-id')."
+    ],
+    "control": [
+      "Inspecter le code source : vérifier la présence de 'aria-describedby'.",
+      "Vérifier que la valeur de cet attribut correspond bien à un 'id' existant dans la page.",
+      "Tester avec un lecteur d'écran : l'aide doit être vocalisée après le label lors de la prise de focus."
+    ],
+    "screenshotsSources": [
+      "https://www.service-public.fr/",
+      "https://getbootstrap.com/docs/5.3/forms/overview/",
+      "https://github.com/signup"
+    ]
+  },{
+    "id": 71,
+    "title": "L'étiquette de chaque champ de formulaire indique si la saisie est obligatoire",
+    "authors": ["Timothé Champieux"],
+    "path": "/rules/71",
+    "description": "L'utilisateur doit pouvoir distinguer immédiatement les champs qu'il est obligé de remplir de ceux qui sont optionnels, avant même de valider le formulaire.",
+    "tags": ["Formulaires", "Accessibilité", "Ergonomie"],
+    "objectives": [
+      "Prévenir les erreurs de saisie lors de la validation du formulaire.",
+      "Accélérer le remplissage en permettant à l'utilisateur de n'aller qu'à l'essentiel.",
+      "Garantir l'accessibilité de l'information pour les utilisateurs de lecteurs d'écran."
+    ],
+    "implementationIntro": "La convention la plus courante est l'astérisque, mais la mention explicite '(obligatoire)' ou '(facultatif)' fonctionne aussi.",
+    "implementation": [
+      "Ajouter un signe distinctif (astérisque, mention texte) dans le libellé <label>.",
+      "Si un symbole est utilisé (comme *), ajouter une légende explicative en début de formulaire.",
+      "Ajouter l'attribut standard 'required' dans la balise <input>.",
+      "Utiliser 'aria-required=\"true\"' si l'attribut HTML5 ne suffit pas dans certains contextes complexes."
+    ],
+    "control": [
+      "Vérifier visuellement la présence de l'indicateur sur tous les champs obligatoires.",
+      "Vérifier la présence de la légende si un symbole est utilisé.",
+      "Vérifier la présence de l'attribut 'required' dans le code source."
+    ],
+    "screenshotsSources": [
+      "https://www.laposte.fr/",
+      "https://www.service-public.fr/",
+      "https://www.fnac.com/"
+    ]
   },
 
   {
@@ -914,4 +1112,5 @@
       "https://github.com"
     ]
   }
+  
 ]
