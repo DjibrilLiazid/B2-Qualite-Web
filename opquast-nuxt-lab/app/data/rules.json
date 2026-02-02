@@ -600,6 +600,7 @@
     "control": [
       "Vérifier manuellement que chaque pictogramme porteur d'information dispose d'une alternative textuelle pertinente.",
       "Vérifier que les pictogrammes décoratifs sont ignorés par les lecteurs d'écran."
+    ],
     "screenshotsSources": [
       "https://www.instant-gaming.com/fr/",
       "https://www.amazon.fr/"
@@ -905,6 +906,9 @@
     ],
     "control": [
       "Vérifier les feuilles de style CSS pour s'assurer que chaque propriété font-family se termine par une famille générique."
+    ]
+  },
+  {
     "id": 133,
     "title": "Les liens d'accès aux versions traduites pointent directement vers la traduction de la page courante.",
     "authors": ["ROMAIN DANIEL"],
@@ -944,6 +948,9 @@
     ],
     "control": [
       "Vérifier que le texte n'est pas justifié dans les feuilles de style CSS."
+    ]
+  },
+  {
     "id": 134,
     "title": "Les liens vers les versions équivalentes des contenus sont rédigés dans leur langue cible.",
     "authors": ["ROMAIN DANIEL"],
@@ -984,6 +991,9 @@
     "control": [
       "Vérifier le code source pour s'assurer que le texte n'est pas saisi entièrement en majuscules (sauf acronymes).",
       "Vérifier l'utilisation de text-transform dans le CSS."
+    ]
+  },
+  {
     "id": 135,
     "title": "Le serveur respecte l'ordre préférentiel de langues des outils de consultation.",
     "authors": ["ROMAIN DANIEL"],
@@ -1261,6 +1271,9 @@
     "control": [
       "Inspecter le code source pour la balise meta viewport.",
       "Tester le zoom sur un appareil mobile ou en émulation."
+    ]
+  },
+  {
     "id": 136,
     "title": "Chaque lien est doté d'un intitulé dans le code source.",
     "authors": ["ROMAIN DANIEL"],
@@ -1429,6 +1442,9 @@
     ],
     "control": [
       "Tester le site sur différentes résolutions d'écran (mobile, tablette, desktop)."
+    ]
+  },
+  {
     "id": 137,
     "title": "Le libellé de chaque lien décrit sa fonction ou la nature du contenu vers lequel il pointe.",
     "authors": ["ROMAIN DANIEL"],
@@ -1488,6 +1504,9 @@
     ],
     "control": [
       "Utiliser la fonction 'Aperçu avant impression' du navigateur pour vérifier le rendu."
+    ]
+  },
+  {
     "id": 72,
     "title": "Le format de saisie des champs de formulaire qui le nécessitent est indiqué",
     "authors": ["Joud CHEBIRA"],
@@ -1756,6 +1775,8 @@
       "Vérifier via l'aperçu avant impression que seuls le contenu principal et les informations essentielles sont présents."
     ],
     "screenshotsSources": []
+  },
+  {
     "id": 138,
     "title": "Les liens de même nature ont des couleurs, des formes et des comportements identiques sur toutes les pages.",
     "authors": ["ROMAIN DANIEL"],
