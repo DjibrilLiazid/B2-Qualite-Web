@@ -2033,6 +2033,221 @@
     ]
   },
   {
+    "id": 80,
+    "title": "En cas de rejet des données saisies dans un formulaire, les raisons du rejet sont indiquées à l'utilisateur.",
+    "authors": ["Alexis DUPIN"],
+    "path": "/rules/80",
+    "description": "Ce qui peut sembler évident pour l’auteur d’un formulaire risque de l’être beaucoup moins pour ses utilisateurs : aidez-les à chaque fois que possible.",
+    "tags": [
+      "Basics",
+      "Accessibilité",
+      "Conception",
+      "Développement",
+      "Formulaires"
+    ],
+    "objectives": [
+      "Aider l'internaute à comprendre ce qu'on attend et, ainsi, faciliter le passage à l'étape suivante.",
+      "Éviter la frustration de l'utilisateur face à une erreur dont il n'aurait pas la solution immédiate.",
+      "Améliorer l’accessibilité des contenus aux personnes handicapées."
+    ],
+    "implementationIntro": "Pour chaque champ contenant des données rejetées, indiquer la nature de l'erreur et fournir une aide à la correction",
+    "implementation": [
+      "Soit en début de formulaire, dans une liste des champs erronés ;",
+      "Soit dans le contexte de chaque champ, autant que possible via leur étiquette label."
+    ],
+    "control": [
+      "Pour chaque formulaire examiné :",
+      "Soumettre les différentes erreurs possibles dans chaque formulaire absence de saisie d'un champ, non-respect d'un format demandé ou prévisible (format d'adresse mail, de date, etc.), sensibilité à la casse, etc.",
+      "Vérifier, si la saisie est rejetée, que la nature de l'erreur est précisée de manière à fournir l'aide nécessaire à sa correction, par l'un des moyens indiqués dans le paragraphe de mise en oeuvre."
+    ],
+    "screenshotsSources": [
+      "https://www.facebook.com/?locale=fr_FR",
+      "https://x.com/?lang=fr",
+      "https://laposte.net/accueil#inbox"
+    ]
+  },
+   {
+    "id": 81,
+    "title": "En cas de rejet des données saisies dans un formulaire, toutes les données saisies peuvent être modifiées par l'utilisateur.",
+    "authors": ["Alexis DUPIN"],
+    "path": "/rules/81",
+    "description": "Il est déjà contrariant de s’être trompé. Mais si en plus il faut tout recommencer parce que l’ensemble des données saisies a été effacé…",
+    "tags": [
+      "Accessibilité",
+      "Développement",
+      "Formulaires"
+    ],
+    "objectives": [
+      "Laisser la main à l'utilisateur sur la totalité des informations qu'il donne.",
+      "Faciliter la correction des erreurs commises par l'utilisateur. ",
+      "Permettre à l'utilisateur de modifier des informations sur lesquelles il voudrait revenir.",
+      "Éviter que l'utilisateur ne quitte le formulaire avant validation définitive."],
+    "implementationIntro": "Stocker toutes les données saisies dans des variables de session afin de pouvoir les afficher de nouveau telles qu'elles ont été saisies dans les champs.",
+    "implementation": [
+      "Rendre possible la modification des champs après rejet des données."
+    ],
+    "control": [
+      "Pour chaque formulaire audité :",
+      "Provoquer le rejet de la saisie en soumettant les différentes erreurs possibles : absence de saisie d'un champ, non-respect d'un format demandé ou prévisible (format d'adresse mail, de date, etc.), sensibilité à la casse ;",
+      "Puis, vérifier que le formulaire est affiché de nouveau tel qu'il a été rempli, ceci afin de pouvoir éventuellement de le corriger."
+    ],
+    "screenshotsSources": [
+      "https://secure.booking.com/book.html?hotel_id=4637618",
+      "https://www.sncf-connect.com/home/shop/results/outward",
+      "https://help.x.com/fr/forms/privacy/job-applicant-data-request"
+    ]
+  },
+   {
+    "id": 82,
+    "title": "Les messages d'erreur personnalisés sont exprimés dans la langue du formulaire.",
+    "authors": ["Alexis DUPIN"],
+    "path": "/rules/82",
+    "description": "Lorsqu’ils conçoivent des formulaires, les professionnels s’occupent prioritairement du rendu visuel et de la facilité d’utilisation. La gestion des erreurs arrive souvent plus tard dans la conception. Quelquefois, ce sont les développeurs ou les systèmes de gestion de contenu qui prennent en charge la gestion des erreurs et c’est l’un des cas où l’on retrouve des messages d’erreurs dans une autre langue que le formulaire d’origine. Cela peut gêner les utilisateurs et nuire à l’image de votre service.",
+    "tags": [
+      "Accessibilité",
+      "Développement",
+      "Formulaires"
+    ],
+    "objectives": [
+      "Prévenir les difficultés de saisie et améliorer la compréhension des messages d’erreur.",
+      "Améliorer l’accessibilité des contenus aux personnes handicapées"
+    ],
+    "implementationIntro": "",
+    "implementation": [
+      "S'assurer que tous les messages d'erreur prévus par les outils de gestion d'erreur de saisie sont traduits et délivrés dans la même langue que les autres libellés du formulaire (étiquettes, etc.)."
+    ],
+    "control": [
+      "Vérifier que tous les messages d'erreur affichés lors de la saisie dans un formulaire sont dans la même langue que les autres libellés du formulaire (étiquettes, etc.)."
+    ],
+    "screenshotsSources": [
+      "https://www.airbnb.es/",
+      "https://www.netflix.com/fr-en/login",
+      "https://wordpress.com/setup/onboarding/user/ru?ref=logged-out-homepage-lp"
+    ]
+  },
+   {
+    "id": 83,
+    "title": "Lors de la saisie d'un formulaire réparti sur plusieurs pages, un récapitulatif global est affiché avant l'envoi définitif.",
+    "authors": ["Alexis DUPIN"],
+    "path": "/rules/83",
+    "description": "Voyons, ne me suis-je pas trompé quelque part ? Ah, tant pis pour cette commande, dans le doute, je vais y renoncer…",
+    "tags": [
+      "Accessibilité",
+      "Conception",
+      "Développement",
+      "Formulaires"
+    ],
+    "objectives": [
+      "Donner à l'utilisateur une vue globale de ce qu'il a saisi dans les pages précédentes.",
+      "Permettre à l'utilisateur de vérifier l'ensemble des informations d'une procédure complexe avant la soumission définitive."
+    ],
+    "implementationIntro": "",
+    "implementation": [
+      "Stocker les informations saisies dans des variables de session afin de pouvoir en afficher un récapitulatif global avant validation."
+    ],
+    "control": [
+      "Pour chaque formulaire réparti sur plusieurs pages :",
+      "Soumettre complètement le formulaire.",
+      "Vérifier que la soumission finale donne lieu à l'affichage d'un récapitulatif des saisies successives, affiché avant la validation finale du processus par l'utilisateur."
+    ],
+    "screenshotsSources": [
+      "https://www.amazon.fr",
+      "https://www.doctolib.fr/ophtalmologue/aix-les-bains/maxence-papegaey/booking",
+      "https://www.temu.com/shopping_cart.html"
+    ]
+  },
+   {
+    "id": 84,
+    "title": "La page affichée après l'envoi d'un formulaire permet de reprendre directement la navigation.",
+    "authors": ["Alexis DUPIN"],
+    "path": "/rules/84",
+    "description": "Après avoir rempli un formulaire, la vie de votre visiteur ne s’arrête pas là, et sa navigation non plus.",
+    "tags": [
+      "Accessibilité",
+      "Développement",
+      "Formulaires"
+    ],
+    "objectives": [
+      "Éviter de dérouter l’utilisateur en le menant à une page en impasse, y compris par l’utilisation de la fonction « page précédente » du navigateur.",
+      "Limiter le risque de double envoi de formulaire."
+    ],
+    "implementationIntro": "",
+    "implementation": [
+      "Après envoi d'un formulaire, afficher une page de confirmation du succès ou d'avertissement d'échec de l'envoi, où sont présents les éléments de navigation du site."
+    ],
+    "control": [
+      "Pour chaque formulaire examiné :",
+      "Remplir les champs demandés et soumettre le formulaire ;",
+      "Vérifier que l'envoi final de chaque formulaire présent dans le site est suivi de l'affichage d'une page comportant les éléments nécessaires à la poursuite de la navigation (menu principal, lien retour en page d'accueil, etc.)."
+    ],
+    "screenshotsSources": [
+      "https://www.service-public.gouv.fr/",
+      "https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal",
+      "https://www.lemonde.fr/"
+    ]
+  },
+   {
+    "id": 85,
+    "title": "La soumission d'un formulaire est suivie d'un message indiquant la réussite ou non de l'action souhaitée.",
+    "authors": ["Alexis DUPIN"],
+    "path": "/rules/85",
+    "description": "Il arrive fréquemment qu’un internaute soit directement renvoyé vers la page d’accueil d’un site après l’envoi d’un formulaire. Dans ce cas, il peut subsister un doute sur la réussite de l’envoi du formulaire. Un simple message permet de le lever.",
+    "tags": [
+      "Accessibilité",
+      "Conception",
+      "Développement",
+      "Formulaires"
+    ],
+    "objectives": [
+      "Fournir à l'utilisateur un retour immédiat et explicite sur l'action qu'il vient d'effectuer.",
+      "Éviter la frustration ultérieure d'un utilisateur qui pense, sur le moment, que le processus s'est déroulé avec succès alors qu'il y a eu un problème."
+    ],
+    "implementationIntro": "",
+    "implementation": [
+      "Retourner une page de confirmation explicite après soumission d'un formulaire."
+    ],
+    "control": [
+      "Pour chaque formulaire examiné :",
+      "Soumettre complètement le formulaire ;",
+      "Vérifier que la soumission finale du formulaire donne lieu à l'affichage d'une page de confirmation indiquant explicitement la réussite ou l'échec de l'opération concernée."
+    ],
+    "screenshotsSources": [
+      "https://mail.google.com/mail/u/0/#inbox",
+      "https://www.amazon.fr/",
+      "https://outlook.cloud.microsoft/mail/inbox/"
+    ]
+  },
+   {
+    "id": 86,
+    "title": "L'utilisateur est averti au début d'un processus complexe de la nature des données et documents exigés.",
+    "authors": ["Alexis DUPIN"],
+    "path": "/rules/86",
+    "description": "Obtenir en quelques clics une évaluation du prix de votre voiture ou de votre maison, obtenir en quelques clics un devis pour une nouvelle mutuelle santé, c’est tellement alléchant, n’est-ce pas ? Quelle sera la déception des utilisateurs lorsqu'ils se rendront compte qu’il est nécessaire de saisir son mail ou son numéro de carte bleue pour obtenir les informations promises ? Pour éviter ça, soyez transparents, annoncez la couleur dès le début du processus.",
+    "tags": [
+      "Accessibilité",
+      "Conception",
+      "Formulaires",
+      "Écoconception"
+    ],
+    "objectives": [
+      "Augmenter le taux de réussite du processus complexe.",
+      "Maintenir et améliorer l’image de marque.",
+      "Permettre à l'utilisateur de préparer les éventuels documents nécéssaires."
+    ],
+    "implementationIntro": "",
+    "implementation": [
+      "Pour tout processus complexe, par exemple un formulaire de commande, afficher avant la première étape de celui-ci la liste des documents ou informations spécifiques qui devront être fournis par l'utilisateur pour finaliser le processus."
+    ],
+    "control": [
+      "Vérifier pour chaque processus complexe que la liste des documents ou informations spécifiques nécessaires pour finaliser le processus est indiquée à l'utilisateur avant la première étape de celui-ci."
+    ],
+    "screenshotsSources": [
+      "https://france-visas.gouv.fr/web/france-visas/les-etapes-de-la-demande-de-visa",
+      "https://www.boursobank.com/",
+      "https://www.airbnb.fr/host/homes"
+    ]
+  },
+  {
     "id": 87,
     "title": "Les processus complexes sont accompagnés de la liste de leurs étapes.",
     "authors": ["Adrien LECOMTE"],
